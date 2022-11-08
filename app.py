@@ -8,9 +8,13 @@ from config import Config
 from server import app, server
 from views import (
     FefferyCaptcha,
+    FefferyCountDown,
+    FefferyCssVar,
     FefferyExecuteJs,
+    FefferyExtraSpinner,
     FefferyHighlightWords,
     FefferyQRCode,
+    FefferyRawHTML,
     FefferyReload,
     FefferyStyle,
     FefferyTopProgress,
@@ -260,6 +264,18 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyTopProgress':
         return FefferyTopProgress.docs_content, pathname
+
+    elif pathname == '/FefferyCountDown':
+        return FefferyCountDown.docs_content, pathname
+
+    elif pathname == '/FefferyCssVar':
+        return FefferyCssVar.docs_content, pathname
+
+    elif pathname == '/FefferyExtraSpinner':
+        return FefferyExtraSpinner.docs_content, pathname
+
+    elif pathname == '/FefferyRawHTML':
+        return FefferyRawHTML.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

@@ -41,9 +41,33 @@ class Config:
                 {
                     'component': 'Item',
                     'props': {
+                        'key': '/FefferyCountDown',
+                        'href': '/FefferyCountDown',
+                        'title': 'FefferyCountDown 倒计时'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyCssVar',
+                        'href': '/FefferyCssVar',
+                        'title': 'FefferyCssVar css变量更新'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
                         'key': '/FefferyExecuteJs',
                         'href': '/FefferyExecuteJs',
                         'title': 'FefferyExecuteJs js执行'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyExtraSpinner',
+                        'href': '/FefferyExtraSpinner',
+                        'title': 'FefferyExtraSpinner 额外加载动画'
                     }
                 },
                 {
@@ -60,6 +84,14 @@ class Config:
                         'key': '/FefferyQRCode',
                         'href': '/FefferyQRCode',
                         'title': 'FefferyQRCode 二维码生成'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyRawHTML',
+                        'href': '/FefferyRawHTML',
+                        'title': 'FefferyRawHTML html源码渲染'
                     }
                 },
                 {
