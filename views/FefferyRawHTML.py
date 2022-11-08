@@ -35,7 +35,6 @@ docs_content = html.Div(
                     [
                         fuc.FefferyRawHTML(
                             htmlString='''
-</ style>
 <div style="width: 300px;height: 150px;box-shadow: 0px 0px 12px rgba(0, 0, 0, .12); display: flex;justify-content: center;align-items: center;">
     示例
 </ div>
