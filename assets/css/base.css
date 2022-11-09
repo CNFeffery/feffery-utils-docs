@@ -75,3 +75,15 @@ div {
 code {
   white-space: pre-wrap !important;
 }
+
+#router-menu:hover {
+  overflow: hidden auto;
+}
+
+#router-menu {
+  overflow: hidden;
+}
+
+.ant-menu-sub {
+  background: transparent !important;
+}

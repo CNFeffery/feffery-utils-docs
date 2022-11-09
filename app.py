@@ -8,6 +8,14 @@ from config import Config
 from server import app, server
 from views import (
     FefferyCaptcha,
+    FefferyBlockColorPicker,
+    FefferyCircleColorPicker,
+    FefferyEyeDropper,
+    FefferyGithubColorPicker,
+    FefferyHexColorPicker,
+    FefferyRgbColorPicker,
+    FefferyTwitterColorPicker,
+    FefferyWheelColorPicker,
     FefferyCountDown,
     FefferyCssVar,
     FefferyExecuteJs,
@@ -164,7 +172,6 @@ app.layout = fuc.FefferyTopProgress(
                                         defaultOpenKeys=[],
                                         style={
                                             'height': '100%',
-                                            'overflow': 'hidden auto',
                                             'paddingBottom': '50px'
                                         }
                                     ),
@@ -189,9 +196,8 @@ app.layout = fuc.FefferyTopProgress(
                                 ],
                                 id='side-menu',
                                 style={
-                                    'width': '280px',
+                                    'width': '290px',
                                     'height': '100vh',
-                                    'overflowY': 'auto',
                                     'transition': 'width 0.2s',
                                     'borderRight': '1px solid rgb(240, 240, 240)',
                                     'paddingRight': 20
@@ -277,6 +283,30 @@ def render_docs_content(pathname):
     elif pathname == '/FefferyRawHTML':
         return FefferyRawHTML.docs_content, pathname
 
+    elif pathname == '/FefferyBlockColorPicker':
+        return FefferyBlockColorPicker.docs_content, pathname
+
+    elif pathname == '/FefferyCircleColorPicker':
+        return FefferyCircleColorPicker.docs_content, pathname
+
+    elif pathname == '/FefferyEyeDropper':
+        return FefferyEyeDropper.docs_content, pathname
+
+    elif pathname == '/FefferyGithubColorPicker':
+        return FefferyGithubColorPicker.docs_content, pathname
+
+    elif pathname == '/FefferyHexColorPicker':
+        return FefferyHexColorPicker.docs_content, pathname
+
+    elif pathname == '/FefferyRgbColorPicker':
+        return FefferyRgbColorPicker.docs_content, pathname
+
+    elif pathname == '/FefferyTwitterColorPicker':
+        return FefferyTwitterColorPicker.docs_content, pathname
+
+    elif pathname == '/FefferyWheelColorPicker':
+        return FefferyWheelColorPicker.docs_content, pathname
+
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
 
@@ -284,12 +314,11 @@ app.clientside_callback(
     '''
     (nClicks, oldStyle) => {
         if (nClicks) {
-            if (oldStyle.width === '280px') {
+            if (oldStyle.width === '290px') {
                 return [
                     {
                         'width': 20,
                         'height': '100vh',
-                        'overflowY': 'auto',
                         'transition': 'width 0.2s',
                         'borderRight': '1px solid rgb(240, 240, 240)',
                         'paddingRight': 20
@@ -299,7 +328,7 @@ app.clientside_callback(
             }
             return [
                 {
-                    'width': '280px',
+                    'width': '290px',
                     'height': '100vh',
                     'transition': 'width 0.2s',
                     'borderRight': '1px solid rgb(240, 240, 240)',

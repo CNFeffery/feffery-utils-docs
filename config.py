@@ -26,8 +26,8 @@ class Config:
         {
             'component': 'ItemGroup',
             'props': {
-                'key': '/',
-                'title': '通用组件'
+                'key': '全部组件',
+                'title': '全部组件'
             },
             'children': [
                 {
@@ -37,6 +37,151 @@ class Config:
                         'href': '/FefferyCaptcha',
                         'title': 'FefferyCaptcha 验证码'
                     }
+                },
+                {
+                    'component': 'SubMenu',
+                    'props': {
+                        'key': '色彩选择类组件',
+                        'title': '色彩选择类组件'
+                    },
+                    'children': [
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': 'Block风格色彩选择器',
+                                'title': 'Block风格色彩选择器'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyBlockColorPicker',
+                                        'title': 'FefferyBlockColorPicker',
+                                        'href': '/FefferyBlockColorPicker'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': 'Circle风格色彩选择器',
+                                'title': 'Circle风格色彩选择器'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyCircleColorPicker',
+                                        'title': 'FefferyCircleColorPicker',
+                                        'href': '/FefferyCircleColorPicker'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '色彩拾取组件',
+                                'title': '色彩拾取组件'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyEyeDropper',
+                                        'title': 'FefferyEyeDropper',
+                                        'href': '/FefferyEyeDropper'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': 'Github风格色彩选择器',
+                                'title': 'Github风格色彩选择器'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyGithubColorPicker',
+                                        'title': 'FefferyGithubColorPicker',
+                                        'href': '/FefferyGithubColorPicker'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '16进制色彩选择器',
+                                'title': '16进制色彩选择器'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyHexColorPicker',
+                                        'title': 'FefferyHexColorPicker',
+                                        'href': '/FefferyHexColorPicker'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': 'Rgb色彩选择器',
+                                'title': 'Rgb色彩选择器'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyRgbColorPicker',
+                                        'title': 'FefferyRgbColorPicker',
+                                        'href': '/FefferyRgbColorPicker'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': 'Twitter风格色彩选择器',
+                                'title': 'Twitter风格色彩选择器'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyTwitterColorPicker',
+                                        'title': 'FefferyTwitterColorPicker',
+                                        'href': '/FefferyTwitterColorPicker'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': 'Wheel风格色彩选择器',
+                                'title': 'Wheel风格色彩选择器'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyWheelColorPicker',
+                                        'title': 'FefferyWheelColorPicker',
+                                        'href': '/FefferyWheelColorPicker'
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     'component': 'Item',

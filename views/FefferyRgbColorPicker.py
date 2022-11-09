@@ -2,6 +2,7 @@ from dash import html
 import feffery_antd_components as fac
 import feffery_utils_components as fuc
 
+import callbacks.FefferyRgbColorPicker
 from views.side_props import render_side_props_layout
 
 docs_content = html.Div(
@@ -18,7 +19,7 @@ docs_content = html.Div(
                             'title': '通用组件'
                         },
                         {
-                            'title': 'FefferyRawHTML html源码渲染'
+                            'title': 'FefferyRgbColorPicker Rgb色彩选择器'
                         }
                     ]
                 ),
@@ -27,18 +28,34 @@ docs_content = html.Div(
 
                 fac.AntdParagraph(
                     [
-                        fac.AntdText('　　用于直接渲染html源码字符串为页面元素。')
+                        fac.AntdText('　　最常见的Rgb色彩选择器。')
                     ]
                 ),
 
                 html.Div(
                     [
-                        fuc.FefferyRawHTML(
-                            htmlString='''
-<div style="width: 300px;height: 150px;box-shadow: 0px 0px 12px rgba(0, 0, 0, .12); display: flex;justify-content: center;align-items: center;">
-    示例
-</ div>
-'''
+                        fac.AntdSpace(
+                            [
+                                fuc.FefferyRgbColorPicker(
+                                    id='rgb-color-picker-demo',
+                                    showAlpha=True
+                                ),
+
+                                html.Div(
+                                    id='rgb-color-picker-demo-output',
+                                    style={
+                                        'width': '200px',
+                                        'height': '200px',
+                                        'display': 'flex',
+                                        'alignItems': 'center',
+                                        'justifyContent': 'center',
+                                        'borderRadius': '5px',
+                                        'boxShadow': '0px 0px 12px rgba(0, 0, 0, .12)',
+                                        'transition': '0.25s'
+                                    }
+                                )
+                            ],
+                            size='large'
                         ),
 
                         fac.AntdDivider(
@@ -47,21 +64,54 @@ docs_content = html.Div(
                             innerTextOrientation='left'
                         ),
 
-
                         fac.AntdCollapse(
                             fuc.FefferySyntaxHighlighter(
                                 showLineNumbers=True,
                                 language='python',
                                 codeTheme='coy-without-shadows',
-                                codeString="""
-fuc.FefferyRawHTML(
-    htmlString='''
-<div style="width: 300px;height: 150px;box-shadow: 0px 0px 12px rgba(0, 0, 0, .12); display: flex;justify-content: center;align-items: center;">
-    示例
-</ div>
-'''
+                                codeString='''
+fac.AntdSpace(
+    [
+        fuc.FefferyRgbColorPicker(
+            id='rgb-color-picker-demo',
+            showAlpha=True
+        ),
+
+        html.Div(
+            id='rgb-color-picker-demo-output',
+            style={
+                'width': '200px',
+                'height': '200px',
+                'display': 'flex',
+                'alignItems': 'center',
+                'justifyContent': 'center',
+                'borderRadius': '5px',
+                'boxShadow': '0px 0px 12px rgba(0, 0, 0, .12)',
+                'transition': '0.25s'
+            }
+        )
+    ],
+    size='large'
 )
-"""
+
+...
+
+@app.callback(
+    [Output('rgb-color-picker-demo-output', 'style'),
+     Output('rgb-color-picker-demo-output', 'children')],
+    Input('rgb-color-picker-demo', 'color'),
+    State('rgb-color-picker-demo-output', 'style')
+)
+def rgb_color_picker_demo(color, old_style):
+
+    return [
+        {
+            **old_style,
+            'background': color
+        },
+        color
+    ]
+'''
                             ),
                             title='点击查看代码',
                             is_open=False,
@@ -98,7 +148,7 @@ fuc.FefferyRawHTML(
         ),
         # 侧边参数栏
         render_side_props_layout(
-            component_name='FefferyRawHTML'
+            component_name='FefferyRgbColorPicker'
         )
     ],
     style={
