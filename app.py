@@ -20,6 +20,7 @@ from views import (
     FefferyCssVar,
     FefferyExecuteJs,
     FefferyExtraSpinner,
+    FefferyGuide,
     FefferyHighlightWords,
     FefferyQRCode,
     FefferyRawHTML,
@@ -115,6 +116,7 @@ app.layout = fuc.FefferyTopProgress(
                             [
                                 html.A(
                                     fac.AntdImage(
+                                        id='github-entry',
                                         alt='fuc源码仓库，欢迎star',
                                         src='https://img.shields.io/github/stars/CNFeffery/feffery-utils-components?style=social',
                                         preview=False,
@@ -306,6 +308,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyWheelColorPicker':
         return FefferyWheelColorPicker.docs_content, pathname
+
+    elif pathname == '/FefferyGuide':
+        return FefferyGuide.docs_content(), pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

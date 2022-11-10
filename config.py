@@ -218,6 +218,14 @@ class Config:
                 {
                     'component': 'Item',
                     'props': {
+                        'key': '/FefferyGuide',
+                        'href': '/FefferyGuide',
+                        'title': 'FefferyGuide 功能引导'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
                         'key': '/FefferyHighlightWords',
                         'href': '/FefferyHighlightWords',
                         'title': 'FefferyHighlightWords 关键词高亮'
