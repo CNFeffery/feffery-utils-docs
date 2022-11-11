@@ -258,6 +258,14 @@ class Config:
                 {
                     'component': 'Item',
                     'props': {
+                        'key': '/FefferyScroll',
+                        'href': '/FefferyScroll',
+                        'title': 'FefferyScroll 滚动动作'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
                         'key': '/FefferyStyle',
                         'href': '/FefferyStyle',
                         'title': 'FefferyStyle 动态样式'

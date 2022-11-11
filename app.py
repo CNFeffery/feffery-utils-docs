@@ -25,6 +25,7 @@ from views import (
     FefferyQRCode,
     FefferyRawHTML,
     FefferyReload,
+    FefferyScroll,
     FefferyStyle,
     FefferyTopProgress,
     what_is_fuc
@@ -311,6 +312,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyGuide':
         return FefferyGuide.docs_content(), pathname
+
+    elif pathname == '/FefferyScroll':
+        return FefferyScroll.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
