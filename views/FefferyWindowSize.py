@@ -19,7 +19,7 @@ docs_content = html.Div(
                             'title': '通用组件'
                         },
                         {
-                            'title': 'FefferyIdle 闲置状态监听'
+                            'title': 'FefferyWindowSize 浏览器窗口尺寸监听'
                         }
                     ]
                 ),
@@ -28,7 +28,7 @@ docs_content = html.Div(
 
                 fac.AntdParagraph(
                     [
-                        fac.AntdText('　　用于监听当前应用是否进入闲置状态。')
+                        fac.AntdText('　　用于监听当前应用所在浏览器窗口的尺寸。')
                     ]
                 ),
 
