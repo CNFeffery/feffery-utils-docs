@@ -16,6 +16,12 @@ from views import (
     FefferyRgbColorPicker,
     FefferyTwitterColorPicker,
     FefferyWheelColorPicker,
+    FefferyDocumentVisibility,
+    FefferyGeolocation,
+    FefferyIdle,
+    FefferyInViewport,
+    FefferyResponsive,
+    FefferyWindowSize,
     FefferyCountDown,
     FefferyCssVar,
     FefferyExecuteJs,
@@ -315,6 +321,24 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyScroll':
         return FefferyScroll.docs_content, pathname
+
+    elif pathname == '/FefferyDocumentVisibility':
+        return FefferyDocumentVisibility.docs_content, pathname
+
+    elif pathname == '/FefferyGeolocation':
+        return FefferyGeolocation.docs_content, pathname
+
+    elif pathname == '/FefferyIdle':
+        return FefferyIdle.docs_content, pathname
+
+    elif pathname == '/FefferyInViewport':
+        return FefferyInViewport.docs_content, pathname
+
+    elif pathname == '/FefferyResponsive':
+        return FefferyResponsive.docs_content, pathname
+
+    elif pathname == '/FefferyWindowSize':
+        return FefferyWindowSize.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

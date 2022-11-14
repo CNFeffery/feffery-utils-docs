@@ -184,6 +184,117 @@ class Config:
                     ]
                 },
                 {
+                    'component': 'SubMenu',
+                    'props': {
+                        'key': '监听类组件',
+                        'title': '监听类组件'
+                    },
+                    'children': [
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '页面可见性监听',
+                                'title': '页面可见性监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyDocumentVisibility',
+                                        'title': 'FefferyDocumentVisibility',
+                                        'href': '/FefferyDocumentVisibility'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '地理位置监听',
+                                'title': '地理位置监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyGeolocation',
+                                        'title': 'FefferyGeolocation',
+                                        'href': '/FefferyGeolocation'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '闲置状态监听',
+                                'title': '闲置状态监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyIdle',
+                                        'title': 'FefferyIdle',
+                                        'href': '/FefferyIdle'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '元素可见性监听',
+                                'title': '元素可见性监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyInViewport',
+                                        'title': 'FefferyInViewport',
+                                        'href': '/FefferyInViewport'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '页面响应式监听',
+                                'title': '页面响应式监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyResponsive',
+                                        'title': 'FefferyResponsive',
+                                        'href': '/FefferyResponsive'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '浏览器窗口尺寸监听',
+                                'title': '浏览器窗口尺寸监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyWindowSize',
+                                        'title': 'FefferyWindowSize',
+                                        'href': '/FefferyWindowSize'
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     'component': 'Item',
                     'props': {
                         'key': '/FefferyCountDown',
@@ -199,6 +310,14 @@ class Config:
                         'title': 'FefferyCssVar css变量更新'
                     }
                 },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyDiv',
+                #         'href': '/FefferyDiv',
+                #         'title': 'FefferyDiv 进阶div容器'
+                #     }
+                # },
                 {
                     'component': 'Item',
                     'props': {
@@ -207,6 +326,22 @@ class Config:
                         'title': 'FefferyExecuteJs js执行'
                     }
                 },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyExternalCss',
+                #         'href': '/FefferyExternalCss',
+                #         'title': 'FefferyExternalCss 外部css资源注入'
+                #     }
+                # },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyExternalJs',
+                #         'href': '/FefferyExternalJs',
+                #         'title': 'FefferyExternalCss 外部js资源注入'
+                #     }
+                # },
                 {
                     'component': 'Item',
                     'props': {
@@ -215,14 +350,30 @@ class Config:
                         'title': 'FefferyExtraSpinner 额外加载动画'
                     }
                 },
-                {
-                    'component': 'Item',
-                    'props': {
-                        'key': '/FefferyGuide',
-                        'href': '/FefferyGuide',
-                        'title': 'FefferyGuide 功能引导'
-                    }
-                },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyFancyMessage',
+                #         'href': '/FefferyFancyMessage',
+                #         'title': 'FefferyFancyMessage 美观消息提示'
+                #     }
+                # },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyFancyNotification',
+                #         'href': '/FefferyFancyNotification',
+                #         'title': 'FefferyFancyNotification 美观通知提示'
+                #     }
+                # },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyGuide',
+                #         'href': '/FefferyGuide',
+                #         'title': 'FefferyGuide 功能引导'
+                #     }
+                # },
                 {
                     'component': 'Item',
                     'props': {
@@ -231,6 +382,22 @@ class Config:
                         'title': 'FefferyHighlightWords 关键词高亮'
                     }
                 },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyLazyLoad',
+                #         'href': '/FefferyLazyLoad',
+                #         'title': 'FefferyLazyLoad 懒加载容器'
+                #     }
+                # },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyLazyLoadImage',
+                #         'href': '/FefferyLazyLoadImage',
+                #         'title': 'FefferyLazyLoadImage 图片懒加载'
+                #     }
+                # },
                 {
                     'component': 'Item',
                     'props': {
@@ -263,6 +430,38 @@ class Config:
                         'title': 'FefferyScroll 滚动动作'
                     }
                 },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyScrollbars',
+                #         'href': '/FefferyScrollbars',
+                #         'title': 'FefferyScrollbars 滚动条容器'
+                #     }
+                # },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferySetTitle',
+                #         'href': '/FefferySetTitle',
+                #         'title': 'FefferySetTitle 页面title更新'
+                #     }
+                # },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyShortcutPanel',
+                #         'href': '/FefferyShortcutPanel',
+                #         'title': 'FefferyShortcutPanel 快捷方式面板'
+                #     }
+                # },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferySticky',
+                #         'href': '/FefferySticky',
+                #         'title': 'FefferySticky 进阶粘性布局'
+                #     }
+                # },
                 {
                     'component': 'Item',
                     'props': {
@@ -271,6 +470,22 @@ class Config:
                         'title': 'FefferyStyle 动态样式'
                     }
                 },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferySyntaxHighlighter',
+                #         'href': '/FefferySyntaxHighlighter',
+                #         'title': 'FefferySyntaxHighlighter 代码语法高亮'
+                #     }
+                # },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyTimeout',
+                #         'href': '/FefferyTimeout',
+                #         'title': 'FefferyTimeout 定时执行'
+                #     }
+                # },
                 {
                     'component': 'Item',
                     'props': {
@@ -278,7 +493,15 @@ class Config:
                         'href': '/FefferyTopProgress',
                         'title': 'FefferyTopProgress 顶部加载进度条'
                     }
-                }
+                },
+                # {
+                #     'component': 'Item',
+                #     'props': {
+                #         'key': '/FefferyVirtualList',
+                #         'href': '/FefferyVirtualList',
+                #         'title': 'FefferyVirtualList 虚拟滚动'
+                #     }
+                # }
             ]
         }
     ]
