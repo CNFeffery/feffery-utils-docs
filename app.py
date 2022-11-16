@@ -24,6 +24,7 @@ from views import (
     FefferyWindowSize,
     FefferyCountDown,
     FefferyCssVar,
+    FefferyDiv,
     FefferyExecuteJs,
     FefferyExtraSpinner,
     FefferyGuide,
@@ -339,6 +340,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyWindowSize':
         return FefferyWindowSize.docs_content, pathname
+
+    elif pathname == '/FefferyDiv':
+        return FefferyDiv.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

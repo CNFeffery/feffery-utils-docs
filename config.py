@@ -310,14 +310,14 @@ class Config:
                         'title': 'FefferyCssVar css变量更新'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyDiv',
-                #         'href': '/FefferyDiv',
-                #         'title': 'FefferyDiv 进阶div容器'
-                #     }
-                # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyDiv',
+                        'href': '/FefferyDiv',
+                        'title': 'FefferyDiv 进阶div容器'
+                    }
+                },
                 {
                     'component': 'Item',
                     'props': {
