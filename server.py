@@ -21,7 +21,8 @@ app = CustomDash(
     extra_hot_reload_paths=[
         './documents'
     ],
-    compress=True
+    compress=True,
+    assets_ignore='dark.css'
 )
 
 app.title = 'feffery-utils-components在线文档'

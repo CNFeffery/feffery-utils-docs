@@ -326,22 +326,22 @@ class Config:
                         'title': 'FefferyExecuteJs js执行'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyExternalCss',
-                #         'href': '/FefferyExternalCss',
-                #         'title': 'FefferyExternalCss 外部css资源注入'
-                #     }
-                # },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyExternalJs',
-                #         'href': '/FefferyExternalJs',
-                #         'title': 'FefferyExternalCss 外部js资源注入'
-                #     }
-                # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyExternalCss',
+                        'href': '/FefferyExternalCss',
+                        'title': 'FefferyExternalCss 外部css资源注入'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyExternalJs',
+                        'href': '/FefferyExternalJs',
+                        'title': 'FefferyExternalCss 外部js资源注入'
+                    }
+                },
                 {
                     'component': 'Item',
                     'props': {
@@ -350,30 +350,30 @@ class Config:
                         'title': 'FefferyExtraSpinner 额外加载动画'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyFancyMessage',
-                #         'href': '/FefferyFancyMessage',
-                #         'title': 'FefferyFancyMessage 美观消息提示'
-                #     }
-                # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyFancyMessage',
+                        'href': '/FefferyFancyMessage',
+                        'title': 'FefferyFancyMessage 美观消息提示'
+                    }
+                },
                 # {
                 #     'component': 'Item',
                 #     'props': {
                 #         'key': '/FefferyFancyNotification',
                 #         'href': '/FefferyFancyNotification',
-                #         'title': 'FefferyFancyNotification 美观通知提示'
+                #         'title': 'FefferyFancyNotification 美观通知'
                 #     }
-                # },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyGuide',
-                #         'href': '/FefferyGuide',
-                #         'title': 'FefferyGuide 功能引导'
-                #     }
-                # },
+                # },y
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyGuide',
+                        'href': '/FefferyGuide',
+                        'title': 'FefferyGuide 功能引导'
+                    }
+                },
                 {
                     'component': 'Item',
                     'props': {

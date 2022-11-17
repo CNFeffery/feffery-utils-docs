@@ -1,7 +1,6 @@
 from dash import dcc, html
 import feffery_antd_components as fac
 import feffery_utils_components as fuc
-import feffery_markdown_components as fmc
 from dash.dependencies import Input, Output, State
 
 from config import Config
@@ -26,7 +25,10 @@ from views import (
     FefferyCssVar,
     FefferyDiv,
     FefferyExecuteJs,
+    FefferyExternalCss,
+    FefferyExternalJs,
     FefferyExtraSpinner,
+    FefferyFancyMessage,
     FefferyGuide,
     FefferyHighlightWords,
     FefferyQRCode,
@@ -343,6 +345,15 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyDiv':
         return FefferyDiv.docs_content, pathname
+
+    elif pathname == '/FefferyExternalCss':
+        return FefferyExternalCss.docs_content, pathname
+
+    elif pathname == '/FefferyExternalJs':
+        return FefferyExternalJs.docs_content, pathname
+
+    elif pathname == '/FefferyFancyMessage':
+        return FefferyFancyMessage.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
