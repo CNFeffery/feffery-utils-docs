@@ -339,7 +339,7 @@ class Config:
                     'props': {
                         'key': '/FefferyExternalJs',
                         'href': '/FefferyExternalJs',
-                        'title': 'FefferyExternalCss 外部js资源注入'
+                        'title': 'FefferyExternalJs 外部js资源注入'
                     }
                 },
                 {
