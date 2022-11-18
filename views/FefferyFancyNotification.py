@@ -2,7 +2,7 @@ from dash import html
 import feffery_antd_components as fac
 import feffery_utils_components as fuc
 
-import callbacks.FefferyFancyMessage
+import callbacks.FefferyFancyNotification
 from views.side_props import render_side_props_layout
 
 docs_content = html.Div(
@@ -19,7 +19,7 @@ docs_content = html.Div(
                             'title': '通用组件'
                         },
                         {
-                            'title': 'FefferyFancyMessage 美观消息提示'
+                            'title': 'FefferyFancyNotification 美观通知'
                         }
                     ]
                 ),
@@ -28,7 +28,7 @@ docs_content = html.Div(
 
                 fac.AntdParagraph(
                     [
-                        fac.AntdText('　　更美观、自定义程度更高的消息提示组件。')
+                        fac.AntdText('　　更美观、自定义程度更高的通知框组件。')
                     ]
                 ),
 
@@ -37,49 +37,65 @@ docs_content = html.Div(
                         fac.AntdSpace(
                             [
                                 fac.AntdSelect(
-                                    id='fancy-message-demo-type',
+                                    id='fancy-notification-demo-type',
                                     options=[
                                         {
                                             'label': type_,
                                             'value': type_
                                         }
                                         for type_ in [
-                                            'blank', 'success', 'error'
+                                            'info', 'success', 'warning', 'error'
                                         ]
                                     ],
-                                    defaultValue='blank',
+                                    defaultValue='info',
                                     allowClear=False,
                                     style={
                                         'width': '100px'
                                     }
                                 ),
                                 fac.AntdSelect(
-                                    id='fancy-message-demo-position',
+                                    id='fancy-notification-demo-position',
                                     options=[
                                         {
                                             'label': position,
                                             'value': position
                                         }
                                         for position in [
-                                            'top-left', 'top-center', 'top-right',
-                                            'bottom-left', 'bottom-center', 'bottom-right'
+                                            'top-left', 'top-center', 'top-right', 'bottom-left', 'bottom-center', 'bottom-right'
                                         ]
                                     ],
-                                    defaultValue='top-center',
+                                    defaultValue='top-right',
                                     allowClear=False,
                                     style={
-                                        'width': '150px'
+                                        'width': '125px'
+                                    }
+                                ),
+                                fac.AntdSelect(
+                                    id='fancy-notification-demo-theme',
+                                    options=[
+                                        {
+                                            'label': theme,
+                                            'value': theme
+                                        }
+                                        for theme in [
+                                            'light', 'dark', 'colored'
+                                        ]
+                                    ],
+                                    defaultValue='light',
+                                    allowClear=False,
+                                    style={
+                                        'width': '100px'
                                     }
                                 ),
                                 fac.AntdButton(
-                                    '触发消息提示',
-                                    id='trigger-fancy-message-demo'
+                                    '触发通知框',
+                                    id='trigger-fancy-notification-demo'
                                 )
                             ]
                         ),
 
                         html.Div(
-                            id='fancy-message-demo-container'
+                            id='fancy-notification-demo-container'
                         ),
 
                         fac.AntdDivider(
@@ -97,67 +113,88 @@ docs_content = html.Div(
 fac.AntdSpace(
     [
         fac.AntdSelect(
-            id='fancy-message-demo-type',
+            id='fancy-notification-demo-type',
             options=[
                 {
                     'label': type_,
                     'value': type_
                 }
                 for type_ in [
-                    'blank', 'success', 'error'
+                    'info', 'success', 'warning', 'error'
                 ]
             ],
-            defaultValue='blank',
+            defaultValue='info',
             allowClear=False,
             style={
                 'width': '100px'
             }
         ),
         fac.AntdSelect(
-            id='fancy-message-demo-position',
+            id='fancy-notification-demo-position',
             options=[
                 {
                     'label': position,
                     'value': position
                 }
                 for position in [
-                    'top-left', 'top-center', 'top-right',
-                    'bottom-left', 'bottom-center', 'bottom-right'
+                    'top-left', 'top-center', 'top-right', 'bottom-left', 'bottom-center', 'bottom-right'
                 ]
             ],
-            defaultValue='top-center',
+            defaultValue='top-right',
             allowClear=False,
             style={
-                'width': '150px'
+                'width': '125px'
+            }
+        ),
+        fac.AntdSelect(
+            id='fancy-notification-demo-theme',
+            options=[
+                {
+                    'label': theme,
+                    'value': theme
+                }
+                for theme in [
+                    'light', 'dark', 'colored'
+                ]
+            ],
+            defaultValue='light',
+            allowClear=False,
+            style={
+                'width': '100px'
             }
         ),
         fac.AntdButton(
-            '触发消息提示',
-            id='trigger-fancy-message-demo'
+            '触发通知框',
+            id='trigger-fancy-notification-demo'
         )
     ]
 ),
 
 html.Div(
-    id='fancy-message-demo-container'
+    id='fancy-notification-demo-container'
 )
 
 ...
 
 @app.callback(
-    Output('fancy-message-demo-container', 'children'),
-    Input('trigger-fancy-message-demo', 'nClicks'),
-    [State('fancy-message-demo-type', 'value'),
-     State('fancy-message-demo-position', 'value')],
+    Output('fancy-notification-demo-container', 'children'),
+    Input('trigger-fancy-notification-demo', 'nClicks'),
+    [State('fancy-notification-demo-type', 'value'),
+     State('fancy-notification-demo-position', 'value'),
+     State('fancy-notification-demo-theme', 'value')],
     prevent_initial_call=True
 )
-def fancy_message_demo(nClicks, message_type, message_position):
+def fancy_notification_demo(nClicks,
+                            notification_type,
+                            notification_position,
+                            notification_theme):
 
-    return fuc.FefferyFancyMessage(
-        'FefferyFancyMessage示例',
-        id='fancy-message-demo',
-        type=message_type,
-        position=message_position
+    return fuc.FefferyFancyNotification(
+        'FefferyFancyNotification示例',
+        id='fancy-notification-demo',
+        type=notification_type,
+        position=notification_position,
+        theme=notification_theme
     )
 '''
                             ),
@@ -196,7 +233,7 @@ def fancy_message_demo(nClicks, message_type, message_position):
         ),
         # 侧边参数栏
         render_side_props_layout(
-            component_name='FefferyFancyMessage'
+            component_name='FefferyFancyNotification'
         )
     ],
     style={

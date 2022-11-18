@@ -358,14 +358,14 @@ class Config:
                         'title': 'FefferyFancyMessage 美观消息提示'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyFancyNotification',
-                #         'href': '/FefferyFancyNotification',
-                #         'title': 'FefferyFancyNotification 美观通知'
-                #     }
-                # },y
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyFancyNotification',
+                        'href': '/FefferyFancyNotification',
+                        'title': 'FefferyFancyNotification 美观通知'
+                    }
+                },
                 {
                     'component': 'Item',
                     'props': {

@@ -5,33 +5,17 @@ from server import app
 
 
 @app.callback(
-    Output('fancy-message-demo1-container', 'children'),
-    Input('trigger-fancy-message-demo1', 'nClicks'),
-    State('fancy-message-demo1-type', 'value'),
+    Output('fancy-message-demo-container', 'children'),
+    Input('trigger-fancy-message-demo', 'nClicks'),
+    [State('fancy-message-demo-type', 'value'),
+     State('fancy-message-demo-position', 'value')],
     prevent_initial_call=True
 )
-def fancy_message_demo1(nClicks, message_type):
+def fancy_message_demo(nClicks, message_type, message_position):
 
     return fuc.FefferyFancyMessage(
         'FefferyFancyMessage示例',
-        id='fancy-message-demo1',
+        id='fancy-message-demo',
         type=message_type,
-        visible=True
-    )
-
-
-@app.callback(
-    Output('fancy-message-demo2-container', 'children'),
-    Input('trigger-fancy-message-demo2', 'nClicks'),
-    State('fancy-message-demo2-position', 'value'),
-    prevent_initial_call=True
-)
-def fancy_message_demo2(nClicks, position):
-
-    return fuc.FefferyFancyMessage(
-        'FefferyFancyMessage示例',
-        id='fancy-message-demo2',
-        position=position,
-        visible=True,
-        type='success'
+        position=message_position
     )
