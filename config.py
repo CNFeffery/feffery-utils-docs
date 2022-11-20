@@ -438,6 +438,14 @@ class Config:
                 #         'title': 'FefferyScrollbars 滚动条容器'
                 #     }
                 # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferySessionStorage',
+                        'href': '/FefferySessionStorage',
+                        'title': 'FefferySessionStorage 状态同步'
+                    }
+                },
                 # {
                 #     'component': 'Item',
                 #     'props': {

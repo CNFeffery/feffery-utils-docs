@@ -36,6 +36,7 @@ from views import (
     FefferyRawHTML,
     FefferyReload,
     FefferyScroll,
+    FefferySessionStorage,
     FefferyStyle,
     FefferyTopProgress,
     what_is_fuc
@@ -358,6 +359,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyFancyNotification':
         return FefferyFancyNotification.docs_content, pathname
+
+    elif pathname == '/FefferySessionStorage':
+        return FefferySessionStorage.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
