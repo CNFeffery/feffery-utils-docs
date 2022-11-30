@@ -35,16 +35,27 @@ docs_content = html.Div(
 
                 html.Div(
                     [
-                        fac.AntdButton(
-                            '触发5秒耗时回调',
-                            id='top-progress-trigger-demo1',
-                            type='primary'
+                        fac.AntdSpace(
+                            [
+                                fuc.FefferyWheelColorPicker(
+                                    id='top-progress-color',
+                                    color='#e74c3c'
+                                ),
+                                fac.AntdButton(
+                                    '触发5秒耗时回调',
+                                    id='top-progress-trigger-demo1',
+                                    type='primary'
+                                )
+                            ]
                         ),
 
                         fuc.FefferyTopProgress(
                             fac.AntdText(
                                 id='top-progress-trigger-demo1-output'
-                            )
+                            ),
+                            id='top-progress-demo',
+                            listenPropsMode='exclude',
+                            excludeProps=['top-progress-demo.color']
                         ),
 
                         fac.AntdDivider(
@@ -59,16 +70,27 @@ docs_content = html.Div(
                                 language='python',
                                 codeTheme='coy-without-shadows',
                                 codeString='''
-fac.AntdButton(
-    '触发5秒耗时回调',
-    id='top-progress-trigger-demo1',
-    type='primary'
+fac.AntdSpace(
+    [
+        fuc.FefferyWheelColorPicker(
+            id='top-progress-color',
+            color='#e74c3c'
+        ),
+        fac.AntdButton(
+            '触发5秒耗时回调',
+            id='top-progress-trigger-demo1',
+            type='primary'
+        )
+    ]
 ),
 
 fuc.FefferyTopProgress(
     fac.AntdText(
         id='top-progress-trigger-demo1-output'
-    )
+    ),
+    id='top-progress-demo',
+    listenPropsMode='exclude',
+    excludeProps=['top-progress-demo.color']
 )
 
 ...
@@ -77,11 +99,20 @@ import time
 from datetime import datetime
 
 @app.callback(
+    Output('top-progress-demo', 'color'),
+    Input('top-progress-color', 'color')
+)
+def top_progress_demo_update_color(color):
+
+    return color
+
+
+@app.callback(
     Output('top-progress-trigger-demo1-output', 'children'),
     Input('top-progress-trigger-demo1', 'nClicks'),
     prevent_initial_call=True
 )
-def top_progress_demo1(nClicks):
+def top_progress_demo(nClicks):
 
     time.sleep(5)
 

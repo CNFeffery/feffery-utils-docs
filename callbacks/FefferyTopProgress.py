@@ -1,8 +1,17 @@
 import time
 from datetime import datetime
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
 
 from server import app
+
+
+@app.callback(
+    Output('top-progress-demo', 'color'),
+    Input('top-progress-color', 'color')
+)
+def top_progress_demo_update_color(color):
+
+    return color
 
 
 @app.callback(
@@ -10,7 +19,7 @@ from server import app
     Input('top-progress-trigger-demo1', 'nClicks'),
     prevent_initial_call=True
 )
-def top_progress_demo1(nClicks):
+def top_progress_demo(nClicks):
 
     time.sleep(5)
 
