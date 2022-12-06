@@ -510,6 +510,14 @@ class Config:
                 #         'title': 'FefferyVirtualList 虚拟滚动'
                 #     }
                 # }
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyWebSocket',
+                        'href': '/FefferyWebSocket',
+                        'title': 'FefferyWebSocket WebSocket通信'
+                    }
+                },
             ]
         }
     ]
