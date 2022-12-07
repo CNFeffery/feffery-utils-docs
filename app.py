@@ -37,6 +37,7 @@ from views import (
     FefferyReload,
     FefferyScroll,
     FefferySessionStorage,
+    FefferyShadowDom,
     FefferyStyle,
     FefferyTopProgress,
     FefferyWebSocket,
@@ -366,6 +367,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyWebSocket':
         return FefferyWebSocket.docs_content, pathname
+
+    elif pathname == '/FefferyShadowDom':
+        return FefferyShadowDom.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

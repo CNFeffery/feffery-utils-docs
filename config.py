@@ -454,6 +454,14 @@ class Config:
                 #         'title': 'FefferySetTitle 页面title更新'
                 #     }
                 # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyShadowDom',
+                        'href': '/FefferyShadowDom',
+                        'title': 'FefferyShadowDom 样式隔离'
+                    }
+                },
                 # {
                 #     'component': 'Item',
                 #     'props': {
