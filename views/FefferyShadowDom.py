@@ -18,7 +18,7 @@ docs_content = html.Div(
                             'title': '通用组件'
                         },
                         {
-                            'title': 'FefferyShadowDom Shadow DOM组件'
+                            'title': 'FefferyShadowDom 样式隔离'
                         }
                     ]
                 ),
@@ -101,13 +101,13 @@ fac.AntdSpace(
                 fuc.FefferyStyle(
                     rawStyle='''
 .style-demo {
-width: 300px;
-height: 150px;
-background: linear-gradient(135deg,#fce38a,#f38181);
-border-radius: 5px;
-display: flex;
-justify-content: center;
-align-items: center;
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(135deg,#fce38a,#f38181);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 '''
                 ),
@@ -123,13 +123,13 @@ align-items: center;
                 fuc.FefferyStyle(
                     rawStyle='''
 .style-demo {
-width: 300px;
-height: 150px;
-background: linear-gradient(135deg,#17ead9,#6078ea);
-border-radius: 5px;
-display: flex;
-justify-content: center;
-align-items: center;
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(135deg,#17ead9,#6078ea);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 '''
                 ),
