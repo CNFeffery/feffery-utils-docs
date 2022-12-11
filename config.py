@@ -31,14 +31,6 @@ class Config:
             },
             'children': [
                 {
-                    'component': 'Item',
-                    'props': {
-                        'key': '/FefferyCaptcha',
-                        'href': '/FefferyCaptcha',
-                        'title': 'FefferyCaptcha 验证码'
-                    }
-                },
-                {
                     'component': 'SubMenu',
                     'props': {
                         'key': '色彩选择类组件',
@@ -293,6 +285,48 @@ class Config:
                             ]
                         }
                     ]
+                },
+                {
+                    'component': 'SubMenu',
+                    'props': {
+                        'key': '拖拽类组件',
+                        'title': '拖拽类组件'
+                    },
+                    'children': [
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '可拖拽网格',
+                                'title': '可拖拽网格'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyGrid',
+                                        'title': 'FefferyGrid 可拖拽网格',
+                                        'href': '/FefferyGrid'
+                                    }
+                                },
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyGridItem',
+                                        'title': 'FefferyGridItem 可拖拽网格项',
+                                        'href': '/FefferyGridItem'
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyCaptcha',
+                        'href': '/FefferyCaptcha',
+                        'title': 'FefferyCaptcha 验证码'
+                    }
                 },
                 {
                     'component': 'Item',
