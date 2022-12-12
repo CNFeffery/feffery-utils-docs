@@ -416,14 +416,14 @@ class Config:
                         'title': 'FefferyHighlightWords 关键词高亮'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyLazyLoad',
-                #         'href': '/FefferyLazyLoad',
-                #         'title': 'FefferyLazyLoad 懒加载容器'
-                #     }
-                # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyLazyLoad',
+                        'href': '/FefferyLazyLoad',
+                        'title': 'FefferyLazyLoad 懒加载容器'
+                    }
+                },
                 # {
                 #     'component': 'Item',
                 #     'props': {

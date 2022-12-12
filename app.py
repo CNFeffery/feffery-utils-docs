@@ -5,6 +5,7 @@ from dash.dependencies import Input, Output, State
 
 from config import Config
 from server import app, server
+import views
 from views import (
     FefferyBlockColorPicker,
     FefferyCircleColorPicker,
@@ -34,6 +35,7 @@ from views import (
     FefferyFancyNotification,
     FefferyGuide,
     FefferyHighlightWords,
+    FefferyLazyLoad,
     FefferyQRCode,
     FefferyRawHTML,
     FefferyReload,
@@ -378,6 +380,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyGridItem':
         return FefferyGridItem.docs_content, pathname
+
+    elif pathname == '/FefferyLazyLoad':
+        return FefferyLazyLoad.docs_content(), pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
