@@ -464,14 +464,14 @@ class Config:
                         'title': 'FefferyScroll 滚动动作'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyScrollbars',
-                #         'href': '/FefferyScrollbars',
-                #         'title': 'FefferyScrollbars 滚动条容器'
-                #     }
-                # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyScrollbars',
+                        'href': '/FefferyScrollbars',
+                        'title': 'FefferyScrollbars 滚动条容器'
+                    }
+                },
                 {
                     'component': 'Item',
                     'props': {

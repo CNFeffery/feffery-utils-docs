@@ -40,6 +40,7 @@ from views import (
     FefferyRawHTML,
     FefferyReload,
     FefferyScroll,
+    FefferyScrollbars,
     FefferySessionStorage,
     FefferyShadowDom,
     FefferyStyle,
@@ -387,6 +388,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyVirtualList':
         return FefferyVirtualList.docs_content(), pathname
+
+    elif pathname == '/FefferyScrollbars':
+        return FefferyScrollbars.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
