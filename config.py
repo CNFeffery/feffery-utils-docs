@@ -544,14 +544,14 @@ class Config:
                         'title': 'FefferyTopProgress 顶部加载进度条'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyVirtualList',
-                #         'href': '/FefferyVirtualList',
-                #         'title': 'FefferyVirtualList 虚拟滚动'
-                #     }
-                # }
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyVirtualList',
+                        'href': '/FefferyVirtualList',
+                        'title': 'FefferyVirtualList 虚拟滚动列表'
+                    }
+                },
                 {
                     'component': 'Item',
                     'props': {

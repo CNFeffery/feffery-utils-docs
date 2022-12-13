@@ -44,6 +44,7 @@ from views import (
     FefferyShadowDom,
     FefferyStyle,
     FefferyTopProgress,
+    FefferyVirtualList,
     FefferyWebSocket,
     what_is_fuc
 )
@@ -383,6 +384,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyLazyLoad':
         return FefferyLazyLoad.docs_content(), pathname
+
+    elif pathname == '/FefferyVirtualList':
+        return FefferyVirtualList.docs_content(), pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
