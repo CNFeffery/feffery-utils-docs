@@ -480,14 +480,14 @@ class Config:
                         'title': 'FefferySessionStorage 状态同步'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferySetTitle',
-                #         'href': '/FefferySetTitle',
-                #         'title': 'FefferySetTitle 页面title更新'
-                #     }
-                # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferySetTitle',
+                        'href': '/FefferySetTitle',
+                        'title': 'FefferySetTitle 页面title更新'
+                    }
+                },
                 {
                     'component': 'Item',
                     'props': {
