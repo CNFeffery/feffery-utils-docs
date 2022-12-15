@@ -528,14 +528,14 @@ class Config:
                 #         'title': 'FefferySyntaxHighlighter 代码语法高亮'
                 #     }
                 # },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyTimeout',
-                #         'href': '/FefferyTimeout',
-                #         'title': 'FefferyTimeout 定时执行'
-                #     }
-                # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyTimeout',
+                        'href': '/FefferyTimeout',
+                        'title': 'FefferyTimeout 定时执行'
+                    }
+                },
                 {
                     'component': 'Item',
                     'props': {

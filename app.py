@@ -45,6 +45,7 @@ from views import (
     FefferySetTitle,
     FefferyShadowDom,
     FefferyStyle,
+    FefferyTimeout,
     FefferyTopProgress,
     FefferyVirtualList,
     FefferyWebSocket,
@@ -395,6 +396,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferySetTitle':
         return FefferySetTitle.docs_content, pathname
+
+    elif pathname == '/FefferyTimeout':
+        return FefferyTimeout.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
