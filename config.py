@@ -387,6 +387,14 @@ class Config:
                 {
                     'component': 'Item',
                     'props': {
+                        'key': '/FefferyFancyButton',
+                        'href': '/FefferyFancyButton',
+                        'title': 'FefferyFancyButton 美观按钮'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
                         'key': '/FefferyFancyMessage',
                         'href': '/FefferyFancyMessage',
                         'title': 'FefferyFancyMessage 美观消息提示'
@@ -414,6 +422,14 @@ class Config:
                         'key': '/FefferyHighlightWords',
                         'href': '/FefferyHighlightWords',
                         'title': 'FefferyHighlightWords 关键词高亮'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyJsonViewer',
+                        'href': '/FefferyJsonViewer',
+                        'title': 'FefferyJsonViewer json数据展示'
                     }
                 },
                 {

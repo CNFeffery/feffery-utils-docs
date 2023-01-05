@@ -31,10 +31,12 @@ from views import (
     FefferyExternalCss,
     FefferyExternalJs,
     FefferyExtraSpinner,
+    FefferyFancyButton,
     FefferyFancyMessage,
     FefferyFancyNotification,
     FefferyGuide,
     FefferyHighlightWords,
+    FefferyJsonViewer,
     FefferyLazyLoad,
     FefferyQRCode,
     FefferyRawHTML,
@@ -399,6 +401,12 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyTimeout':
         return FefferyTimeout.docs_content, pathname
+
+    elif pathname == '/FefferyFancyButton':
+        return FefferyFancyButton.docs_content, pathname
+
+    elif pathname == '/FefferyJsonViewer':
+        return FefferyJsonViewer.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
