@@ -512,14 +512,14 @@ class Config:
                         'title': 'FefferyShadowDom 样式隔离'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyShortcutPanel',
-                #         'href': '/FefferyShortcutPanel',
-                #         'title': 'FefferyShortcutPanel 快捷方式面板'
-                #     }
-                # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyShortcutPanel',
+                        'href': '/FefferyShortcutPanel',
+                        'title': 'FefferyShortcutPanel 快捷方式面板'
+                    }
+                },
                 # {
                 #     'component': 'Item',
                 #     'props': {

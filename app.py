@@ -5,7 +5,6 @@ from dash.dependencies import Input, Output, State
 
 from config import Config
 from server import app, server
-import views
 from views import (
     FefferyBlockColorPicker,
     FefferyCircleColorPicker,
@@ -46,6 +45,7 @@ from views import (
     FefferySessionStorage,
     FefferySetTitle,
     FefferyShadowDom,
+    FefferyShortcutPanel,
     FefferyStyle,
     FefferyTimeout,
     FefferyTopProgress,
@@ -407,6 +407,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyJsonViewer':
         return FefferyJsonViewer.docs_content, pathname
+
+    elif pathname == '/FefferyShortcutPanel':
+        return FefferyShortcutPanel.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
