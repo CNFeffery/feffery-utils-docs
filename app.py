@@ -35,6 +35,7 @@ from views import (
     FefferyFancyNotification,
     FefferyGuide,
     FefferyHighlightWords,
+    FefferyImagePaste,
     FefferyJsonViewer,
     FefferyLazyLoad,
     FefferyQRCode,
@@ -410,6 +411,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyShortcutPanel':
         return FefferyShortcutPanel.docs_content, pathname
+
+    elif pathname == '/FefferyImagePaste':
+        return FefferyImagePaste.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

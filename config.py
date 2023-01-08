@@ -427,6 +427,14 @@ class Config:
                 {
                     'component': 'Item',
                     'props': {
+                        'key': '/FefferyImagePaste',
+                        'href': '/FefferyImagePaste',
+                        'title': 'FefferyImagePaste 图片粘贴捕获'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
                         'key': '/FefferyJsonViewer',
                         'href': '/FefferyJsonViewer',
                         'title': 'FefferyJsonViewer json数据展示'
