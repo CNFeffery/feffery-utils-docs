@@ -14,6 +14,7 @@ from views import (
     FefferyRgbColorPicker,
     FefferyTwitterColorPicker,
     FefferyWheelColorPicker,
+    FefferyDeviceDetect,
     FefferyDocumentVisibility,
     FefferyGeolocation,
     FefferyIdle,
@@ -33,6 +34,7 @@ from views import (
     FefferyFancyButton,
     FefferyFancyMessage,
     FefferyFancyNotification,
+    FefferyFullscreen,
     FefferyGuide,
     FefferyHighlightWords,
     FefferyImagePaste,
@@ -60,6 +62,55 @@ app.layout = fuc.FefferyTopProgress(
         [
             # 注入url监听
             dcc.Location(id='url'),
+
+            # 注入快捷搜索面板
+            fuc.FefferyShortcutPanel(
+                placeholder='输入你想要搜索的组件...',
+                data=[
+                    *[
+                        {
+                            'id': item['children'][0]['props']['title'],
+                            'title': '{} {}'.format(
+                                item['children'][0]['props']['title'],
+                                item['props']['title']
+                            ),
+                            'handler': '() => window.open("%s")' % item['children'][0]['props']['href'],
+                            'section': '色彩选择类组件'
+                        }
+                        for item in Config.menuItems[1]['children'][0]['children']
+                    ],
+                    *[
+                        {
+                            'id': item['children'][0]['props']['title'],
+                            'title': '{} {}'.format(
+                                item['children'][0]['props']['title'],
+                                item['props']['title']
+                            ),
+                            'handler': '() => window.open("%s")' % item['children'][0]['props']['href'],
+                            'section': '监听类组件'
+                        }
+                        for item in Config.menuItems[1]['children'][1]['children']
+                    ],
+                    *[
+                        {
+                            'id': item['props']['title'],
+                            'title': item['props']['title'],
+                            'handler': '() => window.open("%s")' % item['props']['href'],
+                            'section': '拖拽类组件'
+                        }
+                        for item in Config.menuItems[1]['children'][2]['children'][0]['children']
+                    ],
+                    *[
+                        {
+                            'id': item['props']['title'],
+                            'title': item['props']['title'],
+                            'handler': '() => window.open("%s")' % item['props']['href'],
+                            'section': '其他通用组件'
+                        }
+                        for item in Config.menuItems[1]['children'][3:]
+                    ]
+                ]
+            ),
 
             # 注入快捷添加好友悬浮卡片
             html.Div(
@@ -135,7 +186,37 @@ app.layout = fuc.FefferyTopProgress(
                             ]
                         )
                     ),
-
+                    fac.AntdCol(
+                        fac.AntdParagraph(
+                            [
+                                fac.AntdText(
+                                    'Ctrl',
+                                    keyboard=True,
+                                    style={
+                                        'color': '#8c8c8c'
+                                    }
+                                ),
+                                fac.AntdText(
+                                    'K',
+                                    keyboard=True,
+                                    style={
+                                        'color': '#8c8c8c'
+                                    }
+                                ),
+                                fac.AntdText(
+                                    '唤出搜索面板',
+                                    style={
+                                        'color': '#8c8c8c'
+                                    }
+                                )
+                            ],
+                            style={
+                                'marginLeft': '50px',
+                                'marginTop': '21px'
+                            }
+                        ),
+                        flex='auto'
+                    ),
                     fac.AntdCol(
                         html.Div(
                             [
@@ -414,6 +495,12 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyImagePaste':
         return FefferyImagePaste.docs_content, pathname
+
+    elif pathname == '/FefferyDeviceDetect':
+        return FefferyDeviceDetect.docs_content, pathname
+
+    elif pathname == '/FefferyFullscreen':
+        return FefferyFullscreen.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

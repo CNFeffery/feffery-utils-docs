@@ -185,6 +185,23 @@ class Config:
                         {
                             'component': 'ItemGroup',
                             'props': {
+                                'key': '设备信息检测',
+                                'title': '设备信息检测'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyDeviceDetect',
+                                        'title': 'FefferyDeviceDetect',
+                                        'href': '/FefferyDeviceDetect'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
                                 'key': '页面可见性监听',
                                 'title': '页面可见性监听'
                             },
@@ -406,6 +423,14 @@ class Config:
                         'key': '/FefferyFancyNotification',
                         'href': '/FefferyFancyNotification',
                         'title': 'FefferyFancyNotification 美观通知'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferyFullscreen',
+                        'href': '/FefferyFullscreen',
+                        'title': 'FefferyFullscreen 全屏化'
                     }
                 },
                 {
