@@ -6,6 +6,7 @@ from dash.dependencies import Input, Output, State
 from config import Config
 from server import app, server
 from views import (
+    FefferyMotion,
     FefferyBlockColorPicker,
     FefferyCircleColorPicker,
     FefferyEyeDropper,
@@ -75,7 +76,7 @@ app.layout = fuc.FefferyTopProgress(
                                 item['props']['title']
                             ),
                             'handler': '() => window.open("%s")' % item['children'][0]['props']['href'],
-                            'section': '色彩选择类组件'
+                            'section': '动画类组件'
                         }
                         for item in Config.menuItems[1]['children'][0]['children']
                     ],
@@ -87,9 +88,21 @@ app.layout = fuc.FefferyTopProgress(
                                 item['props']['title']
                             ),
                             'handler': '() => window.open("%s")' % item['children'][0]['props']['href'],
-                            'section': '监听类组件'
+                            'section': '色彩选择类组件'
                         }
                         for item in Config.menuItems[1]['children'][1]['children']
+                    ],
+                    *[
+                        {
+                            'id': item['children'][0]['props']['title'],
+                            'title': '{} {}'.format(
+                                item['children'][0]['props']['title'],
+                                item['props']['title']
+                            ),
+                            'handler': '() => window.open("%s")' % item['children'][0]['props']['href'],
+                            'section': '监听类组件'
+                        }
+                        for item in Config.menuItems[1]['children'][2]['children']
                     ],
                     *[
                         {
@@ -98,7 +111,7 @@ app.layout = fuc.FefferyTopProgress(
                             'handler': '() => window.open("%s")' % item['props']['href'],
                             'section': '拖拽类组件'
                         }
-                        for item in Config.menuItems[1]['children'][2]['children'][0]['children']
+                        for item in Config.menuItems[1]['children'][3]['children'][0]['children']
                     ],
                     *[
                         {
@@ -107,7 +120,7 @@ app.layout = fuc.FefferyTopProgress(
                             'handler': '() => window.open("%s")' % item['props']['href'],
                             'section': '其他通用组件'
                         }
-                        for item in Config.menuItems[1]['children'][3:]
+                        for item in Config.menuItems[1]['children'][4:]
                     ]
                 ]
             ),
@@ -155,14 +168,24 @@ app.layout = fuc.FefferyTopProgress(
             fac.AntdRow(
                 [
                     fac.AntdCol(
-                        html.Img(
-                            src=app.get_asset_url(
-                                'imgs/fuc-logo.svg'
+                        fuc.FefferyMotion(
+                            html.Img(
+                                src=app.get_asset_url(
+                                    'imgs/fuc-logo.svg'
+                                ),
+                                style={
+                                    'height': '50px',
+                                    'padding': '0 10px',
+                                    'marginTop': '7px',
+                                    'cursor': 'pointer'
+                                }
                             ),
-                            style={
-                                'height': '50px',
-                                'padding': '0 10px',
-                                'marginTop': '7px'
+                            whileTap={
+                                'scale': 1.2
+                            },
+                            transition={
+                                'duration': 0.5,
+                                'type': 'spring'
                             }
                         ),
                     ),
@@ -501,6 +524,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyFullscreen':
         return FefferyFullscreen.docs_content, pathname
+
+    elif pathname == '/FefferyMotion':
+        return FefferyMotion.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

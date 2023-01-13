@@ -33,6 +33,32 @@ class Config:
                 {
                     'component': 'SubMenu',
                     'props': {
+                        'key': '动画类组件',
+                        'title': '动画类组件'
+                    },
+                    'children': [
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '动画编排',
+                                'title': '动画编排'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyMotion',
+                                        'title': 'FefferyMotion',
+                                        'href': '/FefferyMotion'
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    'component': 'SubMenu',
+                    'props': {
                         'key': '色彩选择类组件',
                         'title': '色彩选择类组件'
                     },
