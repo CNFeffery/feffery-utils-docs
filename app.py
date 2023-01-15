@@ -377,8 +377,8 @@ def render_docs_content(pathname):
     路由回调
     '''
 
-    if pathname == '/what-is-fmc' or pathname == '/':
-        pathname = '/what-is-fmc'
+    if pathname == '/what-is-fuc' or pathname == '/':
+        pathname = '/what-is-fuc'
         return what_is_fuc.docs_content, pathname
 
     elif pathname == '/FefferyCaptcha':

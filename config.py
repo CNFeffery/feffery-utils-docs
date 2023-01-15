@@ -16,8 +16,8 @@ class Config:
                 {
                     'component': 'Item',
                     'props': {
-                        'key': '/what-is-fmc',
-                        'href': '/what-is-fmc',
+                        'key': '/what-is-fuc',
+                        'href': '/what-is-fuc',
                         'title': 'fuc是什么？'
                     }
                 }
