@@ -40,6 +40,23 @@ class Config:
                         {
                             'component': 'ItemGroup',
                             'props': {
+                                'key': '自动动画',
+                                'title': '自动动画'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyAutoAnimate',
+                                        'title': 'FefferyAutoAnimate',
+                                        'href': '/FefferyAutoAnimate'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
                                 'key': '动画编排',
                                 'title': '动画编排'
                             },
@@ -579,14 +596,14 @@ class Config:
                         'title': 'FefferyShortcutPanel 快捷方式面板'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferySticky',
-                #         'href': '/FefferySticky',
-                #         'title': 'FefferySticky 进阶粘性布局'
-                #     }
-                # },
+                {
+                    'component': 'Item',
+                    'props': {
+                        'key': '/FefferySticky',
+                        'href': '/FefferySticky',
+                        'title': 'FefferySticky 粘性布局'
+                    }
+                },
                 {
                     'component': 'Item',
                     'props': {

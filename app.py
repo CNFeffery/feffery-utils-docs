@@ -6,6 +6,7 @@ from dash.dependencies import Input, Output, State
 from config import Config
 from server import app, server
 from views import (
+    FefferyAutoAnimate,
     FefferyMotion,
     FefferyBlockColorPicker,
     FefferyCircleColorPicker,
@@ -50,6 +51,7 @@ from views import (
     FefferySetTitle,
     FefferyShadowDom,
     FefferyShortcutPanel,
+    FefferySticky,
     FefferyStyle,
     FefferyTimeout,
     FefferyTopProgress,
@@ -527,6 +529,12 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyMotion':
         return FefferyMotion.docs_content, pathname
+
+    elif pathname == '/FefferySticky':
+        return FefferySticky.docs_content, pathname
+
+    elif pathname == '/FefferyAutoAnimate':
+        return FefferyAutoAnimate.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

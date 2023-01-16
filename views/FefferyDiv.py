@@ -551,6 +551,124 @@ fac.AntdSpace(
                     className='div-highlight'
                 ),
 
+                html.Div(
+                    [
+
+                        fac.AntdDivider(
+                            'scrollbar="default"（默认）',
+                            innerTextOrientation='left'
+                        ),
+
+                        fuc.FefferyDiv(
+                            '测试'*100,
+                            style={
+                                'width': '200px',
+                                'maxHeight': '100px',
+                                'overflowY': 'auto'
+                            }
+                        ),
+
+                        fac.AntdDivider(
+                            'scrollbar="simple"',
+                            innerTextOrientation='left'
+                        ),
+
+                        fuc.FefferyDiv(
+                            '测试'*100,
+                            scrollbar='simple',
+                            style={
+                                'width': '200px',
+                                'maxHeight': '100px',
+                                'overflowY': 'auto'
+                            }
+                        ),
+
+                        fac.AntdDivider(
+                            'scrollbar="hidden"',
+                            innerTextOrientation='left'
+                        ),
+
+                        fuc.FefferyDiv(
+                            '测试'*100,
+                            scrollbar='hidden',
+                            style={
+                                'width': '200px',
+                                'maxHeight': '100px',
+                                'overflowY': 'auto'
+                            }
+                        ),
+
+                        fac.AntdDivider(
+                            '不同的内置滚动条效果',
+                            lineColor='#f0f0f0',
+                            innerTextOrientation='left'
+                        ),
+
+                        fac.AntdCollapse(
+                            fuc.FefferySyntaxHighlighter(
+                                showLineNumbers=True,
+                                language='python',
+                                codeTheme='coy-without-shadows',
+                                codeString='''
+fac.AntdDivider(
+    'scrollbar="default"（默认）',
+    innerTextOrientation='left'
+),
+
+fuc.FefferyDiv(
+    '测试'*100,
+    style={
+        'width': '200px',
+        'maxHeight': '100px',
+        'overflowY': 'auto'
+    }
+),
+
+fac.AntdDivider(
+    'scrollbar="simple"',
+    innerTextOrientation='left'
+),
+
+fuc.FefferyDiv(
+    '测试'*100,
+    scrollbar='simple',
+    style={
+        'width': '200px',
+        'maxHeight': '100px',
+        'overflowY': 'auto'
+    }
+),
+
+fac.AntdDivider(
+    'scrollbar="hidden"',
+    innerTextOrientation='left'
+),
+
+fuc.FefferyDiv(
+    '测试'*100,
+    scrollbar='hidden',
+    style={
+        'width': '200px',
+        'maxHeight': '100px',
+        'overflowY': 'auto'
+    }
+)
+'''
+                            ),
+                            title='点击查看代码',
+                            is_open=False,
+                            ghost=True
+                        )
+                    ],
+                    style={
+                        'marginBottom': '40px',
+                        'padding': '10px 10px 20px 10px',
+                        'border': '1px solid #f0f0f0'
+                    },
+                    id='不同的内置滚动条效果',
+                    className='div-highlight'
+                ),
+
                 html.Div(style={'height': '100px'})
             ],
             style={
@@ -567,7 +685,8 @@ fac.AntdSpace(
                     {'title': '监听右键事件', 'href': '#监听右键事件'},
                     {'title': '监听鼠标悬停状态', 'href': '#监听鼠标悬停状态'},
                     {'title': '监听容器外点击事件', 'href': '#监听容器外点击事件'},
-                    {'title': '不同的内置阴影效果', 'href': '#不同的内置阴影效果'}
+                    {'title': '不同的内置阴影效果', 'href': '#不同的内置阴影效果'},
+                    {'title': '不同的内置滚动条效果', 'href': '#不同的内置滚动条效果'},
                 ],
                 offsetTop=0
             ),

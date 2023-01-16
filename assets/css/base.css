@@ -46,19 +46,35 @@ div {
 }
 
 /*滚动条自定义样式*/
-*::-webkit-scrollbar-thumb {
+#side-menu>.ant-menu::-webkit-scrollbar-thumb {
   background-color: #bfbfbf;
   outline: none;
   border-radius: 6px;
 }
 
-*::-webkit-scrollbar {
+#side-menu>.ant-menu::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 /*火狐浏览器*/
-* {
+#side-menu>.ant-menu {
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+  outline: none;
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/*火狐浏览器*/
+body {
   scrollbar-width: thin;
 }
 

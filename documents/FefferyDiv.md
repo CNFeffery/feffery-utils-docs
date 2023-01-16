@@ -87,3 +87,8 @@
 **shadow：** *string*型，默认为`'no-shadow'`
 
 　　用于*快捷为当前容器添加阴影效果*，可选的有`'no-shadow'`（无阴影）、`'hover-shadow'`（悬停时显示阴影）、`'always-shadow'`（持久阴影）
+
+**scrollbar：** *string*型，默认为`'default'`
+
+　　用于*快捷为当前容器添加滚动条美化效果*，可选的有`'default'`（浏览器默认）、`'simple'`（简约风）、`'hidden'`（隐藏式）
+
