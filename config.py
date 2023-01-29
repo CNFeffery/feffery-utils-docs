@@ -516,14 +516,6 @@ class Config:
                         'title': 'FefferyLazyLoad 懒加载容器'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferyLazyLoadImage',
-                #         'href': '/FefferyLazyLoadImage',
-                #         'title': 'FefferyLazyLoadImage 图片懒加载'
-                #     }
-                # },
                 {
                     'component': 'Item',
                     'props': {
@@ -612,14 +604,6 @@ class Config:
                         'title': 'FefferyStyle 动态样式'
                     }
                 },
-                # {
-                #     'component': 'Item',
-                #     'props': {
-                #         'key': '/FefferySyntaxHighlighter',
-                #         'href': '/FefferySyntaxHighlighter',
-                #         'title': 'FefferySyntaxHighlighter 代码语法高亮'
-                #     }
-                # },
                 {
                     'component': 'Item',
                     'props': {

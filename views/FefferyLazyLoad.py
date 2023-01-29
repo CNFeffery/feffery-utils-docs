@@ -2,6 +2,7 @@ import uuid
 from dash import html
 import feffery_antd_components as fac
 import feffery_utils_components as fuc
+import feffery_markdown_components as fmc
 
 import callbacks.FefferyLazyLoad
 from views.side_props import render_side_props_layout
@@ -84,7 +85,7 @@ def docs_content():
                             ),
 
                             fac.AntdCollapse(
-                                fuc.FefferySyntaxHighlighter(
+                                fmc.FefferySyntaxHighlighter(
                                     showLineNumbers=True,
                                     language='python',
                                     codeTheme='coy-without-shadows',
@@ -182,7 +183,7 @@ html.Div(
                             ),
 
                             fac.AntdCollapse(
-                                fuc.FefferySyntaxHighlighter(
+                                fmc.FefferySyntaxHighlighter(
                                     showLineNumbers=True,
                                     language='python',
                                     codeTheme='coy-without-shadows',

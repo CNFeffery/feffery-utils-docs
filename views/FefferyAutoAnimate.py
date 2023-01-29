@@ -1,6 +1,7 @@
 from dash import html
 import feffery_antd_components as fac
 import feffery_utils_components as fuc
+import feffery_markdown_components as fmc
 
 import callbacks.FefferyAutoAnimate
 from views.side_props import render_side_props_layout
@@ -72,7 +73,7 @@ docs_content = html.Div(
                                     strong=True
                                 ),
                                 fac.AntdText(
-                                    '可视作常规的div容器使用，其内部的有唯一id、key定义的子元素，在发生新增、删除、顺序变化等操作时会自动渲染动画效果'
+                                    '可视作常规的div容器使用，其内部的有唯一id或key定义的子元素，在发生新增、删除、顺序变化等操作时会自动渲染动画效果'
                                 )
                             ],
                             style={
@@ -81,7 +82,7 @@ docs_content = html.Div(
                         ),
 
                         fac.AntdCollapse(
-                            fuc.FefferySyntaxHighlighter(
+                            fmc.FefferySyntaxHighlighter(
                                 showLineNumbers=True,
                                 language='python',
                                 codeTheme='coy-without-shadows',
