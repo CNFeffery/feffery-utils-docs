@@ -21,6 +21,7 @@ from views import (
     FefferyGeolocation,
     FefferyIdle,
     FefferyInViewport,
+    FefferyKeyPress,
     FefferyResponsive,
     FefferyWindowSize,
     FefferyGrid,
@@ -535,6 +536,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyAutoAnimate':
         return FefferyAutoAnimate.docs_content, pathname
+
+    elif pathname == '/FefferyKeyPress':
+        return FefferyKeyPress.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

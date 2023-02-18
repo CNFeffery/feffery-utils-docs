@@ -313,6 +313,23 @@ class Config:
                         {
                             'component': 'ItemGroup',
                             'props': {
+                                'key': '键盘行为监听',
+                                'title': '键盘行为监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyKeyPress',
+                                        'title': 'FefferyKeyPress',
+                                        'href': '/FefferyKeyPress'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
                                 'key': '页面响应式监听',
                                 'title': '页面响应式监听'
                             },
