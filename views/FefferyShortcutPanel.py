@@ -5,6 +5,9 @@ import feffery_markdown_components as fmc
 
 from views.side_props import render_side_props_layout
 
+# 绑定回调
+import callbacks.FefferyShortcutPanel
+
 docs_content = html.Div(
     [
         html.Div(
@@ -159,6 +162,82 @@ fuc.FefferyShortcutPanel(
                     className='div-highlight'
                 ),
 
+                html.Div(
+                    [
+                        fac.AntdParagraph(
+                            [
+                                fac.AntdText('提示：按下快捷组合键'),
+                                fac.AntdText('ctrl+s', keyboard=True),
+                                fac.AntdText('唤出本示例中的快捷指令面板，在搜索框中输入内容进行远程选项搜索')
+                            ]
+                        ),
+                        fuc.FefferyShortcutPanel(
+                            id='shortcut-panel-demo',
+                            openHotkey='cmd+s,ctrl+s',
+                            data=[]
+                        ),
+
+                        fac.AntdDivider(
+                            '远程搜索',
+                            lineColor='#f0f0f0',
+                            innerTextOrientation='left'
+                        ),
+
+                        fac.AntdCollapse(
+                            fmc.FefferySyntaxHighlighter(
+                                showLineNumbers=True,
+                                language='python',
+                                codeTheme='coy-without-shadows',
+                                codeString="""
+fac.AntdParagraph(
+    [
+        fac.AntdText('提示：按下快捷组合键'),
+        fac.AntdText('ctrl+s', keyboard=True),
+        fac.AntdText('唤出本示例中的快捷指令面板，在搜索框中输入内容进行远程选项搜索')
+    ]
+),
+fuc.FefferyShortcutPanel(
+    id='shortcut-panel-demo',
+    openHotkey='cmd+s,ctrl+s',
+    data=[]
+)
+
+...
+
+import random
+
+...
+
+@app.callback(
+    Output('shortcut-panel-demo', 'data'),
+    Input('shortcut-panel-demo', 'searchValue'),
+    prevent_initial_call=True
+)
+def shortcut_panel_demo(searchValue):
+
+    return [
+        {
+            'id': f'{searchValue}搜索结果{i}',
+            'title': f'{searchValue}搜索结果{i}',
+        }
+        for i in range(1, random.randint(3, 6))
+    ]
+"""
+                            ),
+                            title='点击查看代码',
+                            is_open=False,
+                            ghost=True
+                        )
+                    ],
+                    style={
+                        'marginBottom': '40px',
+                        'padding': '10px 10px 20px 10px',
+                        'border': '1px solid #f0f0f0'
+                    },
+                    id='远程搜索',
+                    className='div-highlight'
+                ),
+
                 html.Div(style={'height': '100px'})
             ],
             style={
@@ -169,7 +248,8 @@ fuc.FefferyShortcutPanel(
         html.Div(
             fac.AntdAnchor(
                 linkDict=[
-                    {'title': '基础使用', 'href': '#基础使用'}
+                    {'title': '基础使用', 'href': '#基础使用'},
+                    {'title': '远程搜索', 'href': '#远程搜索'},
                 ],
                 offsetTop=0
             ),
