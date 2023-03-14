@@ -29,7 +29,25 @@ docs_content = html.Div(
 
                 fac.AntdParagraph(
                     [
-                        fac.AntdText('　　用于监听指定的按键行为。')
+                        fac.AntdText('　　用于监听指定的按键行为，常用的按键别名有：'),
+                        *[
+                            fac.AntdText(
+                                [
+                                    fac.AntdText(
+                                        key_name,
+                                        keyboard=True
+                                    ),
+                                    '、'
+                                ]
+                            )
+                            for key_name in [
+                                'backspace', 'tab', 'enter', 'shift', 'ctrl',
+                                'alt', 'pausebreak', 'capslock', 'esc', 'space',
+                                'pageup', 'pagedown', 'end', 'home', 'leftarrow',
+                                'uparrow', 'rightarrow', 'downarrow', 'insert',
+                                'delete', 'leftwindowkey', 'rightwindowkey'
+                            ]
+                        ]
                     ]
                 ),
 
