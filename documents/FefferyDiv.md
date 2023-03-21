@@ -70,7 +70,15 @@
 
 **contextMenuEvent：** *dict*型
 
-　　当`enableListenContextMenu=True`时，用于*监听右键事件相关参数*
+　　当`enableListenContextMenu=True`时，用于*监听右键事件相关参数*，监听结果中各键值对属性含义如下：
+
+- **pageX：** 以页面整体左上角为原点，记录事件对应的像素横坐标
+- **pageY：** 以页面整体左上角为原点，记录事件对应的像素纵坐标
+- **clientX：** 以当前视口左上角为原点，记录事件对应的像素横坐标
+- **clientY：** 以当前视口左上角为原点，记录事件对应的像素纵坐标
+- **screenX：** 以屏幕左上角为原点，记录事件对应的像素横坐标
+- **screenY：** 以屏幕左上角为原点，记录事件对应的像素纵坐标
+- **timestamp：** 记录事件发生的时间戳信息
 
 **isHovering：** *bool*型
 

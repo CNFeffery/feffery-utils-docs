@@ -416,6 +416,14 @@ class Config:
                 {
                     'component': 'Item',
                     'props': {
+                        'key': '/FefferyCountUp',
+                        'href': '/FefferyCountUp',
+                        'title': 'FefferyCountUp 数字递增'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
                         'key': '/FefferyCssVar',
                         'href': '/FefferyCssVar',
                         'title': 'FefferyCssVar css变量更新'
