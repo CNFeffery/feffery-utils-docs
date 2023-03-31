@@ -330,6 +330,23 @@ class Config:
                         {
                             'component': 'ItemGroup',
                             'props': {
+                                'key': '页面关闭监听',
+                                'title': '页面关闭监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyListenUnload',
+                                        'title': 'FefferyListenUnload',
+                                        'href': '/FefferyListenUnload'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
                                 'key': '页面响应式监听',
                                 'title': '页面响应式监听'
                             },

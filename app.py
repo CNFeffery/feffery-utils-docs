@@ -22,6 +22,7 @@ from views import (
     FefferyIdle,
     FefferyInViewport,
     FefferyKeyPress,
+    FefferyListenUnload,
     FefferyResponsive,
     FefferyWindowSize,
     FefferyGrid,
@@ -543,6 +544,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyCountUp':
         return FefferyCountUp.docs_content, pathname
+
+    elif pathname == '/FefferyListenUnload':
+        return FefferyListenUnload.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 
