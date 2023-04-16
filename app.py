@@ -22,7 +22,9 @@ from views import (
     FefferyIdle,
     FefferyInViewport,
     FefferyKeyPress,
+    FefferyListenScroll,
     FefferyListenUnload,
+    FefferyMousePosition,
     FefferyResponsive,
     FefferyWindowSize,
     FefferyGrid,
@@ -547,6 +549,12 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyListenUnload':
         return FefferyListenUnload.docs_content, pathname
+
+    elif pathname == '/FefferyListenScroll':
+        return FefferyListenScroll.docs_content, pathname
+
+    elif pathname == '/FefferyMousePosition':
+        return FefferyMousePosition.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

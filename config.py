@@ -330,6 +330,23 @@ class Config:
                         {
                             'component': 'ItemGroup',
                             'props': {
+                                'key': '滚动条监听',
+                                'title': '滚动条监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyListenScroll',
+                                        'title': 'FefferyListenScroll',
+                                        'href': '/FefferyListenScroll'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
                                 'key': '页面关闭监听',
                                 'title': '页面关闭监听'
                             },
@@ -340,6 +357,23 @@ class Config:
                                         'key': '/FefferyListenUnload',
                                         'title': 'FefferyListenUnload',
                                         'href': '/FefferyListenUnload'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '鼠标位置监听',
+                                'title': '鼠标位置监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyMousePosition',
+                                        'title': 'FefferyMousePosition',
+                                        'href': '/FefferyMousePosition'
                                     }
                                 }
                             ]

@@ -62,19 +62,19 @@ div {
   scrollbar-width: thin;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background-color: #bfbfbf;
   outline: none;
   border-radius: 6px;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 /*火狐浏览器*/
-body {
+* {
   scrollbar-width: thin;
 }
 
