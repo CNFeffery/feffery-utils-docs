@@ -46,6 +46,23 @@
 
 　　用于*手动控制指令面板关闭*，每次更新为`True`触发面板关闭后都会自动重置为`False`
 
+**panelStyles：** *dict*型
+
+　　用于*快捷配置指令面板相关全局作用样式*，可用的键值对参数有：
+
+- **width：** *string*型，默认为`'640px'`，用于*设置面板宽度*
+- **overflowBackground：** *string*型，默认为`'rgba(255, 255, 255, 0.5)'`，用于*设置面板选项滚动区域背景色*
+- **textColor：** *string*型，默认为`'rgb(60, 65, 73)'`，用于*设置面板字体颜色*
+- **fontSize：** *string*型，默认为`'16px'`，用于*设置面板字体尺寸*
+- **top：** *string*型，默认为`'20%'`，用于*设置面板到页面顶端的距离*
+- **accentColor：** *string*型，默认为`'rgb(110, 94, 210)'`，用于*设置面板的主色*
+- **secondaryBackgroundColor：** *string*型，默认为`'rgb(239, 241, 244)'`，用于*设置面板的次要背景色*
+- **secondaryTextColor：** *string*型，默认为`'rgb(107, 111, 118)'`，用于*设置面板次要文字颜色*
+- **selectedBackground：** *string*型，默认为`'rgb(248, 249, 251)'`，用于*设置面板已选中项背景色*
+- **actionsHeight：** *string*型，默认为`'300px'`，用于*设置面板高度*
+- **groupTextColor：** *string*型，默认为`'rgb(144, 149, 157)'`，用于*设置面板选项分组标签文字颜色*
+- **zIndex：** *int*型，默认为`1`，用于*设置面板的z-index属性*
+
 **searchValue：** *string*型
 
 　　用于*监听当前输入框内的文字内容*
