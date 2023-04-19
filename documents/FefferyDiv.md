@@ -14,28 +14,6 @@
 
 　　用于传入*嵌套的子元素*
 
-**appendChild：** *组件型*
-
-　　用于*快捷向已有children数组末尾追加子元素*，每次成功追加后`appendChild`会自动重置为`None`
-
-**insertChild：** *dict型*
-
-　　用于*快捷在已有children数组中指定位置插入新元素*，必要的键值对参数有：
-
-- **index：** *int*型，用于*设置新元素的插入位序*
-- **element：** *组件型*，用于*设置要插入的新元素*
-
-**replaceChild：** *dict*型
-
-　　用于*快捷替换已有children数组中的指定位置元素*，必要的键值对参数有：
-
-- **index：** *int*型，用于*设置待替换元素在children数组中的位序*
-- **element：** *组件型*，用于*设置要替换的新元素*
-
-**deleteChildIndex：** *int*型
-
-　　用于*快捷删除已有children数组中的指定位置元素*
-
 **_width：** *int*型
 
 　　用于*监听当前容器的像素宽度*
