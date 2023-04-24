@@ -347,6 +347,23 @@ class Config:
                         {
                             'component': 'ItemGroup',
                             'props': {
+                                'key': '粘贴事件监听',
+                                'title': '粘贴事件监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyListenPaste',
+                                        'title': 'FefferyListenPaste',
+                                        'href': '/FefferyListenPaste'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
                                 'key': '页面关闭监听',
                                 'title': '页面关闭监听'
                             },
