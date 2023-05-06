@@ -199,7 +199,7 @@ def fancy_notification_demo(nClicks,
 '''
                             ),
                             title='点击查看代码',
-                            is_open=False,
+                            isOpen=False,
                             ghost=True
                         )
                     ],

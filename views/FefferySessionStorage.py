@@ -102,7 +102,7 @@ def session_storage_demo(data):
 """
                             ),
                             title='点击查看代码',
-                            is_open=False,
+                            isOpen=False,
                             ghost=True
                         )
                     ],

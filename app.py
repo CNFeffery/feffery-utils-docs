@@ -25,6 +25,7 @@ from views import (
     FefferyListenPaste,
     FefferyListenScroll,
     FefferyListenUnload,
+    FefferyLocation,
     FefferyMousePosition,
     FefferyResponsive,
     FefferyWindowSize,
@@ -559,6 +560,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyListenPaste':
         return FefferyListenPaste.docs_content, pathname
+
+    elif pathname == '/FefferyLocation':
+        return FefferyLocation.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

@@ -119,7 +119,7 @@ def countdown_demo1_update(countdown):
 '''
                             ),
                             title='点击查看代码',
-                            is_open=False,
+                            isOpen=False,
                             ghost=True
                         )
                     ],
@@ -229,7 +229,7 @@ def countdown_demo2(countdown):
 '''
                             ),
                             title='点击查看代码',
-                            is_open=False,
+                            isOpen=False,
                             ghost=True
                         )
                     ],

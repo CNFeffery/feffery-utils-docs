@@ -149,7 +149,7 @@ fuc.FefferyShortcutPanel(
 """
                             ),
                             title='点击查看代码',
-                            is_open=False,
+                            isOpen=False,
                             ghost=True
                         )
                     ],
@@ -225,7 +225,7 @@ def shortcut_panel_demo(searchValue):
 """
                             ),
                             title='点击查看代码',
-                            is_open=False,
+                            isOpen=False,
                             ghost=True
                         )
                     ],

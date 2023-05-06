@@ -1,9 +1,9 @@
-from dash import html
+from dash import html, dcc
 import feffery_antd_components as fac
 import feffery_utils_components as fuc
 import feffery_markdown_components as fmc
 
-import callbacks.FefferyEyeDropper
+import callbacks.FefferyLocation
 from views.side_props import render_side_props_layout
 
 docs_content = html.Div(
@@ -20,7 +20,7 @@ docs_content = html.Div(
                             'title': '通用组件'
                         },
                         {
-                            'title': 'FefferyEyeDropper 色彩拾取'
+                            'title': 'FefferyLocation 地址监听'
                         }
                     ]
                 ),
@@ -29,39 +29,42 @@ docs_content = html.Div(
 
                 fac.AntdParagraph(
                     [
-                        fac.AntdText('　　全屏幕色彩拾取。')
-                    ]
+                        fac.AntdText('用于监听与当前应用地址变化相关的信息，可作为对'),
+                        fac.AntdText(
+                            'dcc.Location',
+                            code=True
+                        ),
+                        '的直接替代，并提供更多额外的事件信息监听。'
+                    ],
+                    style={
+                        'textIndent': '2rem'
+                    }
                 ),
 
                 html.Div(
                     [
+                        fuc.FefferyLocation(
+                            id='location-demo'
+                        ),
+
                         fac.AntdSpace(
                             [
-                                fac.AntdButton(
-                                    '开启拾取',
-                                    id='enable-eye-dropper',
-                                    type='primary'
+                                fac.AntdText(
+                                    '示例链接：'
                                 ),
-
-                                fuc.FefferyEyeDropper(
-                                    id='eye-dropper-demo'
+                                dcc.Link(
+                                    '/FefferyLocation#基础使用',
+                                    href='/FefferyLocation#基础使用'
                                 ),
-
-                                html.Div(
-                                    id='eye-dropper-demo-output',
-                                    style={
-                                        'width': '200px',
-                                        'height': '200px',
-                                        'display': 'flex',
-                                        'alignItems': 'center',
-                                        'justifyContent': 'center',
-                                        'borderRadius': '5px',
-                                        'boxShadow': '0px 0px 12px rgba(0, 0, 0, .12)',
-                                        'transition': '0.25s'
-                                    }
+                                dcc.Link(
+                                    '/FefferyLocation?a=1&b=2',
+                                    href='/FefferyLocation?a=1&b=2'
                                 )
-                            ],
-                            size='large'
+                            ]
+                        ),
+
+                        html.Pre(
+                            id='location-demo-output'
                         ),
 
                         fac.AntdDivider(
@@ -76,59 +79,69 @@ docs_content = html.Div(
                                 language='python',
                                 codeTheme='coy-without-shadows',
                                 codeString='''
+fuc.FefferyLocation(
+    id='location-demo'
+),
+
 fac.AntdSpace(
     [
-        fac.AntdButton(
-            '开启拾取',
-            id='enable-eye-dropper',
-            type='primary'
+        fac.AntdText(
+            '示例链接：'
         ),
-
-        fuc.FefferyEyeDropper(
-            id='eye-dropper-demo'
+        dcc.Link(
+            '/FefferyLocation#基础使用',
+            href='/FefferyLocation#基础使用'
         ),
-
-        html.Div(
-            id='eye-dropper-demo-output',
-            style={
-                'width': '200px',
-                'height': '200px',
-                'display': 'flex',
-                'alignItems': 'center',
-                'justifyContent': 'center',
-                'borderRadius': '5px',
-                'boxShadow': '0px 0px 12px rgba(0, 0, 0, .12)',
-                'transition': '0.25s'
-            }
+        dcc.Link(
+            '/FefferyLocation?a=1&b=2',
+            href='/FefferyLocation?a=1&b=2'
         )
-    ],
-    size='large'
+    ]
+),
+
+html.Pre(
+    id='location-demo-output'
 )
 
 ...
 
 @app.callback(
-    Output('eye-dropper-demo', 'enable'),
-    Input('enable-eye-dropper', 'nClicks'),
-    prevent_initial_call=True
+    Output('location-demo-output', 'children'),
+    [Input('location-demo', 'href'),
+     Input('location-demo', 'pathname'),
+     Input('location-demo', 'search'),
+     Input('location-demo', 'hash'),
+     Input('location-demo', 'host'),
+     Input('location-demo', 'hostname'),
+     Input('location-demo', 'port'),
+     Input('location-demo', 'protocol'),
+     Input('location-demo', 'trigger')]
 )
-def enable_eye_dropper_demo(nClicks):
+def lcoation_demo(href,
+                  pathname,
+                  search,
+                  hash,
+                  host,
+                  hostname,
+                  port,
+                  protocol,
+                  trigger):
 
-    return True
-
-
-@app.callback(
-    Output('eye-dropper-demo-output', 'style'),
-    Input('eye-dropper-demo', 'color'),
-    State('eye-dropper-demo-output', 'style'),
-    prevent_initial_call=True
-)
-def eye_dropper_demo(color, old_style):
-
-    return {
-        **old_style,
-        'background': color
-    }
+    return json.dumps(
+        dict(
+            href=href,
+            pathname=pathname,
+            search=search,
+            hash=hash,
+            host=host,
+            hostname=hostname,
+            port=port,
+            protocol=protocol,
+            trigger=trigger
+        ),
+        indent=4,
+        ensure_ascii=False
+    )
 '''
                             ),
                             title='点击查看代码',
@@ -166,7 +179,7 @@ def eye_dropper_demo(color, old_style):
         ),
         # 侧边参数栏
         render_side_props_layout(
-            component_name='FefferyEyeDropper'
+            component_name='FefferyLocation'
         )
     ],
     style={

@@ -330,23 +330,6 @@ class Config:
                         {
                             'component': 'ItemGroup',
                             'props': {
-                                'key': '滚动条监听',
-                                'title': '滚动条监听'
-                            },
-                            'children': [
-                                {
-                                    'component': 'Item',
-                                    'props': {
-                                        'key': '/FefferyListenScroll',
-                                        'title': 'FefferyListenScroll',
-                                        'href': '/FefferyListenScroll'
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            'component': 'ItemGroup',
-                            'props': {
                                 'key': '粘贴事件监听',
                                 'title': '粘贴事件监听'
                             },
@@ -364,6 +347,23 @@ class Config:
                         {
                             'component': 'ItemGroup',
                             'props': {
+                                'key': '滚动条监听',
+                                'title': '滚动条监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyListenScroll',
+                                        'title': 'FefferyListenScroll',
+                                        'href': '/FefferyListenScroll'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
                                 'key': '页面关闭监听',
                                 'title': '页面关闭监听'
                             },
@@ -374,6 +374,23 @@ class Config:
                                         'key': '/FefferyListenUnload',
                                         'title': 'FefferyListenUnload',
                                         'href': '/FefferyListenUnload'
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '地址监听',
+                                'title': '地址监听'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyLocation',
+                                        'title': 'FefferyLocation',
+                                        'href': '/FefferyLocation'
                                     }
                                 }
                             ]
