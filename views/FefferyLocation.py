@@ -34,7 +34,7 @@ docs_content = html.Div(
                             'dcc.Location',
                             code=True
                         ),
-                        '的直接替代，并提供更多额外的事件信息监听。'
+                        '地址监听功能的直接替代，并提供更多额外的事件信息监听。'
                     ],
                     style={
                         'textIndent': '2rem'
