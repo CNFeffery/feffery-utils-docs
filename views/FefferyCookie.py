@@ -154,12 +154,11 @@ fac.AntdText(
 
 @app.callback(
     Output('cookie-init-get-value-demo-output', 'children'),
-    Input('cookie-init-get-value-demo', 'value'),
-    State('cookie-init-get-value-demo-output', 'cookieKey')
+    Input('cookie-init-get-value-demo', 'value')
 )
-def cookie_init_get_value(value, cookieKey):
+def cookie_init_get_value(value):
 
-    return f'{cookieKey}: {value}'
+    return f'feffery-cookie-basic-demo: {value}'
 '''
                             ),
                             title='点击查看代码',
