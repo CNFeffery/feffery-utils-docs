@@ -32,6 +32,7 @@ from views import (
     FefferyGrid,
     FefferyGridItem,
     FefferyCaptcha,
+    FefferyCookie,
     FefferyCountDown,
     FefferyCountUp,
     FefferyCssVar,
@@ -563,6 +564,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyLocation':
         return FefferyLocation.docs_content, pathname
+
+    elif pathname == '/FefferyCookie':
+        return FefferyCookie.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

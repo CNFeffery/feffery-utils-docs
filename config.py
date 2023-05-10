@@ -493,6 +493,14 @@ class Config:
                 {
                     'component': 'Item',
                     'props': {
+                        'key': '/FefferyCookie',
+                        'href': '/FefferyCookie',
+                        'title': 'FefferyCookie cookie控制'
+                    }
+                },
+                {
+                    'component': 'Item',
+                    'props': {
                         'key': '/FefferyCountDown',
                         'href': '/FefferyCountDown',
                         'title': 'FefferyCountDown 倒计时'
