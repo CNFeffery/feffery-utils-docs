@@ -102,82 +102,6 @@ fuc.FefferyCookie(
                 html.Div(
                     [
                         fuc.FefferyCookie(
-                            id='cookie-init-get-value-demo',
-                            cookieKey='feffery-cookie-basic-demo'
-                        ),
-
-                        fac.AntdText(
-                            id='cookie-init-get-value-demo-output'
-                        ),
-
-                        fac.AntdDivider(
-                            '初始化获取cookie值',
-                            lineColor='#f0f0f0',
-                            innerTextOrientation='left'
-                        ),
-
-                        fac.AntdParagraph(
-                            [
-                                '当指定了参数',
-                                fac.AntdText(
-                                    'cookieKey',
-                                    code=True
-                                ),
-                                '且未设置参数',
-                                fac.AntdText(
-                                    'value',
-                                    code=True
-                                ),
-                                '时，可以在当前组件初始化时捕获到对应cookie当下的有效值'
-                            ],
-                            style={
-                                'textIndent': '2rem'
-                            }
-                        ),
-
-                        fac.AntdCollapse(
-                            fmc.FefferySyntaxHighlighter(
-                                showLineNumbers=True,
-                                language='python',
-                                codeTheme='coy-without-shadows',
-                                codeString='''
-fuc.FefferyCookie(
-    id='cookie-init-get-value-demo',
-    cookieKey='feffery-cookie-basic-demo'
-),
-
-fac.AntdText(
-    id='cookie-init-get-value-demo-output'
-)
-
-...
-
-@app.callback(
-    Output('cookie-init-get-value-demo-output', 'children'),
-    Input('cookie-init-get-value-demo', 'value')
-)
-def cookie_init_get_value(value):
-
-    return f'feffery-cookie-basic-demo: {value}'
-'''
-                            ),
-                            title='点击查看代码',
-                            isOpen=False,
-                            ghost=True
-                        )
-                    ],
-                    style={
-                        'marginBottom': '40px',
-                        'padding': '10px 10px 20px 10px',
-                        'border': '1px solid #f0f0f0'
-                    },
-                    id='初始化获取cookie值',
-                    className='div-highlight'
-                ),
-
-                html.Div(
-                    [
-                        fuc.FefferyCookie(
                             id='cookie-dynamic-update-value-demo',
                             cookieKey='feffery-cookie-dynamic-update-demo',
                             defaultValue='1'
@@ -302,7 +226,6 @@ def cookie_dynamic_update_value_demo_output(nClicks):
             fac.AntdAnchor(
                 linkDict=[
                     {'title': '基础使用', 'href': '#基础使用'},
-                    {'title': '初始化获取cookie值', 'href': '#初始化获取cookie值'},
                     {'title': '动态更新cookie值', 'href': '#动态更新cookie值'},
                 ],
                 offsetTop=0

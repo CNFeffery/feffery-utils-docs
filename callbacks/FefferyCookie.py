@@ -5,15 +5,6 @@ from server import app
 
 
 @app.callback(
-    Output('cookie-init-get-value-demo-output', 'children'),
-    Input('cookie-init-get-value-demo', 'value')
-)
-def cookie_init_get_value(value):
-
-    return f'feffery-cookie-basic-demo: {value}'
-
-
-@app.callback(
     Output('cookie-dynamic-update-value-demo', 'value'),
     Input('cookie-dynamic-update-value-demo-add-one', 'nClicks'),
     State('cookie-dynamic-update-value-demo', 'value'),
