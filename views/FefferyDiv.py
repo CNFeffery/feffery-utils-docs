@@ -35,7 +35,6 @@ docs_content = html.Div(
 
                 html.Div(
                     [
-
                         fuc.FefferyDiv(
                             id='div-demo1',
                             style={
@@ -97,7 +96,6 @@ def div_demo1(_width, _height):
                     id='监听自身尺寸变化',
                     className='div-highlight'
                 ),
-
 
                 html.Div(
                     [
@@ -432,42 +430,13 @@ def div_demo6(clickAwayCount):
 
                 html.Div(
                     [
-
                         fac.AntdSpace(
                             [
-
                                 fuc.FefferyDiv(
-                                    '默认',
+                                    f'shadow="{shadow}"',
+                                    shadow=shadow,
                                     style={
-                                        'width': '200px',
-                                        'height': '100px',
-                                        'borderRadius': '6px',
-                                        'border': '1px solid #f1f2f6',
-                                        'display': 'flex',
-                                        'justifyContent': 'center',
-                                        'alignItems': 'center'
-                                    }
-                                ),
-
-                                fuc.FefferyDiv(
-                                    'shadow="hover-shadow"',
-                                    shadow='hover-shadow',
-                                    style={
-                                        'width': '200px',
-                                        'height': '100px',
-                                        'borderRadius': '6px',
-                                        'border': '1px solid #f1f2f6',
-                                        'display': 'flex',
-                                        'justifyContent': 'center',
-                                        'alignItems': 'center'
-                                    }
-                                ),
-
-                                fuc.FefferyDiv(
-                                    'shadow="always-shadow"',
-                                    shadow='always-shadow',
-                                    style={
-                                        'width': '200px',
+                                        'width': '220px',
                                         'height': '100px',
                                         'borderRadius': '6px',
                                         'border': '1px solid #f1f2f6',
@@ -476,7 +445,12 @@ def div_demo6(clickAwayCount):
                                         'alignItems': 'center'
                                     }
                                 )
-                            ]
+                                for shadow in [
+                                    'no-shadow', 'hover-shadow', 'always-shadow',
+                                    'hover-shadow-light', 'always-shadow-light'
+                                ]
+                            ],
+                            wrap=True
                         ),
 
                         fac.AntdDivider(
@@ -493,39 +467,11 @@ def div_demo6(clickAwayCount):
                                 codeString='''
 fac.AntdSpace(
     [
-
         fuc.FefferyDiv(
-            '默认',
+            f'shadow="{shadow}"',
+            shadow=shadow,
             style={
-                'width': '200px',
-                'height': '100px',
-                'borderRadius': '6px',
-                'border': '1px solid #f1f2f6',
-                'display': 'flex',
-                'justifyContent': 'center',
-                'alignItems': 'center'
-            }
-        ),
-
-        fuc.FefferyDiv(
-            'shadow="hover-shadow"',
-            shadow='hover-shadow',
-            style={
-                'width': '200px',
-                'height': '100px',
-                'borderRadius': '6px',
-                'border': '1px solid #f1f2f6',
-                'display': 'flex',
-                'justifyContent': 'center',
-                'alignItems': 'center'
-            }
-        ),
-
-        fuc.FefferyDiv(
-            'shadow="always-shadow"',
-            shadow='always-shadow',
-            style={
-                'width': '200px',
+                'width': '220px',
                 'height': '100px',
                 'borderRadius': '6px',
                 'border': '1px solid #f1f2f6',
@@ -534,7 +480,12 @@ fac.AntdSpace(
                 'alignItems': 'center'
             }
         )
-    ]
+        for shadow in [
+            'no-shadow', 'hover-shadow', 'always-shadow',
+            'hover-shadow-light', 'always-shadow-light'
+        ]
+    ],
+    wrap=True
 )
 '''
                             ),
@@ -670,6 +621,83 @@ fuc.FefferyDiv(
                     className='div-highlight'
                 ),
 
+                html.Div(
+                    [
+                        fuc.FefferyDiv(
+                            '示例1'*20,
+                            textAlign='center',
+                            padding=10,
+                            margin='0 0 25px 0',
+                            border='1px solid #38d9a9',
+                            borderRadius=10,
+                            style={
+                                'width': 350
+                            }
+                        ),
+
+                        fuc.FefferyDiv(
+                            '示例2',
+                            justify='center',
+                            align='center',
+                            border='3px dashed #a5d8ff',
+                            borderRadius=10,
+                            padding='5px 10px',
+                            style={
+                                'width': 350
+                            }
+                        ),
+
+                        fac.AntdDivider(
+                            '快捷样式设置',
+                            lineColor='#f0f0f0',
+                            innerTextOrientation='left'
+                        ),
+
+                        fac.AntdCollapse(
+                            fmc.FefferySyntaxHighlighter(
+                                showLineNumbers=True,
+                                language='python',
+                                codeTheme='coy-without-shadows',
+                                codeString='''
+fuc.FefferyDiv(
+    '示例1'*20,
+    textAlign='center',
+    padding=10,
+    margin='0 0 25px 0',
+    border='1px solid #38d9a9',
+    borderRadius=10,
+    style={
+        'width': 350
+    }
+),
+
+fuc.FefferyDiv(
+    '示例2',
+    justify='center',
+    align='center',
+    border='3px dashed #a5d8ff',
+    borderRadius=10,
+    padding='5px 10px',
+    style={
+        'width': 350
+    }
+)
+'''
+                            ),
+                            title='点击查看代码',
+                            isOpen=False,
+                            ghost=True
+                        )
+                    ],
+                    style={
+                        'marginBottom': '40px',
+                        'padding': '10px 10px 20px 10px',
+                        'border': '1px solid #f0f0f0'
+                    },
+                    id='快捷样式设置',
+                    className='div-highlight'
+                ),
+
                 html.Div(style={'height': '100px'})
             ],
             style={
@@ -688,6 +716,7 @@ fuc.FefferyDiv(
                     {'title': '监听容器外点击事件', 'href': '#监听容器外点击事件'},
                     {'title': '不同的内置阴影效果', 'href': '#不同的内置阴影效果'},
                     {'title': '不同的内置滚动条效果', 'href': '#不同的内置滚动条效果'},
+                    {'title': '快捷样式设置', 'href': '#快捷样式设置'},
                 ],
                 offsetTop=0
             ),

@@ -72,9 +72,36 @@
 
 **shadow：** *string*型，默认为`'no-shadow'`
 
-　　用于*快捷为当前容器添加阴影效果*，可选的有`'no-shadow'`（无阴影）、`'hover-shadow'`（悬停时显示阴影）、`'always-shadow'`（持久阴影）
+　　用于*快捷为当前容器添加阴影效果*，可选的有`'no-shadow'`（无阴影）、`'hover-shadow'`（悬停时显示阴影）、`'always-shadow'`（持久阴影）、`'hover-shadow-light'`（悬停时显示轻度阴影）、`'always-shadow-light'`（持久轻度阴影）
 
 **scrollbar：** *string*型，默认为`'default'`
 
 　　用于*快捷为当前容器添加滚动条美化效果*，可选的有`'default'`（浏览器默认）、`'simple'`（简约风）、`'hidden'`（隐藏式）
 
+**textAlign：** *string*型
+
+　　用于*快捷设置当前容器的text-align样式属性*，可选项有`'left'`、`'center'`、`'right'`
+
+**justify：** *string*型
+
+　　用于*快捷设置当前容器的justify-content样式属性*，传入有效值后会自动为当前容器启用`flex`布局
+
+**align：** *string*型
+
+　　用于*快捷设置当前容器的align-items样式属性*，传入有效值后会自动为当前容器启用`flex`布局
+
+**padding：** *string*或*int*型
+
+　　用于*快捷设置当前容器的padding样式属性*
+
+**margin：** *string*型或*int*型
+
+　　用于*快捷设置当前容器的margin样式属性*
+
+**border：** *string*型
+
+　　用于*快捷设置当前容器的border样式属性*
+
+**borderRadius：** *string*或*int*型
+
+　　用于*快捷设置当前容器的border-radius样式属性*
