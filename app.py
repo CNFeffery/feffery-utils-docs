@@ -31,6 +31,7 @@ from views import (
     FefferyWindowSize,
     FefferyGrid,
     FefferyGridItem,
+    FefferyResizable,
     FefferyCaptcha,
     FefferyCookie,
     FefferyCountDown,
@@ -128,9 +129,18 @@ app.layout = fuc.FefferyTopProgress(
                             'id': item['props']['title'],
                             'title': item['props']['title'],
                             'handler': '() => window.open("%s")' % item['props']['href'],
+                            'section': '尺寸调整类组件'
+                        }
+                        for item in Config.menuItems[1]['children'][4]['children'][0]['children']
+                    ],
+                    *[
+                        {
+                            'id': item['props']['title'],
+                            'title': item['props']['title'],
+                            'handler': '() => window.open("%s")' % item['props']['href'],
                             'section': '其他通用组件'
                         }
-                        for item in Config.menuItems[1]['children'][4:]
+                        for item in Config.menuItems[1]['children'][5:]
                     ]
                 ]
             ),
@@ -567,6 +577,9 @@ def render_docs_content(pathname):
 
     elif pathname == '/FefferyCookie':
         return FefferyCookie.docs_content, pathname
+
+    elif pathname == '/FefferyResizable':
+        return FefferyResizable.docs_content, pathname
 
     return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
 

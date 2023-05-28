@@ -483,6 +483,32 @@ class Config:
                     ]
                 },
                 {
+                    'component': 'SubMenu',
+                    'props': {
+                        'key': '尺寸调整类组件',
+                        'title': '尺寸调整类组件'
+                    },
+                    'children': [
+                        {
+                            'component': 'ItemGroup',
+                            'props': {
+                                'key': '尺寸调整',
+                                'title': '尺寸调整'
+                            },
+                            'children': [
+                                {
+                                    'component': 'Item',
+                                    'props': {
+                                        'key': '/FefferyResizable',
+                                        'title': 'FefferyResizable',
+                                        'href': '/FefferyResizable'
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     'component': 'Item',
                     'props': {
                         'key': '/FefferyCaptcha',
