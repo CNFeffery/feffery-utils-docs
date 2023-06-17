@@ -202,7 +202,7 @@ app.clientside_callback(
         ),
         # 侧边参数栏
         render_side_props_layout(
-            component_name='FefferyExecuteJs'
+            component_name='FefferyListenScroll'
         )
     ],
     style={
