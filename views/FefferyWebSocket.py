@@ -38,7 +38,7 @@ docs_content = html.Div(
 
                         fuc.FefferyWebSocket(
                             id='websocket-demo',
-                            socketUrl='wss://demo.piesocket.com/v3/channel_1?api_key=VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV&notify_self'
+                            socketUrl='wss://ws.postman-echo.com/raw'
                         ),
 
                         fac.AntdSpace(
@@ -97,7 +97,7 @@ docs_content = html.Div(
                                 codeString="""
 fuc.FefferyWebSocket(
     id='websocket-demo',
-    socketUrl='wss://demo.piesocket.com/v3/channel_1?api_key=VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV&notify_self'
+    socketUrl='wss://ws.postman-echo.com/raw'
 ),
 
 fac.AntdSpace(
