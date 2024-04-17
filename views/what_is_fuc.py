@@ -137,27 +137,15 @@ docs_content = html.Div(
                 fac.AntdText('或'),
 
                 fac.AntdText(
-                    f'pip install feffery-utils-components -U',
+                    'pip install feffery-utils-components -U',
                     keyboard=True,
                     copyable=True
                 ),
 
-                fac.AntdTitle('最新开发版本：', level=5),
+                fac.AntdTitle('最新预发布版本：', level=5),
 
                 fac.AntdText(
-                    'pip install git+https://github.com/CNFeffery/feffery-utils-components.git',
-                    keyboard=True,
-                    copyable=True
-                ),
-
-                html.Br(),
-
-                fac.AntdText('国内gitee镜像加速下载方式：'),
-
-                html.Br(),
-
-                fac.AntdText(
-                    'pip install git+https://gitee.com/cnfeffery/feffery-utils-components.git',
+                    'pip install feffery-utils-components -U --pre',
                     keyboard=True,
                     copyable=True
                 ),
