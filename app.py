@@ -1,663 +1,433 @@
-from dash import dcc, html
+import re
+import os
+import dash
+import time
+import uuid
+from flask import request
+from dash import html, dcc
+from datetime import datetime
 import feffery_antd_components as fac
 import feffery_utils_components as fuc
-from dash.dependencies import Input, Output, State
+from dash.dependencies import Input, Output, State, MATCH, ClientsideFunction
 
-from config import Config
-from server import app, server
-from views import (
-    FefferyAutoAnimate,
-    FefferyMotion,
-    FefferyBlockColorPicker,
-    FefferyCircleColorPicker,
-    FefferyEyeDropper,
-    FefferyGithubColorPicker,
-    FefferyHexColorPicker,
-    FefferyRgbColorPicker,
-    FefferyTwitterColorPicker,
-    FefferyWheelColorPicker,
-    FefferyDeviceDetect,
-    FefferyDocumentVisibility,
-    FefferyGeolocation,
-    FefferyIdle,
-    FefferyInViewport,
-    FefferyKeyPress,
-    FefferyListenPaste,
-    FefferyListenScroll,
-    FefferyListenUnload,
-    FefferyLocation,
-    FefferyMousePosition,
-    FefferyResponsive,
-    FefferyWindowSize,
-    FefferyGrid,
-    FefferyGridItem,
-    FefferyResizable,
-    FefferyCaptcha,
-    FefferyCookie,
-    FefferyCountDown,
-    FefferyCountUp,
-    FefferyCssVar,
-    FefferyDiv,
-    FefferyExecuteJs,
-    FefferyExternalCss,
-    FefferyExternalJs,
-    FefferyExtraSpinner,
-    FefferyFancyButton,
-    FefferyFancyMessage,
-    FefferyFancyNotification,
-    FefferyFullscreen,
-    FefferyGuide,
-    FefferyHighlightWords,
-    FefferyImagePaste,
-    FefferyJsonViewer,
-    FefferyLazyLoad,
-    FefferyQRCode,
-    FefferyRawHTML,
-    FefferyReload,
-    FefferyScroll,
-    FefferyScrollbars,
-    FefferySessionStorage,
-    FefferySetTitle,
-    FefferyShadowDom,
-    FefferyShortcutPanel,
-    FefferySticky,
-    FefferyStyle,
-    FefferyTimeout,
-    FefferyTopProgress,
-    FefferyVirtualList,
-    FefferyWebSocket,
-    what_is_fuc
-)
+import views
+from server import app, server  # noqa: F401
+from components import page_header, side_menu, changelog_render
+from config import AppConfig
+from utils import generate_shortcut_panel_data
+import views.what_is_fuc
 
-app.layout = fuc.FefferyTopProgress(
-    html.Div(
+# 国际化
+from i18n import translator
+
+# 记录应用最近启动时间
+boot_datetime = datetime.now().strftime('%Y-%m-%d')
+
+
+def render_layout():
+    return fuc.FefferyTopProgress(
         [
-            # 注入url监听
-            dcc.Location(id='url'),
-
-            # 注入快捷搜索面板
-            fuc.FefferyShortcutPanel(
-                placeholder='输入你想要搜索的组件...',
-                data=[
-                    *[
-                        {
-                            'id': item['children'][0]['props']['title'],
-                            'title': '{} {}'.format(
-                                item['children'][0]['props']['title'],
-                                item['props']['title']
-                            ),
-                            'handler': '() => window.open("%s")' % item['children'][0]['props']['href'],
-                            'section': '动画类组件'
-                        }
-                        for item in Config.menuItems[1]['children'][0]['children']
-                    ],
-                    *[
-                        {
-                            'id': item['children'][0]['props']['title'],
-                            'title': '{} {}'.format(
-                                item['children'][0]['props']['title'],
-                                item['props']['title']
-                            ),
-                            'handler': '() => window.open("%s")' % item['children'][0]['props']['href'],
-                            'section': '色彩选择类组件'
-                        }
-                        for item in Config.menuItems[1]['children'][1]['children']
-                    ],
-                    *[
-                        {
-                            'id': item['children'][0]['props']['title'],
-                            'title': '{} {}'.format(
-                                item['children'][0]['props']['title'],
-                                item['props']['title']
-                            ),
-                            'handler': '() => window.open("%s")' % item['children'][0]['props']['href'],
-                            'section': '监听类组件'
-                        }
-                        for item in Config.menuItems[1]['children'][2]['children']
-                    ],
-                    *[
-                        {
-                            'id': item['props']['title'],
-                            'title': item['props']['title'],
-                            'handler': '() => window.open("%s")' % item['props']['href'],
-                            'section': '拖拽类组件'
-                        }
-                        for item in Config.menuItems[1]['children'][3]['children'][0]['children']
-                    ],
-                    *[
-                        {
-                            'id': item['props']['title'],
-                            'title': item['props']['title'],
-                            'handler': '() => window.open("%s")' % item['props']['href'],
-                            'section': '尺寸调整类组件'
-                        }
-                        for item in Config.menuItems[1]['children'][4]['children'][0]['children']
-                    ],
-                    *[
-                        {
-                            'id': item['props']['title'],
-                            'title': item['props']['title'],
-                            'handler': '() => window.open("%s")' % item['props']['href'],
-                            'section': '其他通用组件'
-                        }
-                        for item in Config.menuItems[1]['children'][5:]
-                    ]
+            # 根容器url监听
+            fuc.FefferyLocation(id='root-url'),
+            # 全局状态存储
+            fac.Fragment(
+                [
+                    # 国际化语种
+                    fuc.FefferyCookie(
+                        id='global-locale',
+                        expires=3600 * 24 * 365,
+                        cookieKey=translator.cookie_name,
+                    )
                 ]
             ),
-
-            # 注入快捷添加好友悬浮卡片
+            # 全局页面重载
+            fuc.FefferyReload(id='global-reload'),
+            # 国际化初始自动判断
+            fuc.FefferyExecuteJs(
+                jsString="""
+// 初始化语种自动赋值策略
+if ( !document.cookie.includes('dash-i18n=') ) {
+    if ( !navigator.language.startsWith('zh-') ) {
+        window.dash_clientside.set_props('global-locale', { value: 'en-us' })
+    }
+}
+                """
+            ),
+            # 页面根容器
             html.Div(
-                [
-                    fac.AntdPopover(
-                        fac.AntdButton(
-                            fac.AntdIcon(icon='antd-bulb'),
-                            shape='circle',
-                            style={
-                                'zoom': '1.25',
-                                'boxShadow': '0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d'
-                            }
-                        ),
-                        placement='left',
-                        content=[
-                            fac.AntdText(
-                                '微信扫码加我好友，备注【dash学习】加入学习交流群，更多灵感更快进步',
-                                strong=True
-                            ),
-                            fac.AntdImage(
-                                src=app.get_asset_url(
-                                    'imgs/feffery-添加好友二维码.jpg'),
-                                width=250,
-                                preview=False
-                            )
-                        ],
-                        overlayStyle={
-                            'width': '300px',
-                            'height': '408px'
-                        }
-                    )
-                ],
-                style={
-                    'position': 'fixed',
-                    'right': '100px',
-                    'bottom': '200px',
-                    'zIndex': 99999
-                }
+                id='root-container',
             ),
-
-            # 页面结构
-            fac.AntdRow(
+            # 辅助内容
+            fac.Fragment(
                 [
-                    fac.AntdCol(
-                        fuc.FefferyMotion(
-                            html.Img(
-                                src=app.get_asset_url(
-                                    'imgs/fuc-logo.svg'
-                                ),
-                                style={
-                                    'height': '50px',
-                                    'padding': '0 10px',
-                                    'marginTop': '7px',
-                                    'cursor': 'pointer'
-                                }
-                            ),
-                            whileTap={
-                                'scale': 1.2
-                            },
-                            transition={
-                                'duration': 0.5,
-                                'type': 'spring'
-                            }
-                        ),
-                    ),
-                    fac.AntdCol(
-                        fac.AntdParagraph(
-                            [
-                                fac.AntdText(
-                                    'feffery-utils-components',
-                                    strong=True,
-                                    style={
-                                        'fontSize': '35px'
-                                    }
-                                ),
-                                fac.AntdText(
-                                    f'v{fuc.__version__}',
-                                    style={
-                                        'fontSize': '10px',
-                                        'paddingLeft': '2px'
-                                    }
-                                )
-                            ]
-                        )
-                    ),
-                    fac.AntdCol(
-                        fac.AntdParagraph(
-                            [
-                                fac.AntdText(
-                                    'Ctrl',
-                                    keyboard=True,
-                                    style={
-                                        'color': '#8c8c8c'
-                                    }
-                                ),
-                                fac.AntdText(
-                                    'K',
-                                    keyboard=True,
-                                    style={
-                                        'color': '#8c8c8c'
-                                    }
-                                ),
-                                fac.AntdText(
-                                    '唤出搜索面板',
-                                    style={
-                                        'color': '#8c8c8c'
-                                    }
-                                )
-                            ],
-                            style={
-                                'marginLeft': '50px',
-                                'marginTop': '21px'
-                            }
-                        ),
-                        flex='auto'
-                    ),
-                    fac.AntdCol(
+                    # 内容区刷新辅助动画锚点
+                    fac.AntdSpin(
                         html.Div(
-                            [
-                                html.A(
-                                    fac.AntdImage(
-                                        id='github-entry',
-                                        alt='fuc源码仓库，欢迎star',
-                                        src='https://img.shields.io/github/stars/CNFeffery/feffery-utils-components?style=social',
-                                        preview=False,
-                                        fallback=None,
-                                        style={
-                                            'transform': 'translateY(0px) scale(1.25)'
-                                        }
-                                    ),
-                                    href='https://github.com/CNFeffery/feffery-utils-components',
-                                    target='_blank',
-                                    style={
-                                        'cursor': 'pointer'
-                                    }
-                                ),
-
-                                html.A(
-                                    '皖ICP备2021012734号-1',
-                                    href='https://beian.miit.gov.cn/',
-                                    target='_blank',
-                                    style={
-                                        'fontSize': '10px',
-                                        'marginLeft': '50px',
-                                        'color': '#494f54'
-                                    }
-                                )
-                            ],
-                            style={
-                                'float': 'right',
-                                'paddingRight': '20px',
-                                'marginTop': '20.5px'
-                            }
+                            id='global-spin-center',
+                            style={'position': 'fixed'},
                         ),
-                        flex='auto'
+                        indicator=fuc.FefferyExtraSpinner(
+                            type='guard',
+                            color='#1890ff',
+                            style={
+                                'position': 'fixed',
+                                'top': '50%',
+                                'left': '50%',
+                                'width': 100,
+                                'height': 100,
+                                'transform': 'translate(-50%, -50%)',
+                                'zIndex': 999,
+                            },
+                        ),
+                    ),
+                ]
+            ),
+        ],
+        listenPropsMode='include',
+        includeProps=[
+            'root-container.children',
+            'doc-layout-container.children',
+        ],
+        minimum=0.33,
+    )
+
+
+# 动态layout
+app.layout = render_layout
+
+
+@app.callback(
+    [Output('root-container', 'children'), Output('global-spin-center', 'key')],
+    Input('root-url', 'pathname'),
+    [
+        State('root-url', 'trigger'),
+        State('root-url', 'search'),
+    ],
+    prevent_initial_call=True,
+)
+def root_router(pathname, trigger, search):
+    """根节点路由控制"""
+
+    current_locale = request.cookies.get(translator.cookie_name)
+
+    # 赋值默认国际化语种
+    current_locale = current_locale or 'zh-cn'
+
+    if pathname.startswith('/~demo/'):
+        time.sleep(0.5)
+
+        try:
+            # 尝试提取单体示例对应的类别、路径信息
+            demo_type, demo_path = pathname.split('/')[2:4]
+
+            return [
+                [
+                    fuc.FefferyStyle(
+                        rawStyle="""
+/* 隐藏debug模式工具图标 */
+.dash-debug-menu,
+.dash-debug-menu__outer--closed {
+    display: none;
+}
+"""
+                    ),
+                    html.Div(
+                        getattr(
+                            getattr(views, demo_type).demos, demo_path
+                        ).render(),
+                        style={'padding': 0 if 'padding=no' in search else 50},
+                    ),
+                ],
+                str(uuid.uuid4()),
+            ]
+
+        except (ValueError, AttributeError):
+            return [
+                fac.AntdCenter(
+                    fac.AntdResult(
+                        status='404',
+                        title=fac.AntdParagraph(
+                            [
+                                translator.t('演示示例不存在，'),
+                                html.A(translator.t('回到首页'), href='/'),
+                            ]
+                        ),
+                    ),
+                    style={'height': 'calc(100vh - 200px)'},
+                ),
+                str(uuid.uuid4()),
+            ]
+
+    # 动态路由切换时，阻止页面重复加载
+    if trigger in ['pushstate', 'popstate']:
+        return dash.no_update
+
+    return [
+        [
+            # 控制非正式发布模式下的文档页初始化通知提示
+            (
+                None
+                if AppConfig.is_release
+                else fac.AntdNotification(
+                    type='info',
+                    message='提示信息',
+                    placement='bottomRight',
+                    description=(
+                        translator.t(
+                            '当前文档网站尚未正式发布，相关文档持续补充建设中。（最近更新时间：{}）'
+                        ).format(boot_datetime)
+                    ),
+                )
+            ),
+            # 悬浮按钮组功能
+            fac.AntdFloatButtonGroup(
+                [
+                    fac.AntdFloatButton(
+                        icon=fac.AntdIcon(icon='antd-bug'),
+                        tooltip=translator.t('问题反馈'),
+                        href=AppConfig.library_repo + '/issues/new',
                     )
                 ],
-                align="middle",
-                style={
-                    'height': '64px',
-                    'boxShadow': 'rgb(240 241 242) 0px 2px 14px',
-                    'background': 'white',
-                    'marginBottom': '5px'
-                }
+                style={'right': 100, 'bottom': 100},
             ),
-
+            # 注入快捷搜索面板
+            fuc.FefferyShortcutPanel(
+                id='global-search-panel',
+                placeholder=translator.t('输入你想要搜索的组件...'),
+                data=generate_shortcut_panel_data(AppConfig.side_menu_items()),
+                panelStyles={'accentColor': '#1890ff', 'zIndex': 99999},
+                locale=('zh' if current_locale == 'zh-cn' else 'en'),
+            ),
+            # 文档页面容器url监听
+            dcc.Location(id='doc-layout-url'),
+            # 页首
+            page_header.render(locale=current_locale),
+            # 主体区域
             fac.AntdRow(
                 [
+                    # 侧边菜单
+                    side_menu.render(locale=current_locale),
+                    # 内容区域
                     fac.AntdCol(
-                        fac.AntdAffix(
-                            html.Div(
-                                [
-                                    fac.AntdMenu(
-                                        id='router-menu',
-                                        menuItems=Config.menuItems,
-                                        mode='inline',
-                                        defaultOpenKeys=[],
-                                        style={
-                                            'height': '100%',
-                                            'paddingBottom': '50px'
-                                        }
-                                    ),
-
-                                    fac.AntdButton(
-                                        fac.AntdIcon(
-                                            id='fold-side-menu-icon',
-                                            icon='antd-arrow-left'
-                                        ),
-                                        id='fold-side-menu',
-                                        type='text',
-                                        shape='circle',
-                                        style={
-                                            'position': 'absolute',
-                                            'zIndex': 999,
-                                            'top': '10px',
-                                            'right': '-15px',
-                                            'boxShadow': '0 4px 10px 0 rgba(0,0,0,.1)',
-                                            'background': 'white'
-                                        }
-                                    )
-                                ],
-                                id='side-menu',
-                                style={
-                                    'width': '290px',
-                                    'height': '100vh',
-                                    'transition': 'width 0.2s',
-                                    'borderRight': '1px solid rgb(240, 240, 240)',
-                                    'paddingRight': 20
-                                }
-                            ),
-                            offsetTop=0
-                        ),
-                        flex='none'
+                        id='doc-layout-container',
+                        flex='auto',
+                        style={'width': 0, 'padding': '0 0 0 30px'},
                     ),
-
-                    fac.AntdCol(
-                        [
-                            html.Div(
-                                id='docs-content',
-                                style={
-                                    'backgroundColor': 'rgb(255, 255, 255)'
-                                }
-                            )
-                        ],
-                        flex='auto'
-                    ),
-
-                    fac.AntdBackTop(
-                        duration=0.5
-                    )
                 ],
-                wrap=False
-            )
-        ]
+                wrap=False,
+            ),
+        ],
+        str(uuid.uuid4()),
+    ]
+
+
+@app.callback(
+    [
+        Output('doc-layout-container', 'children'),
+        Output('global-spin-center', 'key', allow_duplicate=True),
+    ],
+    Input('doc-layout-url', 'pathname'),
+    prevent_initial_call=True,
+)
+def doc_layout_router(pathname):
+    """路由控制"""
+
+    time.sleep(0.5)
+
+    # 404页面
+    doc_layout = fac.AntdResult(
+        status='404',
+        title=translator.t('您访问的页面不存在或还在建设中'),
+        style={'height': 'calc(100vh - 65px)'},
+    )
+
+    # 处理针对非常规单页组件的路由请求
+    if pathname in ['/what-is-fuc', '/']:
+        doc_layout = views.what_is_fuc.render()
+
+    elif pathname.startswith('/changelog'):
+        # 尝试提取命中的版本号
+        match_version = pathname.split('-')[-1]
+        # 检查提取的版本号对应更新日志是否存在
+        if match_version + '.md' in os.listdir('changelogs'):
+            doc_layout = changelog_render.render(version=match_version)
+
+    # 提取当前views下合法格式页面模块
+    valid_views = [
+        '/' + name
+        for name in dir(views)
+        if not name.startswith('__') and name != 'advanced_usage'
+    ]
+
+    # 检测当前pathname是否符合单页组件文档页面模块
+    if pathname in valid_views:
+        doc_layout = getattr(views, pathname.replace('/', '')).render()
+
+    return [doc_layout, str(uuid.uuid4())]
+
+
+app.clientside_callback(
+    # 控制侧边菜单栏的展开/收起
+    ClientsideFunction(
+        namespace='clientside', function_name='toggleSideMenuVisible'
     ),
-    listenPropsMode='include',
-    includeProps=Config.include_props,
-    minimum=0.33,
-    speed=800,
-    debug=True
+    Input('toggle-side-menu', 'nClicks'),
+    State('toggle-side-menu-icon', 'icon'),
 )
 
 
 @app.callback(
-    [Output('docs-content', 'children'),
-     Output('router-menu', 'currentKey')],
-    Input('url', 'pathname')
+    [Output('side-menu', 'openKeys'), Output('side-menu', 'currentKey')],
+    Input('doc-layout-url', 'pathname'),
 )
-def render_docs_content(pathname):
-    '''
-    路由回调
-    '''
+def update_side_menu_state(pathname):
+    """处理pathname变动时，对侧边菜单栏相关状态的更新"""
 
-    if pathname == '/what-is-fuc' or pathname == '/':
+    if pathname == '/':
         pathname = '/what-is-fuc'
-        return what_is_fuc.docs_content, pathname
 
-    elif pathname == '/FefferyCaptcha':
-        return FefferyCaptcha.docs_content, pathname
+    if AppConfig.side_menu_expand_keys.get(pathname):
+        return [AppConfig.side_menu_expand_keys[pathname], pathname]
 
-    elif pathname == '/FefferyExecuteJs':
-        return FefferyExecuteJs.docs_content, pathname
+    elif pathname.startswith('/changelog-'):
+        # 尝试提取命中的版本号
+        match_version = pathname.split('-')[-1]
+        # 检查提取的版本号对应更新日志是否存在
+        if match_version + '.md' in os.listdir('changelogs'):
+            return [[re.sub('\.\d+$', '', match_version) + '.x版本'], pathname]
 
-    elif pathname == '/FefferyHighlightWords':
-        return FefferyHighlightWords.docs_content, pathname
-
-    elif pathname == '/FefferyQRCode':
-        return FefferyQRCode.docs_content, pathname
-
-    elif pathname == '/FefferyReload':
-        return FefferyReload.docs_content, pathname
-
-    elif pathname == '/FefferyStyle':
-        return FefferyStyle.docs_content, pathname
-
-    elif pathname == '/FefferyTopProgress':
-        return FefferyTopProgress.docs_content, pathname
-
-    elif pathname == '/FefferyCountDown':
-        return FefferyCountDown.docs_content, pathname
-
-    elif pathname == '/FefferyCssVar':
-        return FefferyCssVar.docs_content, pathname
-
-    elif pathname == '/FefferyExtraSpinner':
-        return FefferyExtraSpinner.docs_content, pathname
-
-    elif pathname == '/FefferyRawHTML':
-        return FefferyRawHTML.docs_content, pathname
-
-    elif pathname == '/FefferyBlockColorPicker':
-        return FefferyBlockColorPicker.docs_content, pathname
-
-    elif pathname == '/FefferyCircleColorPicker':
-        return FefferyCircleColorPicker.docs_content, pathname
-
-    elif pathname == '/FefferyEyeDropper':
-        return FefferyEyeDropper.docs_content, pathname
-
-    elif pathname == '/FefferyGithubColorPicker':
-        return FefferyGithubColorPicker.docs_content, pathname
-
-    elif pathname == '/FefferyHexColorPicker':
-        return FefferyHexColorPicker.docs_content, pathname
-
-    elif pathname == '/FefferyRgbColorPicker':
-        return FefferyRgbColorPicker.docs_content, pathname
-
-    elif pathname == '/FefferyTwitterColorPicker':
-        return FefferyTwitterColorPicker.docs_content, pathname
-
-    elif pathname == '/FefferyWheelColorPicker':
-        return FefferyWheelColorPicker.docs_content, pathname
-
-    elif pathname == '/FefferyGuide':
-        return FefferyGuide.docs_content(), pathname
-
-    elif pathname == '/FefferyScroll':
-        return FefferyScroll.docs_content, pathname
-
-    elif pathname == '/FefferyDocumentVisibility':
-        return FefferyDocumentVisibility.docs_content, pathname
-
-    elif pathname == '/FefferyGeolocation':
-        return FefferyGeolocation.docs_content, pathname
-
-    elif pathname == '/FefferyIdle':
-        return FefferyIdle.docs_content, pathname
-
-    elif pathname == '/FefferyInViewport':
-        return FefferyInViewport.docs_content, pathname
-
-    elif pathname == '/FefferyResponsive':
-        return FefferyResponsive.docs_content, pathname
-
-    elif pathname == '/FefferyWindowSize':
-        return FefferyWindowSize.docs_content, pathname
-
-    elif pathname == '/FefferyDiv':
-        return FefferyDiv.docs_content, pathname
-
-    elif pathname == '/FefferyExternalCss':
-        return FefferyExternalCss.docs_content, pathname
-
-    elif pathname == '/FefferyExternalJs':
-        return FefferyExternalJs.docs_content, pathname
-
-    elif pathname == '/FefferyFancyMessage':
-        return FefferyFancyMessage.docs_content, pathname
-
-    elif pathname == '/FefferyFancyNotification':
-        return FefferyFancyNotification.docs_content, pathname
-
-    elif pathname == '/FefferySessionStorage':
-        return FefferySessionStorage.docs_content, pathname
-
-    elif pathname == '/FefferyWebSocket':
-        return FefferyWebSocket.docs_content, pathname
-
-    elif pathname == '/FefferyShadowDom':
-        return FefferyShadowDom.docs_content, pathname
-
-    elif pathname == '/FefferyGrid':
-        return FefferyGrid.docs_content, pathname
-
-    elif pathname == '/FefferyGridItem':
-        return FefferyGridItem.docs_content, pathname
-
-    elif pathname == '/FefferyLazyLoad':
-        return FefferyLazyLoad.docs_content(), pathname
-
-    elif pathname == '/FefferyVirtualList':
-        return FefferyVirtualList.docs_content(), pathname
-
-    elif pathname == '/FefferyScrollbars':
-        return FefferyScrollbars.docs_content, pathname
-
-    elif pathname == '/FefferySetTitle':
-        return FefferySetTitle.docs_content, pathname
-
-    elif pathname == '/FefferyTimeout':
-        return FefferyTimeout.docs_content, pathname
-
-    elif pathname == '/FefferyFancyButton':
-        return FefferyFancyButton.docs_content, pathname
-
-    elif pathname == '/FefferyJsonViewer':
-        return FefferyJsonViewer.docs_content, pathname
-
-    elif pathname == '/FefferyShortcutPanel':
-        return FefferyShortcutPanel.docs_content, pathname
-
-    elif pathname == '/FefferyImagePaste':
-        return FefferyImagePaste.docs_content, pathname
-
-    elif pathname == '/FefferyDeviceDetect':
-        return FefferyDeviceDetect.docs_content, pathname
-
-    elif pathname == '/FefferyFullscreen':
-        return FefferyFullscreen.docs_content, pathname
-
-    elif pathname == '/FefferyMotion':
-        return FefferyMotion.docs_content, pathname
-
-    elif pathname == '/FefferySticky':
-        return FefferySticky.docs_content, pathname
-
-    elif pathname == '/FefferyAutoAnimate':
-        return FefferyAutoAnimate.docs_content, pathname
-
-    elif pathname == '/FefferyKeyPress':
-        return FefferyKeyPress.docs_content, pathname
-
-    elif pathname == '/FefferyCountUp':
-        return FefferyCountUp.docs_content, pathname
-
-    elif pathname == '/FefferyListenUnload':
-        return FefferyListenUnload.docs_content, pathname
-
-    elif pathname == '/FefferyListenScroll':
-        return FefferyListenScroll.docs_content, pathname
-
-    elif pathname == '/FefferyMousePosition':
-        return FefferyMousePosition.docs_content, pathname
-
-    elif pathname == '/FefferyListenPaste':
-        return FefferyListenPaste.docs_content, pathname
-
-    elif pathname == '/FefferyLocation':
-        return FefferyLocation.docs_content, pathname
-
-    elif pathname == '/FefferyCookie':
-        return FefferyCookie.docs_content, pathname
-
-    elif pathname == '/FefferyResizable':
-        return FefferyResizable.docs_content, pathname
-
-    return fac.AntdResult(status='404', title='您访问的页面不存在！'), pathname
+    return [None, pathname]
 
 
 app.clientside_callback(
-    '''
-    (nClicks, oldStyle) => {
-        if (nClicks) {
-            if (oldStyle.width === '290px') {
-                return [
-                    {
-                        'width': 20,
-                        'height': '100vh',
-                        'transition': 'width 0.2s',
-                        'borderRight': '1px solid rgb(240, 240, 240)',
-                        'paddingRight': 20
-                    },
-                    'antd-arrow-right'
-                ]
-            }
-            return [
-                {
-                    'width': '290px',
-                    'height': '100vh',
-                    'transition': 'width 0.2s',
-                    'borderRight': '1px solid rgb(240, 240, 240)',
-                    'paddingRight': 20
-                },
-                'antd-arrow-left'
-            ]
-        }
-        return window.dash_clientside.no_update;
-    }
-    ''',
-    [Output('side-menu', 'style'),
-     Output('fold-side-menu-icon', 'icon')],
-    Input('fold-side-menu', 'nClicks'),
-    State('side-menu', 'style')
+    # 处理侧边菜单栏自动滚动到当前菜单项位置
+    ClientsideFunction(
+        namespace='clientside', function_name='handleMenuTargetScoll'
+    ),
+    Input('doc-layout-url', 'pathname'),
+)
+
+
+app.clientside_callback(
+    # 侧边参数栏展开/收起控制
+    ClientsideFunction(
+        namespace='clientside', function_name='toggleSidePropsVisible'
+    ),
+    Output('side-props', 'style'),
+    Output('toggle-side-props-visible-icon', 'icon'),
+    Input('toggle-side-props-visible', 'nClicks'),
+    State('toggle-side-props-visible-icon', 'icon'),
+    prevent_initial_call=True,
+)
+
+
+app.clientside_callback(
+    # 侧边参数栏关键词搜索框展开/收起控制
+    ClientsideFunction(
+        namespace='clientside', function_name='toggleSidePropsBarVisible'
+    ),
+    [
+        Output('side-props-search-bar', 'style'),
+        Output('side-props-search-bar-keyword', 'autoFocus'),
+        Output('side-props-search-bar-keyword', 'key'),
+        Output('side-props-search-bar-keyword', 'value'),
+        Output('side-props-search-bar-keyword', 'debounceValue'),
+    ],
+    [
+        Input('side-props-search-bar-toggle', 'nClicks'),
+        Input('doc-layout-listen-esc-press', 'pressedCounts'),
+    ],
+    State('side-props-search-bar', 'style'),
+    State('side-props-search-bar-keyword', 'focusing'),
+    prevent_initial_call=True,
 )
 
 app.clientside_callback(
-    '''
-    (nClicks, oldStyle) => {
-        if (nClicks) {
-            if (oldStyle.width === '600px') {
-                return [
-                    {
-                        'width': 0,
-                        'height': '100vh',
-                        'borderLeft': '1px solid #f0f0f0',
-                        'padding': '0 10px',
-                        'position': 'relative',
-                        'background': '#f2f3f5',
-                        'transition': 'width 0.15s ease'
-                    },
-                    'antd-arrow-left'
-                ]
-            }
-            return [
-                {
-                    'width': '600px',
-                    'height': '100vh',
-                    'borderLeft': '1px solid #f0f0f0',
-                    'padding': '0 20px',
-                    'position': 'relative',
-                    'background': '#f2f3f5',
-                    'transition': 'width 0.4s ease'
-                },
-                'antd-arrow-right'
-            ]
-        }
-        return window.dash_clientside.no_update;
-    }
-    ''',
-    [Output('side-props', 'style'),
-     Output('fold-side-props-icon', 'icon')],
-    Input('fold-side-props', 'nClicks'),
-    State('side-props', 'style')
+    # 侧边参数栏关键词搜索
+    ClientsideFunction(
+        namespace='clientside', function_name='updateSidePropsMarkdownKeywords'
+    ),
+    Output('side-props-markdown', 'searchKeyword'),
+    Input('side-props-search-bar-keyword', 'debounceValue'),
+    prevent_initial_call=True,
+)
+
+app.clientside_callback(
+    # 基于模式匹配，控制示例代码框的展开/收起
+    ClientsideFunction(
+        namespace='clientside', function_name='toggleDemoCodeVisible'
+    ),
+    Output({'type': 'demo-code', 'index': MATCH}, 'style'),
+    Input({'type': 'demo-code-toggle', 'index': MATCH}, 'nClicks'),
+    State({'type': 'demo-code', 'index': MATCH}, 'style'),
+    prevent_initial_call=True,
+)
+
+app.clientside_callback(
+    # 侧边页面目录展开/收起控制
+    ClientsideFunction(
+        namespace='clientside', function_name='toggleDocAnchorVisible'
+    ),
+    Output('doc-anchor-col', 'style'),
+    Output('toggle-doc-anchor-visible-icon', 'icon'),
+    Input('toggle-doc-anchor-visible', 'nClicks'),
+    State('toggle-doc-anchor-visible-icon', 'icon'),
+    prevent_initial_call=True,
+)
+
+app.clientside_callback(
+    # 小屏幕下侧边菜单自动折叠
+    ClientsideFunction(
+        namespace='clientside', function_name='smallScreenAutoCollapseSide'
+    ),
+    Output('toggle-side-menu', 'nClicks'),
+    Output('toggle-side-props-visible', 'nClicks'),
+    Input('doc-layout-responsive', 'responsive'),
+    State('toggle-side-menu', 'nClicks'),
+    State('toggle-side-props-visible', 'nClicks'),
+    State('toggle-side-menu-icon', 'icon'),
+    State('toggle-side-props-visible-icon', 'icon'),
+    prevent_initial_call=True,
+)
+
+app.clientside_callback(
+    # 小屏幕下优化页首
+    ClientsideFunction(
+        namespace='clientside', function_name='smallScreenUpdateHeader'
+    ),
+    Output('doc-layout-header-standard-col1', 'style'),
+    Output('doc-layout-header-standard-col2', 'style'),
+    Output('doc-layout-header-standard-col3', 'style'),
+    Input('page-header-responsive', 'responsive'),
+    prevent_initial_call=True,
+)
+
+app.clientside_callback(
+    # 控制侧边参数栏关键词搜索滚动切换
+    ClientsideFunction(
+        namespace='clientside', function_name='handleSidePropsSearchScroll'
+    ),
+    Output('side-props-markdown-search-status', 'data'),
+    Input('side-props-search-bar-keyword', 'nSubmit'),
+    Input('side-props-markdown', 'searchKeyword'),
+    State('side-props-markdown-search-status', 'data'),
+    prevent_initial_call=True,
+)
+
+app.clientside_callback(
+    # 文档页点击回到顶部按钮，自动清除url中的hash
+    """(nClicks) => {
+        window.location.hash = '';
+    }""",
+    Input('doc-layout-back-top', 'nClicks'),
+)
+
+app.clientside_callback(
+    # 控制点击触发的搜索面板展开
+    '(n_clicks) => true',
+    Output('global-search-panel', 'open'),
+    Input('open-global-search-panel', 'n_clicks'),
+    prevent_initial_call=True,
 )
 
 if __name__ == '__main__':

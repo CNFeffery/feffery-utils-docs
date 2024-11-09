@@ -1,0 +1,119 @@
+{
+    "root_locale": "zh-cn",
+    "contents": {
+        "演示示例不存在，": {
+            "en-us": "This demo does not exist, "
+        },
+        "回到首页": {
+            "en-us": "back to home"
+        },
+        "当前文档网站尚未正式发布，相关文档持续补充建设中。（最近更新时间：{}）": {
+            "en-us": "The documentation site is not yet released. (Latest update time: {})"
+        },
+        "您访问的页面不存在或还在建设中": {
+            "en-us": "The page you visited does not exist or is still under construction"
+        },
+        "问题反馈": {
+            "en-us": "Bug report"
+        },
+        "输入你想要搜索的组件...": {
+            "en-us": "Input the component you want to search..."
+        },
+        "唤出搜索面板": {
+            "en-us": "Open the search panel"
+        },
+        "English / 中文": {
+            "en-us": "中文 / English"
+        },
+        "0.2.x版本新增组件": {
+            "en-us": "0.2.x version added components"
+        },
+        "快速入门": {
+            "en-us": "Quick start"
+        },
+        "fuc是什么": {
+            "en-us": "What is fuc"
+        },
+        "feffery-utils-components: Dash实用工具组件库": {
+            "en-us": "feffery-utils-components: Dash useful tools component library"
+        },
+        "文档最近更新：": {
+            "en-us": "Latest update: "
+        },
+        "特性": {
+            "en-us": "Features"
+        },
+        "💪 功能丰富，涉及日常应用开发所需的方方面面": {
+            "en-us": "💪 Rich features, including daily application development needs"
+        },
+        "😋 使用简单，功能参数直观明了": {
+            "en-us": "😋 Simple to use, clear and direct function parameters"
+        },
+        "⚡ 迭代迅速，持续维护更新组件功能": {
+            "en-us": "⚡ Rapid iteration, continuous maintenance and updating component functions"
+        },
+        "版本": {
+            "en-us": "Version"
+        },
+        "pypi最新稳定版本：": {
+            "en-us": "pypi latest stable version: "
+        },
+        "安装": {
+            "en-us": "Installation"
+        },
+        "最新稳定版本：": {
+            "en-us": "Latest stable version: "
+        },
+        "最新预发布版本：": {
+            "en-us": "Latest pre-release version: "
+        },
+        "简介": {
+            "en-us": "Introduction"
+        },
+        "组件介绍": {
+            "en-us": "Components introduction"
+        },
+        "通用": {
+            "en-us": "General"
+        },
+        "FefferyBurger 动态菜单图标": {
+            "en-us": "FefferyBurger"
+        },
+        "表现菜单折叠状态的交互图标。": {
+            "en-us": "Display the interactive icon of the menu collapse status."
+        },
+        "在Github上编辑此示例": {
+            "en-us": "Edit this example on Github"
+        },
+        "在新窗口打开": {
+            "en-us": "Open in new window"
+        },
+        "展开/收起代码": {
+            "en-us": "Expand/collapse code"
+        },
+        "在Github中查看完整代码": {
+            "en-us": "View the complete code on Github"
+        },
+        "在Gitee中查看完整代码": {
+            "en-us": "View the complete code on Gitee"
+        },
+        "当页文档贡献者": {
+            "en-us": "Contributors of this page"
+        },
+        "更多组件库": {
+            "en-us": "More component libraries"
+        },
+        "fac: 通用组件库": {
+            "en-us": "fac: General component library"
+        },
+        "fmc: markdown渲染组件库": {
+            "en-us": "fmc: Markdown rendering component library"
+        },
+        "API参数说明": {
+            "en-us": "API"
+        },
+        "请输入搜索关键词": {
+            "en-us": "Please enter the search keyword"
+        }
+    }
+}
