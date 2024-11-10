@@ -11,7 +11,7 @@ from i18n import translator
 
 
 def demos_config() -> list:
-    t = partial(translator.t, locale_topic='FefferyEyeDropper')
+    t = partial(translator.t, locale_topic='FefferyHexColorPicker')
     return [
         {
             'path': 'basic_usage',

@@ -7,8 +7,8 @@ from components import doc_layout
 
 def render() -> Component:
     return doc_layout.render(
-        component=fuc.FefferyEyeDropper,
+        component=fuc.FefferyGithubColorPicker,
         intro=intro.render(),
-        demos=demos.render(component=fuc.FefferyEyeDropper),
+        demos=demos.render(component=fuc.FefferyGithubColorPicker),
         catalog=demos.demos_config,
     )

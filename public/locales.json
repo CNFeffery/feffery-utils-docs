@@ -225,6 +225,12 @@
         },
         "16进制色彩选择器。": {
             "en-us": "16 hex color picker."
+        },
+        "FefferyRgbColorPicker rgb色彩选择器": {
+            "en-us": "FefferyRgbColorPicker"
+        },
+        "rgb色彩选择器。": {
+            "en-us": "rgb color picker."
         }
     }
 }

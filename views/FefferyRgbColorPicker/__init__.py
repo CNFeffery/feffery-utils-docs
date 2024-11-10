@@ -7,8 +7,8 @@ from components import doc_layout
 
 def render() -> Component:
     return doc_layout.render(
-        component=fuc.FefferyHexColorPicker,
+        component=fuc.FefferyRgbColorPicker,
         intro=intro.render(),
-        demos=demos.render(component=fuc.FefferyHexColorPicker),
+        demos=demos.render(component=fuc.FefferyRgbColorPicker),
         catalog=demos.demos_config,
     )

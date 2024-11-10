@@ -11,7 +11,7 @@ from i18n import translator
 
 
 def demos_config() -> list:
-    t = partial(translator.t, locale_topic='FefferyGithubColorPicker')
+    t = partial(translator.t, locale_topic='FefferyRgbColorPicker')
     return [
         {
             'path': 'basic_usage',
