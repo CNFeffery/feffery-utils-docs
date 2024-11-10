@@ -208,6 +208,17 @@ class AppConfig:
                                     'href': '/FefferyTwitterColorPicker',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyWheelColorPicker',
+                                    'name': '/FefferyWheelColorPicker',
+                                    'title': translator.t(
+                                        'FefferyWheelColorPicker Wheel风格色彩选择器'
+                                    ),
+                                    'href': '/FefferyWheelColorPicker',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -251,4 +262,5 @@ class AppConfig:
         '/FefferyHexColorPicker': ['颜色选择'],
         '/FefferyRgbColorPicker': ['颜色选择'],
         '/FefferyTwitterColorPicker': ['颜色选择'],
+        '/FefferyWheelColorPicker': ['颜色选择'],
     }

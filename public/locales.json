@@ -237,6 +237,12 @@
         },
         "Twitter风格色彩选择器。": {
             "en-us": "Twitter style color picker."
+        },
+        "FefferyWheelColorPicker Wheel风格色彩选择器": {
+            "en-us": "FefferyWheelColorPicker"
+        },
+        "Wheel风格色彩选择器。": {
+            "en-us": "Wheel style color picker."
         }
     }
 }
