@@ -4,4 +4,5 @@ from . import (
     FefferyFancyButton,  # noqa: F401
     FefferyBlockColorPicker,  # noqa: F401
     FefferyCircleColorPicker,  # noqa: F401
+    FefferyEyeDropper,  # noqa: F401
 )

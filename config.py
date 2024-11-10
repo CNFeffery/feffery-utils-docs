@@ -153,6 +153,17 @@ class AppConfig:
                                     'href': '/FefferyCircleColorPicker',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyEyeDropper',
+                                    'name': '/FefferyEyeDropper',
+                                    'title': translator.t(
+                                        'FefferyEyeDropper 色彩拾取'
+                                    ),
+                                    'href': '/FefferyEyeDropper',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -191,4 +202,5 @@ class AppConfig:
         '/FefferyFancyButton': ['通用'],
         '/FefferyBlockColorPicker': ['颜色选择'],
         '/FefferyCircleColorPicker': ['颜色选择'],
+        '/FefferyEyeDropper': ['颜色选择'],
     }

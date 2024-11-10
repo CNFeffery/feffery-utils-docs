@@ -207,6 +207,12 @@
         },
         "Circle风格色彩选择器。": {
             "en-us": "Circle style color picker."
+        },
+        "FefferyEyeDropper 色彩拾取": {
+            "en-us": "FefferyEyeDropper"
+        },
+        "通过色彩拾取的方式进行颜色选择。": {
+            "en-us": "Color selection through color picking."
         }
     }
 }
