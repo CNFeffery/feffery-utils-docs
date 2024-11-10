@@ -164,6 +164,17 @@ class AppConfig:
                                     'href': '/FefferyEyeDropper',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyGithubColorPicker',
+                                    'name': '/FefferyGithubColorPicker',
+                                    'title': translator.t(
+                                        'FefferyGithubColorPicker Github风格色彩选择器'
+                                    ),
+                                    'href': '/FefferyGithubColorPicker',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -203,4 +214,5 @@ class AppConfig:
         '/FefferyBlockColorPicker': ['颜色选择'],
         '/FefferyCircleColorPicker': ['颜色选择'],
         '/FefferyEyeDropper': ['颜色选择'],
+        '/FefferyGithubColorPicker': ['颜色选择'],
     }
