@@ -197,6 +197,17 @@ class AppConfig:
                                     'href': '/FefferyRgbColorPicker',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyTwitterColorPicker',
+                                    'name': '/FefferyTwitterColorPicker',
+                                    'title': translator.t(
+                                        'FefferyTwitterColorPicker Twitter风格色彩选择器'
+                                    ),
+                                    'href': '/FefferyTwitterColorPicker',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -239,4 +250,5 @@ class AppConfig:
         '/FefferyGithubColorPicker': ['颜色选择'],
         '/FefferyHexColorPicker': ['颜色选择'],
         '/FefferyRgbColorPicker': ['颜色选择'],
+        '/FefferyTwitterColorPicker': ['颜色选择'],
     }

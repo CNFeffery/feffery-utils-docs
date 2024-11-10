@@ -231,6 +231,12 @@
         },
         "rgb色彩选择器。": {
             "en-us": "rgb color picker."
+        },
+        "FefferyTwitterColorPicker Twitter风格色彩选择器": {
+            "en-us": "FefferyTwitterColorPicker"
+        },
+        "Twitter风格色彩选择器。": {
+            "en-us": "Twitter style color picker."
         }
     }
 }

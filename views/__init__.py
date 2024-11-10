@@ -8,4 +8,5 @@ from . import (
     FefferyGithubColorPicker,  # noqa: F401
     FefferyHexColorPicker,  # noqa: F401
     FefferyRgbColorPicker,  # noqa: F401
+    FefferyTwitterColorPicker,  # noqa: F401
 )
