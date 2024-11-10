@@ -163,3 +163,8 @@ html::-webkit-scrollbar {
 #side-props-markdown ul {
     padding-left: 15px;
 }
+
+#side-menu a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

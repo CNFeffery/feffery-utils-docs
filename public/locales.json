@@ -76,6 +76,75 @@
         "通用": {
             "en-us": "General"
         },
+        "颜色选择": {
+            "en-us": "Color selection"
+        },
+        "动效": {
+            "en-us": "Animation"
+        },
+        "加载动画": {
+            "en-us": "Loading animation"
+        },
+        "容器": {
+            "en-us": "Container"
+        },
+        "拖拽交互": {
+            "en-us": "Drag interaction"
+        },
+        "播放器": {
+            "en-us": "Player"
+        },
+        "编辑器": {
+            "en-us": "Editor"
+        },
+        "图片": {
+            "en-us": "Image"
+        },
+        "数据录入": {
+            "en-us": "Data entry"
+        },
+        "事件监听": {
+            "en-us": "Event listening"
+        },
+        "静态资源控制": {
+            "en-us": "Static resource control"
+        },
+        "页面控制": {
+            "en-us": "Page control"
+        },
+        "样式控制": {
+            "en-us": "Style control"
+        },
+        "通信": {
+            "en-us": "Communication"
+        },
+        "文件预览": {
+            "en-us": "File preview"
+        },
+        "尺寸调整": {
+            "en-us": "Size adjustment"
+        },
+        "安全": {
+            "en-us": "Wecurity"
+        },
+        "性能优化": {
+            "en-us": "Performance optimization"
+        },
+        "数据展示": {
+            "en-us": "Data display"
+        },
+        "反馈": {
+            "en-us": "Feedback"
+        },
+        "存储": {
+            "en-us": "Storage"
+        },
+        "验证码": {
+            "en-us": "Verification code"
+        },
+        "其他": {
+            "en-us": "Other"
+        },
         "在Github上编辑此示例": {
             "en-us": "Edit this example on Github"
         },
@@ -132,6 +201,12 @@
         },
         "Block风格色彩选择器。": {
             "en-us": "Block style color picker."
+        },
+        "FefferyCircleColorPicker Circle风格色彩选择器": {
+            "en-us": "FefferyCircleColorPicker"
+        },
+        "Circle风格色彩选择器。": {
+            "en-us": "Circle style color picker."
         }
     }
 }

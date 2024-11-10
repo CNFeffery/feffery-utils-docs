@@ -14,14 +14,14 @@ def render() -> Component:
                 {'title': translator.t('颜色选择')},
                 {
                     'title': translator.t(
-                        'FefferyBlockColorPicker Block风格色彩选择器'
+                        'FefferyCircleColorPicker Circle风格色彩选择器'
                     )
                 },
             ],
             style={'marginBottom': 8},
         ),
         fac.AntdTitle(
-            translator.t('FefferyBlockColorPicker Block风格色彩选择器'), level=2
+            translator.t('FefferyCircleColorPicker Circle风格色彩选择器'), level=2
         ),
-        fac.AntdParagraph(translator.t('Block风格色彩选择器。')),
+        fac.AntdParagraph(translator.t('Circle风格色彩选择器。')),
     ]

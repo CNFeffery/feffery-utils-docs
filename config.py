@@ -122,6 +122,15 @@ class AppConfig:
                                     'href': '/FefferyFancyButton',
                                 },
                             },
+                        ],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '颜色选择',
+                            'title': translator.t('颜色选择'),
+                        },
+                        'children': [
                             {
                                 'component': 'Item',
                                 'props': {
@@ -133,8 +142,19 @@ class AppConfig:
                                     'href': '/FefferyBlockColorPicker',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyCircleColorPicker',
+                                    'name': '/FefferyCircleColorPicker',
+                                    'title': translator.t(
+                                        'FefferyCircleColorPicker Circle风格色彩选择器'
+                                    ),
+                                    'href': '/FefferyCircleColorPicker',
+                                },
+                            },
                         ],
-                    }
+                    },
                 ],
             },
             # {
@@ -169,5 +189,6 @@ class AppConfig:
         '/FefferyBurger': ['通用'],
         '/FefferyDownload': ['通用'],
         '/FefferyFancyButton': ['通用'],
-        '/FefferyBlockColorPicker': ['通用'],
+        '/FefferyBlockColorPicker': ['颜色选择'],
+        '/FefferyCircleColorPicker': ['颜色选择'],
     }
