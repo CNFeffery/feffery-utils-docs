@@ -126,6 +126,12 @@
         },
         "具有特殊样式的按钮。": {
             "en-us": "Buttons with special styles."
+        },
+        "FefferyBlockColorPicker Block风格色彩选择器": {
+            "en-us": "FefferyBlockColorPicker"
+        },
+        "Block风格色彩选择器。": {
+            "en-us": "Block style color picker."
         }
     }
 }

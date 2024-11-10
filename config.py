@@ -122,6 +122,17 @@ class AppConfig:
                                     'href': '/FefferyFancyButton',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyBlockColorPicker',
+                                    'name': '/FefferyBlockColorPicker',
+                                    'title': translator.t(
+                                        'FefferyBlockColorPicker Block风格色彩选择器'
+                                    ),
+                                    'href': '/FefferyBlockColorPicker',
+                                },
+                            },
                         ],
                     }
                 ],
@@ -158,4 +169,5 @@ class AppConfig:
         '/FefferyBurger': ['通用'],
         '/FefferyDownload': ['通用'],
         '/FefferyFancyButton': ['通用'],
+        '/FefferyBlockColorPicker': ['通用'],
     }
