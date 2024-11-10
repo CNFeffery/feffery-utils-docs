@@ -76,12 +76,6 @@
         "通用": {
             "en-us": "General"
         },
-        "FefferyBurger 动态菜单图标": {
-            "en-us": "FefferyBurger"
-        },
-        "表现菜单折叠状态的交互图标。": {
-            "en-us": "Display the interactive icon of the menu collapse status."
-        },
         "在Github上编辑此示例": {
             "en-us": "Edit this example on Github"
         },
@@ -114,6 +108,18 @@
         },
         "请输入搜索关键词": {
             "en-us": "Please enter the search keyword"
+        },
+        "FefferyBurger 动态菜单图标": {
+            "en-us": "FefferyBurger"
+        },
+        "表现菜单折叠状态的交互图标。": {
+            "en-us": "Display the interactive icon of the menu collapse status."
+        },
+        "FefferyDownload 文件下载": {
+            "en-us": "FefferyDownload"
+        },
+        "基于文件地址触发下载。": {
+            "en-us": "Trigger download based on file address."
         }
     }
 }

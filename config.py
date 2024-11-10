@@ -100,6 +100,17 @@ class AppConfig:
                                     'href': '/FefferyBurger',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyDownload',
+                                    'name': '/FefferyDownload',
+                                    'title': translator.t(
+                                        'FefferyDownload 文件下载'
+                                    ),
+                                    'href': '/FefferyDownload',
+                                },
+                            },
                         ],
                     }
                 ],
@@ -134,4 +145,5 @@ class AppConfig:
     # 侧边菜单栏key值 -> 展开项节点key值数组
     side_menu_expand_keys = {
         '/FefferyBurger': ['通用'],
+        '/FefferyDownload': ['通用'],
     }
