@@ -219,6 +219,12 @@
         },
         "Github风格色彩选择器。": {
             "en-us": "Github style color picker."
+        },
+        "FefferyHexColorPicker 16进制色彩选择器": {
+            "en-us": "FefferyHexColorPicker"
+        },
+        "16进制色彩选择器。": {
+            "en-us": "16 hex color picker."
         }
     }
 }

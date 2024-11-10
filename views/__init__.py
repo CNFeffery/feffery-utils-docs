@@ -6,4 +6,5 @@ from . import (
     FefferyCircleColorPicker,  # noqa: F401
     FefferyEyeDropper,  # noqa: F401
     FefferyGithubColorPicker,  # noqa: F401
+    FefferyHexColorPicker,  # noqa: F401
 )

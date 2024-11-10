@@ -175,6 +175,17 @@ class AppConfig:
                                     'href': '/FefferyGithubColorPicker',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyHexColorPicker',
+                                    'name': '/FefferyHexColorPicker',
+                                    'title': translator.t(
+                                        'FefferyHexColorPicker 16进制色彩选择器'
+                                    ),
+                                    'href': '/FefferyHexColorPicker',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -215,4 +226,5 @@ class AppConfig:
         '/FefferyCircleColorPicker': ['颜色选择'],
         '/FefferyEyeDropper': ['颜色选择'],
         '/FefferyGithubColorPicker': ['颜色选择'],
+        '/FefferyHexColorPicker': ['颜色选择'],
     }
