@@ -120,6 +120,12 @@
         },
         "基于文件地址触发下载。": {
             "en-us": "Trigger download based on file address."
+        },
+        "FefferyFancyButton 美观按钮": {
+            "en-us": "FefferyFancyButton"
+        },
+        "具有特殊样式的按钮。": {
+            "en-us": "Buttons with special styles."
         }
     }
 }

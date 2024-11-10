@@ -111,6 +111,17 @@ class AppConfig:
                                     'href': '/FefferyDownload',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyFancyButton',
+                                    'name': '/FefferyFancyButton',
+                                    'title': translator.t(
+                                        'FefferyFancyButton 美观按钮'
+                                    ),
+                                    'href': '/FefferyFancyButton',
+                                },
+                            },
                         ],
                     }
                 ],
@@ -146,4 +157,5 @@ class AppConfig:
     side_menu_expand_keys = {
         '/FefferyBurger': ['通用'],
         '/FefferyDownload': ['通用'],
+        '/FefferyFancyButton': ['通用'],
     }
