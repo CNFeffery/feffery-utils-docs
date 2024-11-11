@@ -395,6 +395,26 @@ class AppConfig:
                             },
                         ],
                     },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '加载动画',
+                            'title': translator.t('加载动画'),
+                        },
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyExtraSpinner',
+                                    'name': '/FefferyExtraSpinner',
+                                    'title': translator.t(
+                                        'FefferyExtraSpinner 额外加载动画'
+                                    ),
+                                    'href': '/FefferyExtraSpinner',
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             # {
@@ -452,4 +472,5 @@ class AppConfig:
         '/FefferyTrunkBackground': ['动效'],
         '/FefferyWavesBackground': ['动效'],
         '/FefferyTiltHover': ['动效'],
+        '/FefferyExtraSpinner': ['加载动画'],
     }

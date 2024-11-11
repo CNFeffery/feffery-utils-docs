@@ -333,6 +333,12 @@
         },
         "快捷渲染倾斜悬浮效果。": {
             "en-us": "Quick render tilt hover effect."
+        },
+        "FefferyExtraSpinner 额外加载动画": {
+            "en-us": "FefferyExtraSpinner"
+        },
+        "提供一系列丰富的加载动画图标。": {
+            "en-us": "Provide a series of rich loading animation icons."
         }
     }
 }

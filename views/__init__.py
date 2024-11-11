@@ -25,4 +25,5 @@ from . import (
     FefferyTrunkBackground,  # noqa: F401
     FefferyWavesBackground,  # noqa: F401
     FefferyTiltHover,  # noqa: F401
+    FefferyExtraSpinner,  # noqa: F401
 )
