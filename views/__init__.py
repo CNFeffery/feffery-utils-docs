@@ -21,4 +21,5 @@ from . import (
     FefferyHaloBackground,  # noqa: F401
     FefferyNetBackground,  # noqa: F401
     FefferyRingsBackground,  # noqa: F401
+    FefferyTopologyBackground,  # noqa: F401
 )

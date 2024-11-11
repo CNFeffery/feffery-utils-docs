@@ -309,6 +309,12 @@
         },
         "渲染3D-Rings动画背景。": {
             "en-us": "Render 3D-Rings animation background."
+        },
+        "FefferyTopologyBackground 3D-Topology背景": {
+            "en-us": "FefferyTopologyBackground"
+        },
+        "渲染3D-Topology动画背景。": {
+            "en-us": "Render 3D-Topology animation background."
         }
     }
 }
