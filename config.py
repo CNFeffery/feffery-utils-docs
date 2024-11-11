@@ -444,6 +444,17 @@ class AppConfig:
                                     'href': '/FefferyDiv',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyFixed',
+                                    'name': '/FefferyFixed',
+                                    'title': translator.t(
+                                        'FefferyFixed 固定布局'
+                                    ),
+                                    'href': '/FefferyFixed',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -506,4 +517,5 @@ class AppConfig:
         '/FefferyExtraSpinner': ['加载动画'],
         '/FefferyTopProgress': ['加载动画'],
         '/FefferyDiv': ['容器'],
+        '/FefferyFixed': ['容器'],
     }

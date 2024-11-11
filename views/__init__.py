@@ -28,4 +28,5 @@ from . import (
     FefferyExtraSpinner,  # noqa: F401
     FefferyTopProgress,  # noqa: F401
     FefferyDiv,  # noqa: F401
+    FefferyFixed,  # noqa: F401
 )

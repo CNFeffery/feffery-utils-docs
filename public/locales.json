@@ -351,6 +351,12 @@
         },
         "提供具有更多功能的div容器。": {
             "en-us": "Provide a div container with more functions."
+        },
+        "FefferyFixed 固定布局": {
+            "en-us": "FefferyFixed"
+        },
+        "实现相对页面的元素快捷固定效果。": {
+            "en-us": "Implement relative page element quick fixed effect."
         }
     }
 }
