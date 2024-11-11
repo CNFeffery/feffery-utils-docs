@@ -285,6 +285,12 @@
         },
         "渲染3D-Globe动画背景。": {
             "en-us": "Render 3D-Globe animation background."
+        },
+        "FefferyHaloBackground 3D-Halo背景": {
+            "en-us": "FefferyHaloBackground"
+        },
+        "渲染3D-Halo动画背景。": {
+            "en-us": "Render 3D-Halo animation background."
         }
     }
 }

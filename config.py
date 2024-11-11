@@ -305,6 +305,17 @@ class AppConfig:
                                     'href': '/FefferyGlobeBackground',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyHaloBackground',
+                                    'name': '/FefferyHaloBackground',
+                                    'title': translator.t(
+                                        'FefferyHaloBackground 3D-Halo背景'
+                                    ),
+                                    'href': '/FefferyHaloBackground',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -356,4 +367,5 @@ class AppConfig:
         '/FefferyCloudsTwoBackground': ['动效'],
         '/FefferyFogBackground': ['动效'],
         '/FefferyGlobeBackground': ['动效'],
+        '/FefferyHaloBackground': ['动效'],
     }
