@@ -239,6 +239,17 @@ class AppConfig:
                                     'href': '/FefferyAutoAnimate',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyBirdsBackground',
+                                    'name': '/FefferyBirdsBackground',
+                                    'title': translator.t(
+                                        'FefferyBirdsBackground 3D-Birds背景'
+                                    ),
+                                    'href': '/FefferyBirdsBackground',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -284,4 +295,5 @@ class AppConfig:
         '/FefferyTwitterColorPicker': ['颜色选择'],
         '/FefferyWheelColorPicker': ['颜色选择'],
         '/FefferyAutoAnimate': ['动效'],
+        '/FefferyBirdsBackground': ['动效'],
     }

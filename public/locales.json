@@ -249,6 +249,12 @@
         },
         "针对列表内的一组元素添加自动的动画效果。": {
             "en-us": "Add automatic animation effects to a group of elements in the list."
+        },
+        "FefferyBirdsBackground 3D-Birds背景": {
+            "en-us": "FefferyBirdsBackground"
+        },
+        "渲染3D-Birds动画背景。": {
+            "en-us": "Render 3D-Birds animation background."
         }
     }
 }
