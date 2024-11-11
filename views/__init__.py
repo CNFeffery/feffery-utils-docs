@@ -11,6 +11,7 @@ from . import (
     FefferyTwitterColorPicker,  # noqa: F401
     FefferyWheelColorPicker,  # noqa: F401
     FefferyAutoAnimate,  # noqa: F401
+    FefferyMotion,  # noqa: F401
     FefferyBirdsBackground,  # noqa: F401
     FefferyCellsBackground,  # noqa: F401
     FefferyCloudsBackground,  # noqa: F401

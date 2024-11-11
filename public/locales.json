@@ -250,6 +250,12 @@
         "针对列表内的一组元素添加自动的动画效果。": {
             "en-us": "Add automatic animation effects to a group of elements in the list."
         },
+        "FefferyMotion 动画编排": {
+            "en-us": "FefferyMotion"
+        },
+        "针对目标元素快捷编排丰富的样式动画。": {
+            "en-us": "Quickly arrange a rich style animation for the target element."
+        },
         "FefferyBirdsBackground 3D-Birds背景": {
             "en-us": "FefferyBirdsBackground"
         },

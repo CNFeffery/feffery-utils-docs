@@ -242,6 +242,17 @@ class AppConfig:
                             {
                                 'component': 'Item',
                                 'props': {
+                                    'key': '/FefferyMotion',
+                                    'name': '/FefferyMotion',
+                                    'title': translator.t(
+                                        'FefferyMotion 动画编排'
+                                    ),
+                                    'href': '/FefferyMotion',
+                                },
+                            },
+                            {
+                                'component': 'Item',
+                                'props': {
                                     'key': '/FefferyBirdsBackground',
                                     'name': '/FefferyBirdsBackground',
                                     'title': translator.t(
@@ -361,6 +372,7 @@ class AppConfig:
         '/FefferyTwitterColorPicker': ['颜色选择'],
         '/FefferyWheelColorPicker': ['颜色选择'],
         '/FefferyAutoAnimate': ['动效'],
+        '/FefferyMotion': ['动效'],
         '/FefferyBirdsBackground': ['动效'],
         '/FefferyCellsBackground': ['动效'],
         '/FefferyCloudsBackground': ['动效'],
