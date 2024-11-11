@@ -15,4 +15,5 @@ from . import (
     FefferyCellsBackground,  # noqa: F401
     FefferyCloudsBackground,  # noqa: F401
     FefferyCloudsTwoBackground,  # noqa: F401
+    FefferyFogBackground,  # noqa: F401
 )

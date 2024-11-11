@@ -273,6 +273,12 @@
         },
         "渲染3D-CloudsTwo动画背景。": {
             "en-us": "Render 3D-CloudsTwo animation background."
+        },
+        "FefferyFogBackground 3D-Fog背景": {
+            "en-us": "FefferyFogBackground"
+        },
+        "渲染3D-Fog动画背景。": {
+            "en-us": "Render 3D-Fog animation background."
         }
     }
 }
