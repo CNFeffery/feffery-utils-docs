@@ -261,6 +261,17 @@ class AppConfig:
                                     'href': '/FefferyCellsBackground',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyCloudsBackground',
+                                    'name': '/FefferyCloudsBackground',
+                                    'title': translator.t(
+                                        'FefferyCloudsBackground 3D-Clouds背景'
+                                    ),
+                                    'href': '/FefferyCloudsBackground',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -308,4 +319,5 @@ class AppConfig:
         '/FefferyAutoAnimate': ['动效'],
         '/FefferyBirdsBackground': ['动效'],
         '/FefferyCellsBackground': ['动效'],
+        '/FefferyCloudsBackground': ['动效'],
     }

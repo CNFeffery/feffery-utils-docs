@@ -13,4 +13,5 @@ from . import (
     FefferyAutoAnimate,  # noqa: F401
     FefferyBirdsBackground,  # noqa: F401
     FefferyCellsBackground,  # noqa: F401
+    FefferyCloudsBackground,  # noqa: F401
 )

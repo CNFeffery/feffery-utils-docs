@@ -261,6 +261,12 @@
         },
         "渲染3D-Cells动画背景。": {
             "en-us": "Render 3D-Cells animation background."
+        },
+        "FefferyCloudsBackground 3D-Clouds背景": {
+            "en-us": "FefferyCloudsBackground"
+        },
+        "渲染3D-Clouds动画背景。": {
+            "en-us": "Render 3D-Clouds animation background."
         }
     }
 }
