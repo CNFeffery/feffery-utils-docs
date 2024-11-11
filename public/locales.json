@@ -267,6 +267,12 @@
         },
         "渲染3D-Clouds动画背景。": {
             "en-us": "Render 3D-Clouds animation background."
+        },
+        "FefferyCloudsTwoBackground 3D-CloudsTwo背景": {
+            "en-us": "FefferyCloudsTwoBackground"
+        },
+        "渲染3D-CloudsTwo动画背景。": {
+            "en-us": "Render 3D-CloudsTwo animation background."
         }
     }
 }
