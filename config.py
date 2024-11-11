@@ -466,6 +466,17 @@ class AppConfig:
                                     'href': '/FefferyHighlightWords',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyPortal',
+                                    'name': '/FefferyPortal',
+                                    'title': translator.t(
+                                        'FefferyPortal 传送门'
+                                    ),
+                                    'href': '/FefferyPortal',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -530,4 +541,5 @@ class AppConfig:
         '/FefferyDiv': ['容器'],
         '/FefferyFixed': ['容器'],
         '/FefferyHighlightWords': ['容器'],
+        '/FefferyPortal': ['容器'],
     }

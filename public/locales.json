@@ -363,6 +363,12 @@
         },
         "针对一段内容中的指定关键词进行高亮展示。": {
             "en-us": "Highlight specified keywords in a piece of content."
+        },
+        "FefferyPortal 传送门": {
+            "en-us": "FefferyPortal"
+        },
+        "将指定的元素内容传送到指定的页面位置中进行渲染。": {
+            "en-us": "Send the specified element content to the specified page position for rendering."
         }
     }
 }
