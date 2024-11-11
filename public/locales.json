@@ -327,6 +327,12 @@
         },
         "渲染3D-Waves动画背景。": {
             "en-us": "Render 3D-Waves animation background."
+        },
+        "FefferyTiltHover 倾斜悬浮": {
+            "en-us": "FefferyTiltHover"
+        },
+        "快捷渲染倾斜悬浮效果。": {
+            "en-us": "Quick render tilt hover effect."
         }
     }
 }

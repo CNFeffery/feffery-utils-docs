@@ -382,6 +382,17 @@ class AppConfig:
                                     'href': '/FefferyWavesBackground',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyTiltHover',
+                                    'name': '/FefferyTiltHover',
+                                    'title': translator.t(
+                                        'FefferyTiltHover 倾斜悬浮'
+                                    ),
+                                    'href': '/FefferyTiltHover',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -440,4 +451,5 @@ class AppConfig:
         '/FefferyTopologyBackground': ['动效'],
         '/FefferyTrunkBackground': ['动效'],
         '/FefferyWavesBackground': ['动效'],
+        '/FefferyTiltHover': ['动效'],
     }
