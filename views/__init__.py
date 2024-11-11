@@ -10,4 +10,5 @@ from . import (
     FefferyRgbColorPicker,  # noqa: F401
     FefferyTwitterColorPicker,  # noqa: F401
     FefferyWheelColorPicker,  # noqa: F401
+    FefferyAutoAnimate,  # noqa: F401
 )

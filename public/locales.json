@@ -243,6 +243,12 @@
         },
         "Wheel风格色彩选择器。": {
             "en-us": "Wheel style color picker."
+        },
+        "FefferyAutoAnimate 自动动画": {
+            "en-us": "FefferyAutoAnimate"
+        },
+        "针对列表内的一组元素添加自动的动画效果。": {
+            "en-us": "Add automatic animation effects to a group of elements in the list."
         }
     }
 }

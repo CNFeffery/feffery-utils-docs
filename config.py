@@ -221,6 +221,26 @@ class AppConfig:
                             },
                         ],
                     },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '动效',
+                            'title': translator.t('动效'),
+                        },
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyAutoAnimate',
+                                    'name': '/FefferyAutoAnimate',
+                                    'title': translator.t(
+                                        'FefferyAutoAnimate 自动动画'
+                                    ),
+                                    'href': '/FefferyAutoAnimate',
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             # {
@@ -263,4 +283,5 @@ class AppConfig:
         '/FefferyRgbColorPicker': ['颜色选择'],
         '/FefferyTwitterColorPicker': ['颜色选择'],
         '/FefferyWheelColorPicker': ['颜色选择'],
+        '/FefferyAutoAnimate': ['动效'],
     }
