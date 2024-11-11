@@ -339,6 +339,12 @@
         },
         "提供一系列丰富的加载动画图标。": {
             "en-us": "Provide a series of rich loading animation icons."
+        },
+        "FefferyTopProgress 顶端加载进度条": {
+            "en-us": "FefferyTopProgress"
+        },
+        "页面顶端进度条形式的加载动画。": {
+            "en-us": "Page top progress bar loading animation."
         }
     }
 }

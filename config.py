@@ -413,6 +413,17 @@ class AppConfig:
                                     'href': '/FefferyExtraSpinner',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyTopProgress',
+                                    'name': '/FefferyTopProgress',
+                                    'title': translator.t(
+                                        'FefferyTopProgress 顶端加载进度条'
+                                    ),
+                                    'href': '/FefferyTopProgress',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -473,4 +484,5 @@ class AppConfig:
         '/FefferyWavesBackground': ['动效'],
         '/FefferyTiltHover': ['动效'],
         '/FefferyExtraSpinner': ['加载动画'],
+        '/FefferyTopProgress': ['加载动画'],
     }
