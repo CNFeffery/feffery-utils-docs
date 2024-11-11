@@ -279,6 +279,12 @@
         },
         "渲染3D-Fog动画背景。": {
             "en-us": "Render 3D-Fog animation background."
+        },
+        "FefferyGlobeBackground 3D-Globe背景": {
+            "en-us": "FefferyGlobeBackground"
+        },
+        "渲染3D-Globe动画背景。": {
+            "en-us": "Render 3D-Globe animation background."
         }
     }
 }
