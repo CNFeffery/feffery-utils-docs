@@ -360,6 +360,17 @@ class AppConfig:
                                     'href': '/FefferyTopologyBackground',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyTrunkBackground',
+                                    'name': '/FefferyTrunkBackground',
+                                    'title': translator.t(
+                                        'FefferyTrunkBackground 3D-Trunk背景'
+                                    ),
+                                    'href': '/FefferyTrunkBackground',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -416,4 +427,5 @@ class AppConfig:
         '/FefferyNetBackground': ['动效'],
         '/FefferyRingsBackground': ['动效'],
         '/FefferyTopologyBackground': ['动效'],
+        '/FefferyTrunkBackground': ['动效'],
     }

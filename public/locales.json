@@ -315,6 +315,12 @@
         },
         "渲染3D-Topology动画背景。": {
             "en-us": "Render 3D-Topology animation background."
+        },
+        "FefferyTrunkBackground 3D-Trunk背景": {
+            "en-us": "FefferyTrunkBackground"
+        },
+        "渲染3D-Trunk动画背景。": {
+            "en-us": "Render 3D-Trunk animation background."
         }
     }
 }
