@@ -27,4 +27,5 @@ from . import (
     FefferyTiltHover,  # noqa: F401
     FefferyExtraSpinner,  # noqa: F401
     FefferyTopProgress,  # noqa: F401
+    FefferyDiv,  # noqa: F401
 )

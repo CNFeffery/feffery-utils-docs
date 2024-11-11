@@ -426,6 +426,26 @@ class AppConfig:
                             },
                         ],
                     },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '容器',
+                            'title': translator.t('容器'),
+                        },
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyDiv',
+                                    'name': '/FefferyDiv',
+                                    'title': translator.t(
+                                        'FefferyDiv 进阶div容器'
+                                    ),
+                                    'href': '/FefferyDiv',
+                                },
+                            },
+                        ],
+                    },
                 ],
             },
             # {
@@ -485,4 +505,5 @@ class AppConfig:
         '/FefferyTiltHover': ['动效'],
         '/FefferyExtraSpinner': ['加载动画'],
         '/FefferyTopProgress': ['加载动画'],
+        '/FefferyDiv': ['容器'],
     }

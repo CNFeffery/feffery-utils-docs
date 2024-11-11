@@ -345,6 +345,12 @@
         },
         "页面顶端进度条形式的加载动画。": {
             "en-us": "Page top progress bar loading animation."
+        },
+        "FefferyDiv 进阶div容器": {
+            "en-us": "FefferyDiv"
+        },
+        "提供具有更多功能的div容器。": {
+            "en-us": "Provide a div container with more functions."
         }
     }
 }
