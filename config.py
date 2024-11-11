@@ -250,6 +250,17 @@ class AppConfig:
                                     'href': '/FefferyBirdsBackground',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyCellsBackground',
+                                    'name': '/FefferyCellsBackground',
+                                    'title': translator.t(
+                                        'FefferyCellsBackground 3D-Cells背景'
+                                    ),
+                                    'href': '/FefferyCellsBackground',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -296,4 +307,5 @@ class AppConfig:
         '/FefferyWheelColorPicker': ['颜色选择'],
         '/FefferyAutoAnimate': ['动效'],
         '/FefferyBirdsBackground': ['动效'],
+        '/FefferyCellsBackground': ['动效'],
     }
