@@ -303,6 +303,12 @@
         },
         "渲染3D-Net动画背景。": {
             "en-us": "Render 3D-Net animation background."
+        },
+        "FefferyRingsBackground 3D-Rings背景": {
+            "en-us": "FefferyRingsBackground"
+        },
+        "渲染3D-Rings动画背景。": {
+            "en-us": "Render 3D-Rings animation background."
         }
     }
 }

@@ -20,4 +20,5 @@ from . import (
     FefferyGlobeBackground,  # noqa: F401
     FefferyHaloBackground,  # noqa: F401
     FefferyNetBackground,  # noqa: F401
+    FefferyRingsBackground,  # noqa: F401
 )

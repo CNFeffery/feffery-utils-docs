@@ -338,6 +338,17 @@ class AppConfig:
                                     'href': '/FefferyNetBackground',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyRingsBackground',
+                                    'name': '/FefferyRingsBackground',
+                                    'title': translator.t(
+                                        'FefferyRingsBackground 3D-Rings背景'
+                                    ),
+                                    'href': '/FefferyRingsBackground',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -392,4 +403,5 @@ class AppConfig:
         '/FefferyGlobeBackground': ['动效'],
         '/FefferyHaloBackground': ['动效'],
         '/FefferyNetBackground': ['动效'],
+        '/FefferyRingsBackground': ['动效'],
     }
