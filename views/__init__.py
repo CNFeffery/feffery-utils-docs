@@ -29,4 +29,5 @@ from . import (
     FefferyTopProgress,  # noqa: F401
     FefferyDiv,  # noqa: F401
     FefferyFixed,  # noqa: F401
+    FefferyHighlightWords,  # noqa: F401
 )

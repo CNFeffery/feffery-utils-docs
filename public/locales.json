@@ -357,6 +357,12 @@
         },
         "实现相对页面的元素快捷固定效果。": {
             "en-us": "Implement relative page element quick fixed effect."
+        },
+        "FefferyHighlightWords 关键词高亮": {
+            "en-us": "FefferyHighlightWords"
+        },
+        "针对一段内容中的指定关键词进行高亮展示。": {
+            "en-us": "Highlight specified keywords in a piece of content."
         }
     }
 }

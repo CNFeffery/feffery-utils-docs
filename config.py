@@ -455,6 +455,17 @@ class AppConfig:
                                     'href': '/FefferyFixed',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyHighlightWords',
+                                    'name': '/FefferyHighlightWords',
+                                    'title': translator.t(
+                                        'FefferyHighlightWords 关键词高亮'
+                                    ),
+                                    'href': '/FefferyHighlightWords',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -518,4 +529,5 @@ class AppConfig:
         '/FefferyTopProgress': ['加载动画'],
         '/FefferyDiv': ['容器'],
         '/FefferyFixed': ['容器'],
+        '/FefferyHighlightWords': ['容器'],
     }
