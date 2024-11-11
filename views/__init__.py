@@ -23,4 +23,5 @@ from . import (
     FefferyRingsBackground,  # noqa: F401
     FefferyTopologyBackground,  # noqa: F401
     FefferyTrunkBackground,  # noqa: F401
+    FefferyWavesBackground,  # noqa: F401
 )

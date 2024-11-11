@@ -371,6 +371,17 @@ class AppConfig:
                                     'href': '/FefferyTrunkBackground',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyWavesBackground',
+                                    'name': '/FefferyWavesBackground',
+                                    'title': translator.t(
+                                        'FefferyWavesBackground 3D-Waves背景'
+                                    ),
+                                    'href': '/FefferyWavesBackground',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -428,4 +439,5 @@ class AppConfig:
         '/FefferyRingsBackground': ['动效'],
         '/FefferyTopologyBackground': ['动效'],
         '/FefferyTrunkBackground': ['动效'],
+        '/FefferyWavesBackground': ['动效'],
     }
