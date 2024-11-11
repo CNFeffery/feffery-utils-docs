@@ -297,6 +297,12 @@
         },
         "渲染3D-Halo动画背景。": {
             "en-us": "Render 3D-Halo animation background."
+        },
+        "FefferyNetBackground 3D-Net背景": {
+            "en-us": "FefferyNetBackground"
+        },
+        "渲染3D-Net动画背景。": {
+            "en-us": "Render 3D-Net animation background."
         }
     }
 }

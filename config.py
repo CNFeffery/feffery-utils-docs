@@ -327,6 +327,17 @@ class AppConfig:
                                     'href': '/FefferyHaloBackground',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyNetBackground',
+                                    'name': '/FefferyNetBackground',
+                                    'title': translator.t(
+                                        'FefferyNetBackground 3D-Net背景'
+                                    ),
+                                    'href': '/FefferyNetBackground',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -380,4 +391,5 @@ class AppConfig:
         '/FefferyFogBackground': ['动效'],
         '/FefferyGlobeBackground': ['动效'],
         '/FefferyHaloBackground': ['动效'],
+        '/FefferyNetBackground': ['动效'],
     }
