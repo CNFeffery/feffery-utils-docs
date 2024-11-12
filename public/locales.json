@@ -411,6 +411,12 @@
         },
         "实现尺寸可调+可拖拽功能。": {
             "en-us": "Implement size adjustable + draggable function."
+        },
+        "FefferySortable 排序列表": {
+            "en-us": "FefferySortable"
+        },
+        "对一组元素进行可交互的拖拽排序。": {
+            "en-us": "Drag and drop sorting of a group of elements."
         }
     }
 }

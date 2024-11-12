@@ -563,6 +563,17 @@ class AppConfig:
                                     'href': '/FefferyRND',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferySortable',
+                                    'name': '/FefferySortable',
+                                    'title': translator.t(
+                                        'FefferySortable 排序列表'
+                                    ),
+                                    'href': '/FefferySortable',
+                                },
+                            },
                         ],
                     },
                     {
@@ -787,4 +798,5 @@ class AppConfig:
         '/FefferyGrid': ['拖拽交互'],
         '/FefferyGridItem': ['拖拽交互'],
         '/FefferyRND': ['拖拽交互'],
+        '/FefferySortable': ['拖拽交互'],
     }
