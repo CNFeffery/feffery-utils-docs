@@ -399,6 +399,12 @@
         },
         "在“可拖拽网格”功能中充当整体容器。": {
             "en-us": "In the draggable grid feature, act as the entire container."
+        },
+        "FefferyGridItem 可拖拽网格项": {
+            "en-us": "FefferyGridItem"
+        },
+        "在“可拖拽网格”功能中充当网格子项。": {
+            "en-us": "In the draggable grid feature, act as a grid item."
         }
     }
 }

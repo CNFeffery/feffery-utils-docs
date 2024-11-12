@@ -36,4 +36,5 @@ from . import (
     FefferySticky,  # noqa: F401
     FefferyDraggable,  # noqa: F401
     FefferyGrid,  # noqa: F401
+    FefferyGridItem,  # noqa: F401
 )
