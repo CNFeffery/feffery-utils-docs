@@ -499,6 +499,17 @@ class AppConfig:
                                     'href': '/FefferyShadowDom',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferySticky',
+                                    'name': '/FefferySticky',
+                                    'title': translator.t(
+                                        'FefferySticky 粘性布局'
+                                    ),
+                                    'href': '/FefferySticky',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -566,4 +577,5 @@ class AppConfig:
         '/FefferyPortal': ['容器'],
         '/FefferyScrollbars': ['容器'],
         '/FefferyShadowDom': ['容器'],
+        '/FefferySticky': ['容器'],
     }

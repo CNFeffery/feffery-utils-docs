@@ -381,6 +381,12 @@
         },
         "渲染Shadow DOM节点。": {
             "en-us": "Render Shadow DOM nodes."
+        },
+        "FefferySticky 粘性布局": {
+            "en-us": "FefferySticky"
+        },
+        "具有特殊粘性布局效果的容器。": {
+            "en-us": "Container with special sticky layout effects."
         }
     }
 }
