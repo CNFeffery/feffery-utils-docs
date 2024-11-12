@@ -34,4 +34,5 @@ from . import (
     FefferyScrollbars,  # noqa: F401
     FefferyShadowDom,  # noqa: F401
     FefferySticky,  # noqa: F401
+    FefferyDraggable,  # noqa: F401
 )

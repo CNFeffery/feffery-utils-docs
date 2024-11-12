@@ -387,6 +387,12 @@
         },
         "具有特殊粘性布局效果的容器。": {
             "en-us": "Container with special sticky layout effects."
+        },
+        "FefferyDraggable 可拖拽": {
+            "en-us": "FefferyDraggable"
+        },
+        "快捷实现可拖拽功能。": {
+            "en-us": "Quickly implement draggable function."
         }
     }
 }

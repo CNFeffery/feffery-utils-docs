@@ -512,6 +512,178 @@ class AppConfig:
                             },
                         ],
                     },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '拖拽交互',
+                            'title': translator.t('拖拽交互'),
+                        },
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyDraggable',
+                                    'name': '/FefferyDraggable',
+                                    'title': translator.t(
+                                        'FefferyDraggable 可拖拽'
+                                    ),
+                                    'href': '/FefferyDraggable',
+                                },
+                            },
+                        ],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '播放器',
+                            'title': translator.t('播放器'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '编辑器',
+                            'title': translator.t('编辑器'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '图片',
+                            'title': translator.t('图片'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '数据录入',
+                            'title': translator.t('数据录入'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '事件监听',
+                            'title': translator.t('事件监听'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '静态资源控制',
+                            'title': translator.t('静态资源控制'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '页面控制',
+                            'title': translator.t('页面控制'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '样式控制',
+                            'title': translator.t('样式控制'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '通信',
+                            'title': translator.t('通信'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '文件预览',
+                            'title': translator.t('文件预览'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '尺寸调整',
+                            'title': translator.t('尺寸调整'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '安全',
+                            'title': translator.t('安全'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '性能优化',
+                            'title': translator.t('性能优化'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '数据展示',
+                            'title': translator.t('数据展示'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '数据展示',
+                            'title': translator.t('数据展示'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '反馈',
+                            'title': translator.t('反馈'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '存储',
+                            'title': translator.t('存储'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '验证码',
+                            'title': translator.t('验证码'),
+                        },
+                        'children': [],
+                    },
+                    {
+                        'component': 'SubMenu',
+                        'props': {
+                            'key': '其他',
+                            'title': translator.t('其他'),
+                        },
+                        'children': [],
+                    },
                 ],
             },
             # {
@@ -578,4 +750,5 @@ class AppConfig:
         '/FefferyScrollbars': ['容器'],
         '/FefferyShadowDom': ['容器'],
         '/FefferySticky': ['容器'],
+        '/FefferyDraggable': ['拖拽交互'],
     }
