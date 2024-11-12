@@ -477,6 +477,17 @@ class AppConfig:
                                     'href': '/FefferyPortal',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyScrollbars',
+                                    'name': '/FefferyScrollbars',
+                                    'title': translator.t(
+                                        'FefferyScrollbars 滚动条容器'
+                                    ),
+                                    'href': '/FefferyScrollbars',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -542,4 +553,5 @@ class AppConfig:
         '/FefferyFixed': ['容器'],
         '/FefferyHighlightWords': ['容器'],
         '/FefferyPortal': ['容器'],
+        '/FefferyScrollbars': ['容器'],
     }

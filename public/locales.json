@@ -369,6 +369,12 @@
         },
         "将指定的元素内容传送到指定的页面位置中进行渲染。": {
             "en-us": "Send the specified element content to the specified page position for rendering."
+        },
+        "FefferyScrollbars 滚动条容器": {
+            "en-us": "FefferyScrollbars"
+        },
+        "具有特殊滚动条功能的容器。": {
+            "en-us": "Container with special scroll bar features."
         }
     }
 }

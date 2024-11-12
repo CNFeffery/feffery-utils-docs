@@ -31,4 +31,5 @@ from . import (
     FefferyFixed,  # noqa: F401
     FefferyHighlightWords,  # noqa: F401
     FefferyPortal,  # noqa: F401
+    FefferyScrollbars,  # noqa: F401
 )
