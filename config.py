@@ -530,6 +530,17 @@ class AppConfig:
                                     'href': '/FefferyDraggable',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyGrid',
+                                    'name': '/FefferyGrid',
+                                    'title': translator.t(
+                                        'FefferyGrid 可拖拽网格'
+                                    ),
+                                    'href': '/FefferyGrid',
+                                },
+                            },
                         ],
                     },
                     {
@@ -751,4 +762,5 @@ class AppConfig:
         '/FefferyShadowDom': ['容器'],
         '/FefferySticky': ['容器'],
         '/FefferyDraggable': ['拖拽交互'],
+        '/FefferyGrid': ['拖拽交互'],
     }

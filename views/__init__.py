@@ -35,4 +35,5 @@ from . import (
     FefferyShadowDom,  # noqa: F401
     FefferySticky,  # noqa: F401
     FefferyDraggable,  # noqa: F401
+    FefferyGrid,  # noqa: F401
 )

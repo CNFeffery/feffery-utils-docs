@@ -393,6 +393,12 @@
         },
         "快捷实现可拖拽功能。": {
             "en-us": "Quickly implement draggable function."
+        },
+        "FefferyGrid 可拖拽网格": {
+            "en-us": "FefferyGrid"
+        },
+        "在“可拖拽网格”功能中充当整体容器。": {
+            "en-us": "In the draggable grid feature, act as the entire container."
         }
     }
 }
