@@ -405,6 +405,12 @@
         },
         "在“可拖拽网格”功能中充当网格子项。": {
             "en-us": "In the draggable grid feature, act as a grid item."
+        },
+        "FefferyRND 尺寸可调可拖拽": {
+            "en-us": "FefferyRND"
+        },
+        "实现尺寸可调+可拖拽功能。": {
+            "en-us": "Implement size adjustable + draggable function."
         }
     }
 }

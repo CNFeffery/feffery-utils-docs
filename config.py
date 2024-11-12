@@ -552,6 +552,17 @@ class AppConfig:
                                     'href': '/FefferyGridItem',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyRND',
+                                    'name': '/FefferyRND',
+                                    'title': translator.t(
+                                        'FefferyRND 尺寸可调可拖拽'
+                                    ),
+                                    'href': '/FefferyRND',
+                                },
+                            },
                         ],
                     },
                     {
@@ -775,4 +786,5 @@ class AppConfig:
         '/FefferyDraggable': ['拖拽交互'],
         '/FefferyGrid': ['拖拽交互'],
         '/FefferyGridItem': ['拖拽交互'],
+        '/FefferyRND': ['拖拽交互'],
     }
