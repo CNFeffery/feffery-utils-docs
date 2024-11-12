@@ -375,6 +375,12 @@
         },
         "具有特殊滚动条功能的容器。": {
             "en-us": "Container with special scroll bar features."
+        },
+        "FefferyShadowDom Shadow DOM": {
+            "en-us": "FefferyShadowDom"
+        },
+        "渲染Shadow DOM节点。": {
+            "en-us": "Render Shadow DOM nodes."
         }
     }
 }

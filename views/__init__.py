@@ -32,4 +32,5 @@ from . import (
     FefferyHighlightWords,  # noqa: F401
     FefferyPortal,  # noqa: F401
     FefferyScrollbars,  # noqa: F401
+    FefferyShadowDom,  # noqa: F401
 )
