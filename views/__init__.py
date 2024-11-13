@@ -51,4 +51,5 @@ from . import (
     FefferyImageGallery,  # noqa: F401
     FefferyPhotoSphereViewer,  # noqa: F401
     FefferyEmojiPicker,  # noqa: F401
+    FefferyImagePaste,  # noqa: F401
 )

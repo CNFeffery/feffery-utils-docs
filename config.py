@@ -742,6 +742,17 @@ class AppConfig:
                                     'href': '/FefferyEmojiPicker',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyImagePaste',
+                                    'name': '/FefferyImagePaste',
+                                    'title': translator.t(
+                                        'FefferyImagePaste 粘贴板图片获取'
+                                    ),
+                                    'href': '/FefferyImagePaste',
+                                },
+                            },
                         ],
                     },
                     {
@@ -946,5 +957,6 @@ class AppConfig:
         '/FefferyImageCropper': ['图片'],
         '/FefferyImageGallery': ['图片'],
         '/FefferyPhotoSphereViewer': ['图片'],
-        '/FefferyEmojiPicker': ['图片'],
+        '/FefferyEmojiPicker': ['数据录入'],
+        '/FefferyImagePaste': ['数据录入'],
     }

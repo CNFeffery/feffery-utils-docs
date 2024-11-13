@@ -489,6 +489,12 @@
         },
         "提供emoji表情选择功能。": {
             "en-us": "Provide emoji selection function."
+        },
+        "FefferyImagePaste 粘贴板图片获取": {
+            "en-us": "FefferyImagePaste"
+        },
+        "监听图片粘贴行为并获取相关数据。": {
+            "en-us": "Listen to image paste behavior and get related data."
         }
     }
 }
