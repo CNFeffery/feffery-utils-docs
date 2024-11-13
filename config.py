@@ -828,6 +828,17 @@ class AppConfig:
                                     'href': '/FefferyInViewport',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyKeyPress',
+                                    'name': '/FefferyKeyPress',
+                                    'title': translator.t(
+                                        'FefferyKeyPress 按键事件监听'
+                                    ),
+                                    'href': '/FefferyKeyPress',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1032,4 +1043,5 @@ class AppConfig:
         '/FefferyGeolocation': ['事件监听'],
         '/FefferyIdle': ['事件监听'],
         '/FefferyInViewport': ['事件监听'],
+        '/FefferyKeyPress': ['事件监听'],
     }

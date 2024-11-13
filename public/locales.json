@@ -531,6 +531,12 @@
         },
         "监听目标元素是否在视口中可见。": {
             "en-us": "Listen to whether the target element is visible in the viewport."
+        },
+        "FefferyKeyPress 按键事件监听": {
+            "en-us": "FefferyKeyPress"
+        },
+        "针对指定的按键事件进行监听。": {
+            "en-us": "Listen to the specified key event."
         }
     }
 }

@@ -58,4 +58,5 @@ from . import (
     FefferyGeolocation,  # noqa: F401
     FefferyIdle,  # noqa: F401
     FefferyInViewport,  # noqa: F401
+    FefferyKeyPress,  # noqa: F401
 )
