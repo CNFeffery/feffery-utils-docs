@@ -817,6 +817,17 @@ class AppConfig:
                                     'href': '/FefferyIdle',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyInViewport',
+                                    'name': '/FefferyInViewport',
+                                    'title': translator.t(
+                                        'FefferyInViewport 元素可见性检查'
+                                    ),
+                                    'href': '/FefferyInViewport',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1020,4 +1031,5 @@ class AppConfig:
         '/FefferyEventListener': ['事件监听'],
         '/FefferyGeolocation': ['事件监听'],
         '/FefferyIdle': ['事件监听'],
+        '/FefferyInViewport': ['事件监听'],
     }

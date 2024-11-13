@@ -57,4 +57,5 @@ from . import (
     FefferyEventListener,  # noqa: F401
     FefferyGeolocation,  # noqa: F401
     FefferyIdle,  # noqa: F401
+    FefferyInViewport,  # noqa: F401
 )

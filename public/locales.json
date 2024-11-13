@@ -525,6 +525,12 @@
         },
         "监听应用是否处于无用户操作闲置状态。": {
             "en-us": "Listen to whether the application is in idle state."
+        },
+        "FefferyInViewport 元素可见性检查": {
+            "en-us": "FefferyInViewport"
+        },
+        "监听目标元素是否在视口中可见。": {
+            "en-us": "Listen to whether the target element is visible in the viewport."
         }
     }
 }
