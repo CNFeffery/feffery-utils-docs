@@ -519,6 +519,12 @@
         },
         "尝试获取用户的地理位置信息。": {
             "en-us": "Try to get user's geographic location information."
+        },
+        "FefferyIdle 闲置状态监听": {
+            "en-us": "FefferyIdle"
+        },
+        "监听应用是否处于无用户操作闲置状态。": {
+            "en-us": "Listen to whether the application is in idle state."
         }
     }
 }

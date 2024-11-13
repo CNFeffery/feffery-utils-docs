@@ -806,6 +806,17 @@ class AppConfig:
                                     'href': '/FefferyGeolocation',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyIdle',
+                                    'name': '/FefferyIdle',
+                                    'title': translator.t(
+                                        'FefferyIdle 闲置状态监听'
+                                    ),
+                                    'href': '/FefferyIdle',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1008,4 +1019,5 @@ class AppConfig:
         '/FefferyDocumentVisibility': ['事件监听'],
         '/FefferyEventListener': ['事件监听'],
         '/FefferyGeolocation': ['事件监听'],
+        '/FefferyIdle': ['事件监听'],
     }

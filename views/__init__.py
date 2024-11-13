@@ -56,4 +56,5 @@ from . import (
     FefferyDocumentVisibility,  # noqa: F401
     FefferyEventListener,  # noqa: F401
     FefferyGeolocation,  # noqa: F401
+    FefferyIdle,  # noqa: F401
 )
