@@ -501,6 +501,12 @@
         },
         "对用户设备的相关基础信息进行获取。": {
             "en-us": "Obtain basic information related to the user's device."
+        },
+        "FefferyDocumentVisibility 页面可见性检查": {
+            "en-us": "FefferyDocumentVisibility"
+        },
+        "监听当前页面是否可见。": {
+            "en-us": "Listen to whether the current page is visible."
         }
     }
 }

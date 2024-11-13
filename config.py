@@ -773,6 +773,17 @@ class AppConfig:
                                     'href': '/FefferyDeviceDetect',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyDocumentVisibility',
+                                    'name': '/FefferyDocumentVisibility',
+                                    'title': translator.t(
+                                        'FefferyDocumentVisibility 页面可见性检查'
+                                    ),
+                                    'href': '/FefferyDocumentVisibility',
+                                },
+                            },
                         ],
                     },
                     {
@@ -972,4 +983,5 @@ class AppConfig:
         '/FefferyEmojiPicker': ['数据录入'],
         '/FefferyImagePaste': ['数据录入'],
         '/FefferyDeviceDetect': ['事件监听'],
+        '/FefferyDocumentVisibility': ['事件监听'],
     }
