@@ -441,6 +441,12 @@
         },
         "具有丰富功能的markdown编辑器。": {
             "en-us": "Rich markdown editor."
+        },
+        "FefferyRichTextEditor 富文本编辑器": {
+            "en-us": "FefferyRichTextEditor"
+        },
+        "具有丰富功能的富文本编辑器。": {
+            "en-us": "Rich text editor."
         }
     }
 }

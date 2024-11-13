@@ -636,6 +636,17 @@ class AppConfig:
                                     'href': '/FefferyMarkdownEditor',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyRichTextEditor',
+                                    'name': '/FefferyRichTextEditor',
+                                    'title': translator.t(
+                                        'FefferyRichTextEditor 富文本编辑器'
+                                    ),
+                                    'href': '/FefferyRichTextEditor',
+                                },
+                            },
                         ],
                     },
                     {
@@ -849,4 +860,5 @@ class AppConfig:
         '/FefferyDPlayer': ['播放器'],
         '/FefferyMusicPlayer': ['播放器'],
         '/FefferyMarkdownEditor': ['编辑器'],
+        '/FefferyRichTextEditor': ['编辑器'],
     }
