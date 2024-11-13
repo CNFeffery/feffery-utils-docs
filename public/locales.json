@@ -435,6 +435,12 @@
         },
         "提供丰富的音乐播放功能。": {
             "en-us": "Provide rich music playback functions."
+        },
+        "FefferyMarkdownEditor markdown编辑器": {
+            "en-us": "FefferyMarkdownEditor"
+        },
+        "具有丰富功能的markdown编辑器。": {
+            "en-us": "Rich markdown editor."
         }
     }
 }

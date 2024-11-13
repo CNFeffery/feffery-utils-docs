@@ -624,7 +624,19 @@ class AppConfig:
                             'key': '编辑器',
                             'title': translator.t('编辑器'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyMarkdownEditor',
+                                    'name': '/FefferyMarkdownEditor',
+                                    'title': translator.t(
+                                        'FefferyMarkdownEditor markdown编辑器'
+                                    ),
+                                    'href': '/FefferyMarkdownEditor',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -836,4 +848,5 @@ class AppConfig:
         '/FefferyAPlayer': ['播放器'],
         '/FefferyDPlayer': ['播放器'],
         '/FefferyMusicPlayer': ['播放器'],
+        '/FefferyMarkdownEditor': ['编辑器'],
     }

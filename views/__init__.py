@@ -42,4 +42,5 @@ from . import (
     FefferyAPlayer,  # noqa: F401
     FefferyDPlayer,  # noqa: F401
     FefferyMusicPlayer,  # noqa: F401
+    FefferyMarkdownEditor,  # noqa: F401
 )
