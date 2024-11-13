@@ -55,4 +55,5 @@ from . import (
     FefferyDeviceDetect,  # noqa: F401
     FefferyDocumentVisibility,  # noqa: F401
     FefferyEventListener,  # noqa: F401
+    FefferyGeolocation,  # noqa: F401
 )

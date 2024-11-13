@@ -795,6 +795,17 @@ class AppConfig:
                                     'href': '/FefferyEventListener',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyGeolocation',
+                                    'name': '/FefferyGeolocation',
+                                    'title': translator.t(
+                                        'FefferyGeolocation 地理位置监听'
+                                    ),
+                                    'href': '/FefferyGeolocation',
+                                },
+                            },
                         ],
                     },
                     {
@@ -996,4 +1007,5 @@ class AppConfig:
         '/FefferyDeviceDetect': ['事件监听'],
         '/FefferyDocumentVisibility': ['事件监听'],
         '/FefferyEventListener': ['事件监听'],
+        '/FefferyGeolocation': ['事件监听'],
     }

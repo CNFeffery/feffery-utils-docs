@@ -513,6 +513,12 @@
         },
         "针对指定目标的任意浏览器事件进行灵活的监听。": {
             "en-us": "Flexibly listen to any browser event for the specified target."
+        },
+        "FefferyGeolocation 地理位置监听": {
+            "en-us": "FefferyGeolocation"
+        },
+        "尝试获取用户的地理位置信息。": {
+            "en-us": "Try to get user's geographic location information."
         }
     }
 }
