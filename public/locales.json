@@ -483,6 +483,12 @@
         },
         "功能丰富的全景图片查看器。": {
             "en-us": "360° panoramas viewer with rich features."
+        },
+        "FefferyEmojiPicker emoji选择器": {
+            "en-us": "FefferyEmojiPicker"
+        },
+        "提供emoji表情选择功能。": {
+            "en-us": "Provide emoji selection function."
         }
     }
 }

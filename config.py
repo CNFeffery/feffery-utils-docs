@@ -730,7 +730,19 @@ class AppConfig:
                             'key': '数据录入',
                             'title': translator.t('数据录入'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyEmojiPicker',
+                                    'name': '/FefferyEmojiPicker',
+                                    'title': translator.t(
+                                        'FefferyEmojiPicker emoji选择器'
+                                    ),
+                                    'href': '/FefferyEmojiPicker',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -934,4 +946,5 @@ class AppConfig:
         '/FefferyImageCropper': ['图片'],
         '/FefferyImageGallery': ['图片'],
         '/FefferyPhotoSphereViewer': ['图片'],
+        '/FefferyEmojiPicker': ['图片'],
     }
