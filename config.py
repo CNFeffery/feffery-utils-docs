@@ -678,6 +678,17 @@ class AppConfig:
                                     'href': '/FefferyAnimatedImage',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyDom2Image',
+                                    'name': '/FefferyDom2Image',
+                                    'title': translator.t(
+                                        'FefferyDom2Image 元素转图片'
+                                    ),
+                                    'href': '/FefferyDom2Image',
+                                },
+                            },
                         ],
                     },
                     {
@@ -886,4 +897,5 @@ class AppConfig:
         '/FefferyRichTextEditor': ['编辑器'],
         '/FefferyVditor': ['编辑器'],
         '/FefferyAnimatedImage': ['图片'],
+        '/FefferyDom2Image': ['图片'],
     }

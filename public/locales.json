@@ -459,6 +459,12 @@
         },
         "交互式的动图展示功能。": {
             "en-us": "Interactive animation display function."
+        },
+        "FefferyDom2Image 元素转图片": {
+            "en-us": "FefferyDom2Image"
+        },
+        "将目标元素转成任意精度的图片数据。": {
+            "en-us": "Convert the target element into any precision image data."
         }
     }
 }

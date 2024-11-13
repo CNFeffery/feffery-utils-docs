@@ -46,4 +46,5 @@ from . import (
     FefferyRichTextEditor,  # noqa: F401
     FefferyVditor,  # noqa: F401
     FefferyAnimatedImage,  # noqa: F401
+    FefferyDom2Image,  # noqa: F401
 )
