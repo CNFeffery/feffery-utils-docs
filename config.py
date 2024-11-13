@@ -605,6 +605,17 @@ class AppConfig:
                                     'href': '/FefferyDPlayer',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyMusicPlayer',
+                                    'name': '/FefferyMusicPlayer',
+                                    'title': translator.t(
+                                        'FefferyMusicPlayer 音乐播放'
+                                    ),
+                                    'href': '/FefferyMusicPlayer',
+                                },
+                            },
                         ],
                     },
                     {
@@ -824,4 +835,5 @@ class AppConfig:
         '/FefferySortable': ['拖拽交互'],
         '/FefferyAPlayer': ['播放器'],
         '/FefferyDPlayer': ['播放器'],
+        '/FefferyMusicPlayer': ['播放器'],
     }

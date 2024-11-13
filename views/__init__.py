@@ -41,4 +41,5 @@ from . import (
     FefferySortable,  # noqa: F401
     FefferyAPlayer,  # noqa: F401
     FefferyDPlayer,  # noqa: F401
+    FefferyMusicPlayer,  # noqa: F401
 )

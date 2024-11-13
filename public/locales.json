@@ -429,6 +429,12 @@
         },
         "提供丰富的视频播放功能。": {
             "en-us": "Provide rich video playback functions."
+        },
+        "FefferyMusicPlayer 音乐播放": {
+            "en-us": "FefferyMusicPlayer"
+        },
+        "提供丰富的音乐播放功能。": {
+            "en-us": "Provide rich music playback functions."
         }
     }
 }
