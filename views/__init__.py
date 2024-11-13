@@ -48,4 +48,5 @@ from . import (
     FefferyAnimatedImage,  # noqa: F401
     FefferyDom2Image,  # noqa: F401
     FefferyImageCropper,  # noqa: F401
+    FefferyImageGallery,  # noqa: F401
 )

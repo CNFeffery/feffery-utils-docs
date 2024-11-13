@@ -700,6 +700,17 @@ class AppConfig:
                                     'href': '/FefferyImageCropper',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyImageGallery',
+                                    'name': '/FefferyImageGallery',
+                                    'title': translator.t(
+                                        'FefferyImageGallery 相册'
+                                    ),
+                                    'href': '/FefferyImageGallery',
+                                },
+                            },
                         ],
                     },
                     {
@@ -910,4 +921,5 @@ class AppConfig:
         '/FefferyAnimatedImage': ['图片'],
         '/FefferyDom2Image': ['图片'],
         '/FefferyImageCropper': ['图片'],
+        '/FefferyImageGallery': ['图片'],
     }

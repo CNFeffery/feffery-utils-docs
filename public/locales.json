@@ -471,6 +471,12 @@
         },
         "提供针对图片进行裁剪的一系列功能。": {
             "en-us": "Provide functions for cropping images."
+        },
+        "FefferyImageGallery 相册": {
+            "en-us": "FefferyImageGallery"
+        },
+        "以相册的形式展示一组照片。": {
+            "en-us": "Show a group of photos in a gallery."
         }
     }
 }
