@@ -711,6 +711,17 @@ class AppConfig:
                                     'href': '/FefferyImageGallery',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyPhotoSphereViewer',
+                                    'name': '/FefferyPhotoSphereViewer',
+                                    'title': translator.t(
+                                        'FefferyPhotoSphereViewer 全景图片查看器'
+                                    ),
+                                    'href': '/FefferyPhotoSphereViewer',
+                                },
+                            },
                         ],
                     },
                     {
@@ -922,4 +933,5 @@ class AppConfig:
         '/FefferyDom2Image': ['图片'],
         '/FefferyImageCropper': ['图片'],
         '/FefferyImageGallery': ['图片'],
+        '/FefferyPhotoSphereViewer': ['图片'],
     }

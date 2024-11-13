@@ -477,6 +477,12 @@
         },
         "以相册的形式展示一组照片。": {
             "en-us": "Show a group of photos in a gallery."
+        },
+        "FefferyPhotoSphereViewer 全景图片查看器": {
+            "en-us": "FefferyPhotoSphereViewer"
+        },
+        "功能丰富的全景图片查看器。": {
+            "en-us": "360° panoramas viewer with rich features."
         }
     }
 }
