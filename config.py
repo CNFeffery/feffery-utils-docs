@@ -666,7 +666,19 @@ class AppConfig:
                             'key': '图片',
                             'title': translator.t('图片'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyAnimatedImage',
+                                    'name': '/FefferyAnimatedImage',
+                                    'title': translator.t(
+                                        'FefferyAnimatedImage 动图'
+                                    ),
+                                    'href': '/FefferyAnimatedImage',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -873,4 +885,5 @@ class AppConfig:
         '/FefferyMarkdownEditor': ['编辑器'],
         '/FefferyRichTextEditor': ['编辑器'],
         '/FefferyVditor': ['编辑器'],
+        '/FefferyAnimatedImage': ['图片'],
     }

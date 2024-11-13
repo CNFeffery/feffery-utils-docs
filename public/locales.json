@@ -453,6 +453,12 @@
         },
         "类似Typora操作风格的markdown编辑器。": {
             "en-us": "Typora style markdown editor."
+        },
+        "FefferyAnimatedImage 动图": {
+            "en-us": "FefferyAnimatedImage"
+        },
+        "交互式的动图展示功能。": {
+            "en-us": "Interactive animation display function."
         }
     }
 }
