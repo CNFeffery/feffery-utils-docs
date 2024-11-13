@@ -447,6 +447,12 @@
         },
         "具有丰富功能的富文本编辑器。": {
             "en-us": "Rich text editor."
+        },
+        "FefferyVditor 类Typora的markdown编辑器": {
+            "en-us": "FefferyVditor"
+        },
+        "类似Typora操作风格的markdown编辑器。": {
+            "en-us": "Typora style markdown editor."
         }
     }
 }

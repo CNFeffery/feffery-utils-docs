@@ -647,6 +647,17 @@ class AppConfig:
                                     'href': '/FefferyRichTextEditor',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyVditor',
+                                    'name': '/FefferyVditor',
+                                    'title': translator.t(
+                                        'FefferyVditor 类Typora的markdown编辑器'
+                                    ),
+                                    'href': '/FefferyVditor',
+                                },
+                            },
                         ],
                     },
                     {
@@ -861,4 +872,5 @@ class AppConfig:
         '/FefferyMusicPlayer': ['播放器'],
         '/FefferyMarkdownEditor': ['编辑器'],
         '/FefferyRichTextEditor': ['编辑器'],
+        '/FefferyVditor': ['编辑器'],
     }
