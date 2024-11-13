@@ -537,6 +537,12 @@
         },
         "针对指定的按键事件进行监听。": {
             "en-us": "Listen to the specified key event."
+        },
+        "FefferyListenDrag 拖拽事件监听": {
+            "en-us": "FefferyListenDrag"
+        },
+        "配合**FefferyListenDrop**实现指定目标元素的拖拽放置事件监听。": {
+            "en-us": "Implement drag-and-drop event listening for specified target elements in conjunction with **FefferyListenDrop**."
         }
     }
 }
