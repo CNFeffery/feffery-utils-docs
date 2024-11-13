@@ -507,6 +507,12 @@
         },
         "监听当前页面是否可见。": {
             "en-us": "Listen to whether the current page is visible."
+        },
+        "FefferyEventListener 通用事件监听": {
+            "en-us": "FefferyEventListener"
+        },
+        "针对指定目标的任意浏览器事件进行灵活的监听。": {
+            "en-us": "Flexibly listen to any browser event for the specified target."
         }
     }
 }

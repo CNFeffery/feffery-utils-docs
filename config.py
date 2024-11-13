@@ -784,6 +784,17 @@ class AppConfig:
                                     'href': '/FefferyDocumentVisibility',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyEventListener',
+                                    'name': '/FefferyEventListener',
+                                    'title': translator.t(
+                                        'FefferyEventListener 通用事件监听'
+                                    ),
+                                    'href': '/FefferyEventListener',
+                                },
+                            },
                         ],
                     },
                     {
@@ -984,4 +995,5 @@ class AppConfig:
         '/FefferyImagePaste': ['数据录入'],
         '/FefferyDeviceDetect': ['事件监听'],
         '/FefferyDocumentVisibility': ['事件监听'],
+        '/FefferyEventListener': ['事件监听'],
     }
