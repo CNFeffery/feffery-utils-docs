@@ -689,6 +689,17 @@ class AppConfig:
                                     'href': '/FefferyDom2Image',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyImageCropper',
+                                    'name': '/FefferyImageCropper',
+                                    'title': translator.t(
+                                        'FefferyImageCropper 图片裁剪'
+                                    ),
+                                    'href': '/FefferyImageCropper',
+                                },
+                            },
                         ],
                     },
                     {
@@ -898,4 +909,5 @@ class AppConfig:
         '/FefferyVditor': ['编辑器'],
         '/FefferyAnimatedImage': ['图片'],
         '/FefferyDom2Image': ['图片'],
+        '/FefferyImageCropper': ['图片'],
     }

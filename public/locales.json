@@ -465,6 +465,12 @@
         },
         "将目标元素转成任意精度的图片数据。": {
             "en-us": "Convert the target element into any precision image data."
+        },
+        "FefferyImageCropper 图片裁剪": {
+            "en-us": "FefferyImageCropper"
+        },
+        "提供针对图片进行裁剪的一系列功能。": {
+            "en-us": "Provide functions for cropping images."
         }
     }
 }
