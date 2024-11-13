@@ -594,6 +594,17 @@ class AppConfig:
                                     'href': '/FefferyAPlayer',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyDPlayer',
+                                    'name': '/FefferyDPlayer',
+                                    'title': translator.t(
+                                        'FefferyDPlayer 视频播放'
+                                    ),
+                                    'href': '/FefferyDPlayer',
+                                },
+                            },
                         ],
                     },
                     {
@@ -812,4 +823,5 @@ class AppConfig:
         '/FefferyRND': ['拖拽交互'],
         '/FefferySortable': ['拖拽交互'],
         '/FefferyAPlayer': ['播放器'],
+        '/FefferyDPlayer': ['播放器'],
     }

@@ -40,4 +40,5 @@ from . import (
     FefferyRND,  # noqa: F401
     FefferySortable,  # noqa: F401
     FefferyAPlayer,  # noqa: F401
+    FefferyDPlayer,  # noqa: F401
 )
