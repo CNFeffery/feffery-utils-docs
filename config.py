@@ -582,7 +582,19 @@ class AppConfig:
                             'key': '播放器',
                             'title': translator.t('播放器'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyAPlayer',
+                                    'name': '/FefferyAPlayer',
+                                    'title': translator.t(
+                                        'FefferyAPlayer 音频播放'
+                                    ),
+                                    'href': '/FefferyAPlayer',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -799,4 +811,5 @@ class AppConfig:
         '/FefferyGridItem': ['拖拽交互'],
         '/FefferyRND': ['拖拽交互'],
         '/FefferySortable': ['拖拽交互'],
+        '/FefferyAPlayer': ['播放器'],
     }

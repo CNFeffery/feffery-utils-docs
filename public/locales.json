@@ -417,6 +417,12 @@
         },
         "对一组元素进行可交互的拖拽排序。": {
             "en-us": "Drag and drop sorting of a group of elements."
+        },
+        "FefferyAPlayer 音频播放": {
+            "en-us": "FefferyAPlayer"
+        },
+        "提供丰富的音频播放功能。": {
+            "en-us": "Provide rich audio playback functions."
         }
     }
 }

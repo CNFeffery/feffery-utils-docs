@@ -39,4 +39,5 @@ from . import (
     FefferyGridItem,  # noqa: F401
     FefferyRND,  # noqa: F401
     FefferySortable,  # noqa: F401
+    FefferyAPlayer,  # noqa: F401
 )
