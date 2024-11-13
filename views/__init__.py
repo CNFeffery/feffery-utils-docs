@@ -52,4 +52,5 @@ from . import (
     FefferyPhotoSphereViewer,  # noqa: F401
     FefferyEmojiPicker,  # noqa: F401
     FefferyImagePaste,  # noqa: F401
+    FefferyDeviceDetect,  # noqa: F401
 )

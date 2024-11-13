@@ -761,7 +761,19 @@ class AppConfig:
                             'key': '事件监听',
                             'title': translator.t('事件监听'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyDeviceDetect',
+                                    'name': '/FefferyDeviceDetect',
+                                    'title': translator.t(
+                                        'FefferyDeviceDetect 设备信息检测'
+                                    ),
+                                    'href': '/FefferyDeviceDetect',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -959,4 +971,5 @@ class AppConfig:
         '/FefferyPhotoSphereViewer': ['图片'],
         '/FefferyEmojiPicker': ['数据录入'],
         '/FefferyImagePaste': ['数据录入'],
+        '/FefferyDeviceDetect': ['事件监听'],
     }

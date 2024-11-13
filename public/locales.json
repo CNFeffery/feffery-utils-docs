@@ -495,6 +495,12 @@
         },
         "监听图片粘贴行为并获取相关数据。": {
             "en-us": "Listen to image paste behavior and get related data."
+        },
+        "FefferyDeviceDetect 设备信息检测": {
+            "en-us": "FefferyDeviceDetect"
+        },
+        "对用户设备的相关基础信息进行获取。": {
+            "en-us": "Obtain basic information related to the user's device."
         }
     }
 }
