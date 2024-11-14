@@ -12,17 +12,13 @@ def render() -> Component:
             items=[
                 {'title': translator.t('组件介绍')},
                 {'title': translator.t('事件监听')},
-                {'title': translator.t('FefferyListenDrop 放置事件监听')},
+                {'title': translator.t('FefferyListenHover 鼠标悬停监听')},
             ],
             style={'marginBottom': 8},
         ),
         fac.AntdTitle(
-            translator.t('FefferyListenDrop 放置事件监听'),
+            translator.t('FefferyListenHover 鼠标悬停监听'),
             level=2,
         ),
-        fac.AntdParagraph(
-            translator.t(
-                '配合FefferyListenDrag实现指定目标元素的拖拽放置事件监听。'
-            )
-        ),
+        fac.AntdParagraph(translator.t('监听指定目标元素的鼠标悬停状态。')),
     ]

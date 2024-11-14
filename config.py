@@ -872,6 +872,17 @@ class AppConfig:
                                     'href': '/FefferyListenElementSize',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyListenHover',
+                                    'name': '/FefferyListenHover',
+                                    'title': translator.t(
+                                        'FefferyListenHover 鼠标悬停监听'
+                                    ),
+                                    'href': '/FefferyListenHover',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1080,4 +1091,5 @@ class AppConfig:
         '/FefferyListenDrag': ['事件监听'],
         '/FefferyListenDrop': ['事件监听'],
         '/FefferyListenElementSize': ['事件监听'],
+        '/FefferyListenHover': ['事件监听'],
     }

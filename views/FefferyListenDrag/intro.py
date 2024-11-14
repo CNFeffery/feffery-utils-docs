@@ -22,7 +22,7 @@ def render() -> Component:
         ),
         fac.AntdParagraph(
             translator.t(
-                '配合**FefferyListenDrop**实现指定目标元素的拖拽放置事件监听。'
+                '配合FefferyListenDrop实现指定目标元素的拖拽放置事件监听。'
             )
         ),
     ]
