@@ -579,6 +579,12 @@
         },
         "监听页面关闭或重载事件。": {
             "en-us": "Listen to page close or reload events."
+        },
+        "FefferyLocation 地址监听": {
+            "en-us": "FefferyLocation"
+        },
+        "监听地址栏相关信息变化。": {
+            "en-us": "Listen to address bar related information changes."
         }
     }
 }

@@ -916,6 +916,17 @@ class AppConfig:
                                     'href': '/FefferyListenUnload',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyLocation',
+                                    'name': '/FefferyLocation',
+                                    'title': translator.t(
+                                        'FefferyLocation 地址监听'
+                                    ),
+                                    'href': '/FefferyLocation',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1128,4 +1139,5 @@ class AppConfig:
         '/FefferyListenPaste': ['事件监听'],
         '/FefferyListenScroll': ['事件监听'],
         '/FefferyListenUnload': ['事件监听'],
+        '/FefferyLocation': ['事件监听'],
     }
