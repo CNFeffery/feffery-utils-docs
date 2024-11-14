@@ -549,6 +549,12 @@
         },
         "配合**FefferyListenDrag**实现指定目标元素的拖拽放置事件监听。": {
             "en-us": "Implement drag-and-drop event listening for specified target elements in conjunction with **FefferyListenDrag**."
+        },
+        "FefferyListenElementSize 元素尺寸监听": {
+            "en-us": "FefferyListenElementSize"
+        },
+        "监听指定目标元素的尺寸变化事件。": {
+            "en-us": "Listen to the size change event of the specified target element."
         }
     }
 }

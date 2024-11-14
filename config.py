@@ -861,6 +861,17 @@ class AppConfig:
                                     'href': '/FefferyListenDrop',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyListenElementSize',
+                                    'name': '/FefferyListenElementSize',
+                                    'title': translator.t(
+                                        'FefferyListenElementSize 元素尺寸监听'
+                                    ),
+                                    'href': '/FefferyListenElementSize',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1068,4 +1079,5 @@ class AppConfig:
         '/FefferyKeyPress': ['事件监听'],
         '/FefferyListenDrag': ['事件监听'],
         '/FefferyListenDrop': ['事件监听'],
+        '/FefferyListenElementSize': ['事件监听'],
     }

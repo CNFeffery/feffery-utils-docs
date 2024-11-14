@@ -61,4 +61,5 @@ from . import (
     FefferyKeyPress,  # noqa: F401
     FefferyListenDrag,  # noqa: F401
     FefferyListenDrop,  # noqa: F401
+    FefferyListenElementSize,  # noqa: F401
 )
