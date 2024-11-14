@@ -567,6 +567,12 @@
         },
         "针对指定的文本粘贴事件进行监听。": {
             "en-us": "Listen to the specified text paste event."
+        },
+        "FefferyListenScroll 滚动条监听": {
+            "en-us": "FefferyListenScroll"
+        },
+        "针对指定目标元素内部的滚动条事件进行监听。": {
+            "en-us": "Listen to the scroll bar event of the specified target element."
         }
     }
 }
