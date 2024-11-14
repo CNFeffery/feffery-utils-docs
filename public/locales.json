@@ -543,6 +543,12 @@
         },
         "配合**FefferyListenDrop**实现指定目标元素的拖拽放置事件监听。": {
             "en-us": "Implement drag-and-drop event listening for specified target elements in conjunction with **FefferyListenDrop**."
+        },
+        "FefferyListenDrop 放置事件监听": {
+            "en-us": "FefferyListenDrop"
+        },
+        "配合**FefferyListenDrag**实现指定目标元素的拖拽放置事件监听。": {
+            "en-us": "Implement drag-and-drop event listening for specified target elements in conjunction with **FefferyListenDrag**."
         }
     }
 }

@@ -60,4 +60,5 @@ from . import (
     FefferyInViewport,  # noqa: F401
     FefferyKeyPress,  # noqa: F401
     FefferyListenDrag,  # noqa: F401
+    FefferyListenDrop,  # noqa: F401
 )

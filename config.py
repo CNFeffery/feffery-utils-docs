@@ -850,6 +850,17 @@ class AppConfig:
                                     'href': '/FefferyListenDrag',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyListenDrop',
+                                    'name': '/FefferyListenDrop',
+                                    'title': translator.t(
+                                        'FefferyListenDrop 放置事件监听'
+                                    ),
+                                    'href': '/FefferyListenDrop',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1056,4 +1067,5 @@ class AppConfig:
         '/FefferyInViewport': ['事件监听'],
         '/FefferyKeyPress': ['事件监听'],
         '/FefferyListenDrag': ['事件监听'],
+        '/FefferyListenDrop': ['事件监听'],
     }
