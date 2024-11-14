@@ -1,14 +1,16 @@
 import re
 import dash
+from flask import request, abort
+
+from config import DeployConfig, AppConfig
 
 
 class CustomDash(dash.Dash):
+    """
+    自定义Dash实例，用于改造默认的CDN访问行为
+    """
+
     def interpolate_index(self, **kwargs):
-        # scripts = (
-        #     kwargs.pop('scripts').replace(
-        #         'https://unpkg.com/', 'https://npm.elemecdn.com/'
-        #     )
-        # )
         scripts = kwargs.pop('scripts')
 
         # 提取scripts部分符合条件的外部js资源
@@ -39,40 +41,17 @@ class CustomDash(dash.Dash):
             )
 
         scripts = (
-            """<script>
-window.onerror = async function(message, source, lineno, colno, error) {
-    if (message.includes('is not defined') !== -1) {
-        await waitForModules();
-    }
-}
-
-async function waitForModules() {
-    const requiredModules = [
-        'DashRenderer',
-        'dash_html_components',
-        'dash_core_components',
-        'feffery_antd_components',
-        'feffery_utils_components',
-        'feffery_markdown_components'
-    ];
-
-    while (!areModulesDefined(requiredModules)) {
-        await delay(100); // 延迟100毫秒
-    }
-
-    // 变量已定义，触发事件
-    var renderer = new DashRenderer();
-}
-
-function areModulesDefined(modules) {
-    return modules.every(module => window[module]);
-}
-
-function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
+            """
+<script>
+const requiredModules = {};
+{}
 </script>
-"""
+""".format(
+                str(DeployConfig.cdn_modules),
+                open(
+                    './public/handleModulesLoadError.js', encoding='utf-8'
+                ).read(),
+            )
             + scripts
         )
 
@@ -86,11 +65,17 @@ app = CustomDash(
     suppress_callback_exceptions=True,
     update_title=None,
     serve_locally=False,
-    extra_hot_reload_paths=['./documents'],
+    extra_hot_reload_paths=['./changelogs', './public'],
     compress=True,
-    assets_ignore='dark.css',
+    meta_tags=[
+        # 移动端显示优化
+        {
+            'name': 'viewport',
+            'content': 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0',
+        }
+    ],
 )
 
-app.title = 'feffery-utils-components在线文档'
+app.title = AppConfig.title
 
 server = app.server

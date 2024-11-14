@@ -1,0 +1,560 @@
+{
+    "root_locale": "zh-cn",
+    "contents": {
+        "演示示例不存在，": {
+            "en-us": "This demo does not exist, "
+        },
+        "回到首页": {
+            "en-us": "back to home"
+        },
+        "当前文档网站尚未正式发布，相关文档持续补充建设中。（最近更新时间：{}）": {
+            "en-us": "The documentation site is not yet released. (Latest update time: {})"
+        },
+        "您访问的页面不存在或还在建设中": {
+            "en-us": "The page you visited does not exist or is still under construction"
+        },
+        "问题反馈": {
+            "en-us": "Bug report"
+        },
+        "输入你想要搜索的组件...": {
+            "en-us": "Input the component you want to search..."
+        },
+        "唤出搜索面板": {
+            "en-us": "Open the search panel"
+        },
+        "English / 中文": {
+            "en-us": "中文 / English"
+        },
+        "0.2.x版本新增组件": {
+            "en-us": "0.2.x version added components"
+        },
+        "快速入门": {
+            "en-us": "Quick start"
+        },
+        "fuc是什么": {
+            "en-us": "What is fuc"
+        },
+        "feffery-utils-components: Dash实用工具组件库": {
+            "en-us": "feffery-utils-components: Dash useful tools component library"
+        },
+        "文档最近更新：": {
+            "en-us": "Latest update: "
+        },
+        "特性": {
+            "en-us": "Features"
+        },
+        "💪 功能丰富，涉及日常应用开发所需的方方面面": {
+            "en-us": "💪 Rich features, including daily application development needs"
+        },
+        "😋 使用简单，功能参数直观明了": {
+            "en-us": "😋 Simple to use, clear and direct function parameters"
+        },
+        "⚡ 迭代迅速，持续维护更新组件功能": {
+            "en-us": "⚡ Rapid iteration, continuous maintenance and updating component functions"
+        },
+        "版本": {
+            "en-us": "Version"
+        },
+        "pypi最新稳定版本：": {
+            "en-us": "pypi latest stable version: "
+        },
+        "安装": {
+            "en-us": "Installation"
+        },
+        "最新稳定版本：": {
+            "en-us": "Latest stable version: "
+        },
+        "最新预发布版本：": {
+            "en-us": "Latest pre-release version: "
+        },
+        "简介": {
+            "en-us": "Introduction"
+        },
+        "组件介绍": {
+            "en-us": "Components introduction"
+        },
+        "通用": {
+            "en-us": "General"
+        },
+        "颜色选择": {
+            "en-us": "Color selection"
+        },
+        "动效": {
+            "en-us": "Animation"
+        },
+        "加载动画": {
+            "en-us": "Loading animation"
+        },
+        "容器": {
+            "en-us": "Container"
+        },
+        "拖拽交互": {
+            "en-us": "Drag interaction"
+        },
+        "播放器": {
+            "en-us": "Player"
+        },
+        "编辑器": {
+            "en-us": "Editor"
+        },
+        "图片": {
+            "en-us": "Image"
+        },
+        "数据录入": {
+            "en-us": "Data entry"
+        },
+        "事件监听": {
+            "en-us": "Event listening"
+        },
+        "静态资源控制": {
+            "en-us": "Static resource control"
+        },
+        "页面控制": {
+            "en-us": "Page control"
+        },
+        "样式控制": {
+            "en-us": "Style control"
+        },
+        "通信": {
+            "en-us": "Communication"
+        },
+        "文件预览": {
+            "en-us": "File preview"
+        },
+        "尺寸调整": {
+            "en-us": "Size adjustment"
+        },
+        "安全": {
+            "en-us": "Wecurity"
+        },
+        "性能优化": {
+            "en-us": "Performance optimization"
+        },
+        "数据展示": {
+            "en-us": "Data display"
+        },
+        "反馈": {
+            "en-us": "Feedback"
+        },
+        "存储": {
+            "en-us": "Storage"
+        },
+        "验证码": {
+            "en-us": "Verification code"
+        },
+        "其他": {
+            "en-us": "Other"
+        },
+        "在Github上编辑此示例": {
+            "en-us": "Edit this example on Github"
+        },
+        "在新窗口打开": {
+            "en-us": "Open in new window"
+        },
+        "展开/收起代码": {
+            "en-us": "Expand/collapse code"
+        },
+        "在Github中查看完整代码": {
+            "en-us": "View the complete code on Github"
+        },
+        "在Gitee中查看完整代码": {
+            "en-us": "View the complete code on Gitee"
+        },
+        "当页文档贡献者": {
+            "en-us": "Contributors of this page"
+        },
+        "更多组件库": {
+            "en-us": "More component libraries"
+        },
+        "fac: 通用组件库": {
+            "en-us": "fac: General component library"
+        },
+        "fmc: markdown渲染组件库": {
+            "en-us": "fmc: Markdown rendering component library"
+        },
+        "API参数说明": {
+            "en-us": "API"
+        },
+        "请输入搜索关键词": {
+            "en-us": "Please enter the search keyword"
+        },
+        "FefferyBurger 动态菜单图标": {
+            "en-us": "FefferyBurger"
+        },
+        "表现菜单折叠状态的交互图标。": {
+            "en-us": "Display the interactive icon of the menu collapse status."
+        },
+        "FefferyDownload 文件下载": {
+            "en-us": "FefferyDownload"
+        },
+        "基于文件地址触发下载。": {
+            "en-us": "Trigger download based on file address."
+        },
+        "FefferyFancyButton 美观按钮": {
+            "en-us": "FefferyFancyButton"
+        },
+        "具有特殊样式的按钮。": {
+            "en-us": "Buttons with special styles."
+        },
+        "FefferyBlockColorPicker Block风格色彩选择器": {
+            "en-us": "FefferyBlockColorPicker"
+        },
+        "Block风格色彩选择器。": {
+            "en-us": "Block style color picker."
+        },
+        "FefferyCircleColorPicker Circle风格色彩选择器": {
+            "en-us": "FefferyCircleColorPicker"
+        },
+        "Circle风格色彩选择器。": {
+            "en-us": "Circle style color picker."
+        },
+        "FefferyEyeDropper 色彩拾取": {
+            "en-us": "FefferyEyeDropper"
+        },
+        "通过色彩拾取的方式进行颜色选择。": {
+            "en-us": "Color selection through color picking."
+        },
+        "FefferyGithubColorPicker Github风格色彩选择器": {
+            "en-us": "FefferyGithubColorPicker"
+        },
+        "Github风格色彩选择器。": {
+            "en-us": "Github style color picker."
+        },
+        "FefferyHexColorPicker 16进制色彩选择器": {
+            "en-us": "FefferyHexColorPicker"
+        },
+        "16进制色彩选择器。": {
+            "en-us": "16 hex color picker."
+        },
+        "FefferyRgbColorPicker rgb色彩选择器": {
+            "en-us": "FefferyRgbColorPicker"
+        },
+        "rgb色彩选择器。": {
+            "en-us": "rgb color picker."
+        },
+        "FefferyTwitterColorPicker Twitter风格色彩选择器": {
+            "en-us": "FefferyTwitterColorPicker"
+        },
+        "Twitter风格色彩选择器。": {
+            "en-us": "Twitter style color picker."
+        },
+        "FefferyWheelColorPicker Wheel风格色彩选择器": {
+            "en-us": "FefferyWheelColorPicker"
+        },
+        "Wheel风格色彩选择器。": {
+            "en-us": "Wheel style color picker."
+        },
+        "FefferyAutoAnimate 自动动画": {
+            "en-us": "FefferyAutoAnimate"
+        },
+        "针对列表内的一组元素添加自动的动画效果。": {
+            "en-us": "Add automatic animation effects to a group of elements in the list."
+        },
+        "FefferyMotion 动画编排": {
+            "en-us": "FefferyMotion"
+        },
+        "针对目标元素快捷编排丰富的样式动画。": {
+            "en-us": "Quickly arrange a rich style animation for the target element."
+        },
+        "FefferyBirdsBackground 3D-Birds背景": {
+            "en-us": "FefferyBirdsBackground"
+        },
+        "渲染3D-Birds动画背景。": {
+            "en-us": "Render 3D-Birds animation background."
+        },
+        "FefferyCellsBackground 3D-Cells背景": {
+            "en-us": "FefferyCellsBackground"
+        },
+        "渲染3D-Cells动画背景。": {
+            "en-us": "Render 3D-Cells animation background."
+        },
+        "FefferyCloudsBackground 3D-Clouds背景": {
+            "en-us": "FefferyCloudsBackground"
+        },
+        "渲染3D-Clouds动画背景。": {
+            "en-us": "Render 3D-Clouds animation background."
+        },
+        "FefferyCloudsTwoBackground 3D-CloudsTwo背景": {
+            "en-us": "FefferyCloudsTwoBackground"
+        },
+        "渲染3D-CloudsTwo动画背景。": {
+            "en-us": "Render 3D-CloudsTwo animation background."
+        },
+        "FefferyFogBackground 3D-Fog背景": {
+            "en-us": "FefferyFogBackground"
+        },
+        "渲染3D-Fog动画背景。": {
+            "en-us": "Render 3D-Fog animation background."
+        },
+        "FefferyGlobeBackground 3D-Globe背景": {
+            "en-us": "FefferyGlobeBackground"
+        },
+        "渲染3D-Globe动画背景。": {
+            "en-us": "Render 3D-Globe animation background."
+        },
+        "FefferyHaloBackground 3D-Halo背景": {
+            "en-us": "FefferyHaloBackground"
+        },
+        "渲染3D-Halo动画背景。": {
+            "en-us": "Render 3D-Halo animation background."
+        },
+        "FefferyNetBackground 3D-Net背景": {
+            "en-us": "FefferyNetBackground"
+        },
+        "渲染3D-Net动画背景。": {
+            "en-us": "Render 3D-Net animation background."
+        },
+        "FefferyRingsBackground 3D-Rings背景": {
+            "en-us": "FefferyRingsBackground"
+        },
+        "渲染3D-Rings动画背景。": {
+            "en-us": "Render 3D-Rings animation background."
+        },
+        "FefferyTopologyBackground 3D-Topology背景": {
+            "en-us": "FefferyTopologyBackground"
+        },
+        "渲染3D-Topology动画背景。": {
+            "en-us": "Render 3D-Topology animation background."
+        },
+        "FefferyTrunkBackground 3D-Trunk背景": {
+            "en-us": "FefferyTrunkBackground"
+        },
+        "渲染3D-Trunk动画背景。": {
+            "en-us": "Render 3D-Trunk animation background."
+        },
+        "FefferyWavesBackground 3D-Waves背景": {
+            "en-us": "FefferyWavesBackground"
+        },
+        "渲染3D-Waves动画背景。": {
+            "en-us": "Render 3D-Waves animation background."
+        },
+        "FefferyTiltHover 倾斜悬浮": {
+            "en-us": "FefferyTiltHover"
+        },
+        "快捷渲染倾斜悬浮效果。": {
+            "en-us": "Quick render tilt hover effect."
+        },
+        "FefferyExtraSpinner 额外加载动画": {
+            "en-us": "FefferyExtraSpinner"
+        },
+        "提供一系列丰富的加载动画图标。": {
+            "en-us": "Provide a series of rich loading animation icons."
+        },
+        "FefferyTopProgress 顶端加载进度条": {
+            "en-us": "FefferyTopProgress"
+        },
+        "页面顶端进度条形式的加载动画。": {
+            "en-us": "Page top progress bar loading animation."
+        },
+        "FefferyDiv 进阶div容器": {
+            "en-us": "FefferyDiv"
+        },
+        "提供具有更多功能的div容器。": {
+            "en-us": "Provide a div container with more functions."
+        },
+        "FefferyFixed 固定布局": {
+            "en-us": "FefferyFixed"
+        },
+        "实现相对页面的元素快捷固定效果。": {
+            "en-us": "Implement relative page element quick fixed effect."
+        },
+        "FefferyHighlightWords 关键词高亮": {
+            "en-us": "FefferyHighlightWords"
+        },
+        "针对一段内容中的指定关键词进行高亮展示。": {
+            "en-us": "Highlight specified keywords in a piece of content."
+        },
+        "FefferyPortal 传送门": {
+            "en-us": "FefferyPortal"
+        },
+        "将指定的元素内容传送到指定的页面位置中进行渲染。": {
+            "en-us": "Send the specified element content to the specified page position for rendering."
+        },
+        "FefferyScrollbars 滚动条容器": {
+            "en-us": "FefferyScrollbars"
+        },
+        "具有特殊滚动条功能的容器。": {
+            "en-us": "Container with special scroll bar features."
+        },
+        "FefferyShadowDom Shadow DOM": {
+            "en-us": "FefferyShadowDom"
+        },
+        "渲染Shadow DOM节点。": {
+            "en-us": "Render Shadow DOM nodes."
+        },
+        "FefferySticky 粘性布局": {
+            "en-us": "FefferySticky"
+        },
+        "具有特殊粘性布局效果的容器。": {
+            "en-us": "Container with special sticky layout effects."
+        },
+        "FefferyDraggable 可拖拽": {
+            "en-us": "FefferyDraggable"
+        },
+        "快捷实现可拖拽功能。": {
+            "en-us": "Quickly implement draggable function."
+        },
+        "FefferyGrid 可拖拽网格": {
+            "en-us": "FefferyGrid"
+        },
+        "在“可拖拽网格”功能中充当整体容器。": {
+            "en-us": "In the draggable grid feature, act as the entire container."
+        },
+        "FefferyGridItem 可拖拽网格项": {
+            "en-us": "FefferyGridItem"
+        },
+        "在“可拖拽网格”功能中充当网格子项。": {
+            "en-us": "In the draggable grid feature, act as a grid item."
+        },
+        "FefferyRND 尺寸可调可拖拽": {
+            "en-us": "FefferyRND"
+        },
+        "实现尺寸可调+可拖拽功能。": {
+            "en-us": "Implement size adjustable + draggable function."
+        },
+        "FefferySortable 排序列表": {
+            "en-us": "FefferySortable"
+        },
+        "对一组元素进行可交互的拖拽排序。": {
+            "en-us": "Drag and drop sorting of a group of elements."
+        },
+        "FefferyAPlayer 音频播放": {
+            "en-us": "FefferyAPlayer"
+        },
+        "提供丰富的音频播放功能。": {
+            "en-us": "Provide rich audio playback functions."
+        },
+        "FefferyDPlayer 视频播放": {
+            "en-us": "FefferyDPlayer"
+        },
+        "提供丰富的视频播放功能。": {
+            "en-us": "Provide rich video playback functions."
+        },
+        "FefferyMusicPlayer 音乐播放": {
+            "en-us": "FefferyMusicPlayer"
+        },
+        "提供丰富的音乐播放功能。": {
+            "en-us": "Provide rich music playback functions."
+        },
+        "FefferyMarkdownEditor markdown编辑器": {
+            "en-us": "FefferyMarkdownEditor"
+        },
+        "具有丰富功能的markdown编辑器。": {
+            "en-us": "Rich markdown editor."
+        },
+        "FefferyRichTextEditor 富文本编辑器": {
+            "en-us": "FefferyRichTextEditor"
+        },
+        "具有丰富功能的富文本编辑器。": {
+            "en-us": "Rich text editor."
+        },
+        "FefferyVditor 类Typora的markdown编辑器": {
+            "en-us": "FefferyVditor"
+        },
+        "类似Typora操作风格的markdown编辑器。": {
+            "en-us": "Typora style markdown editor."
+        },
+        "FefferyAnimatedImage 动图": {
+            "en-us": "FefferyAnimatedImage"
+        },
+        "交互式的动图展示功能。": {
+            "en-us": "Interactive animation display function."
+        },
+        "FefferyDom2Image 元素转图片": {
+            "en-us": "FefferyDom2Image"
+        },
+        "将目标元素转成任意精度的图片数据。": {
+            "en-us": "Convert the target element into any precision image data."
+        },
+        "FefferyImageCropper 图片裁剪": {
+            "en-us": "FefferyImageCropper"
+        },
+        "提供针对图片进行裁剪的一系列功能。": {
+            "en-us": "Provide functions for cropping images."
+        },
+        "FefferyImageGallery 相册": {
+            "en-us": "FefferyImageGallery"
+        },
+        "以相册的形式展示一组照片。": {
+            "en-us": "Show a group of photos in a gallery."
+        },
+        "FefferyPhotoSphereViewer 全景图片查看器": {
+            "en-us": "FefferyPhotoSphereViewer"
+        },
+        "功能丰富的全景图片查看器。": {
+            "en-us": "360° panoramas viewer with rich features."
+        },
+        "FefferyEmojiPicker emoji选择器": {
+            "en-us": "FefferyEmojiPicker"
+        },
+        "提供emoji表情选择功能。": {
+            "en-us": "Provide emoji selection function."
+        },
+        "FefferyImagePaste 粘贴板图片获取": {
+            "en-us": "FefferyImagePaste"
+        },
+        "监听图片粘贴行为并获取相关数据。": {
+            "en-us": "Listen to image paste behavior and get related data."
+        },
+        "FefferyDeviceDetect 设备信息检测": {
+            "en-us": "FefferyDeviceDetect"
+        },
+        "对用户设备的相关基础信息进行获取。": {
+            "en-us": "Obtain basic information related to the user's device."
+        },
+        "FefferyDocumentVisibility 页面可见性检查": {
+            "en-us": "FefferyDocumentVisibility"
+        },
+        "监听当前页面是否可见。": {
+            "en-us": "Listen to whether the current page is visible."
+        },
+        "FefferyEventListener 通用事件监听": {
+            "en-us": "FefferyEventListener"
+        },
+        "针对指定目标的任意浏览器事件进行灵活的监听。": {
+            "en-us": "Flexibly listen to any browser event for the specified target."
+        },
+        "FefferyGeolocation 地理位置监听": {
+            "en-us": "FefferyGeolocation"
+        },
+        "尝试获取用户的地理位置信息。": {
+            "en-us": "Try to get user's geographic location information."
+        },
+        "FefferyIdle 闲置状态监听": {
+            "en-us": "FefferyIdle"
+        },
+        "监听应用是否处于无用户操作闲置状态。": {
+            "en-us": "Listen to whether the application is in idle state."
+        },
+        "FefferyInViewport 元素可见性检查": {
+            "en-us": "FefferyInViewport"
+        },
+        "监听目标元素是否在视口中可见。": {
+            "en-us": "Listen to whether the target element is visible in the viewport."
+        },
+        "FefferyKeyPress 按键事件监听": {
+            "en-us": "FefferyKeyPress"
+        },
+        "针对指定的按键事件进行监听。": {
+            "en-us": "Listen to the specified key event."
+        },
+        "FefferyListenDrag 拖拽事件监听": {
+            "en-us": "FefferyListenDrag"
+        },
+        "配合**FefferyListenDrop**实现指定目标元素的拖拽放置事件监听。": {
+            "en-us": "Implement drag-and-drop event listening for specified target elements in conjunction with **FefferyListenDrop**."
+        },
+        "FefferyListenDrop 放置事件监听": {
+            "en-us": "FefferyListenDrop"
+        },
+        "配合**FefferyListenDrag**实现指定目标元素的拖拽放置事件监听。": {
+            "en-us": "Implement drag-and-drop event listening for specified target elements in conjunction with **FefferyListenDrag**."
+        },
+        "FefferyListenElementSize 元素尺寸监听": {
+            "en-us": "FefferyListenElementSize"
+        },
+        "监听指定目标元素的尺寸变化事件。": {
+            "en-us": "Listen to the size change event of the specified target element."
+        }
+    }
+}
