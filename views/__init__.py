@@ -65,4 +65,5 @@ from . import (
     FefferyListenHover,  # noqa: F401
     FefferyListenPaste,  # noqa: F401
     FefferyListenScroll,  # noqa: F401
+    FefferyListenUnload,  # noqa: F401
 )
