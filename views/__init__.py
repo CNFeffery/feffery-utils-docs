@@ -63,4 +63,5 @@ from . import (
     FefferyListenDrop,  # noqa: F401
     FefferyListenElementSize,  # noqa: F401
     FefferyListenHover,  # noqa: F401
+    FefferyListenPaste,  # noqa: F401
 )

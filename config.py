@@ -883,6 +883,17 @@ class AppConfig:
                                     'href': '/FefferyListenHover',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyListenPaste',
+                                    'name': '/FefferyListenPaste',
+                                    'title': translator.t(
+                                        'FefferyListenPaste 全局粘贴监听'
+                                    ),
+                                    'href': '/FefferyListenPaste',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1092,4 +1103,5 @@ class AppConfig:
         '/FefferyListenDrop': ['事件监听'],
         '/FefferyListenElementSize': ['事件监听'],
         '/FefferyListenHover': ['事件监听'],
+        '/FefferyListenPaste': ['事件监听'],
     }
