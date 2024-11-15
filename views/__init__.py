@@ -69,4 +69,5 @@ from . import (
     FefferyLocation,  # noqa: F401
     FefferyLongPress,  # noqa: F401
     FefferyMediaQuery,  # noqa: F401
+    FefferyMousePosition,  # noqa: F401
 )

@@ -949,6 +949,17 @@ class AppConfig:
                                     'href': '/FefferyMediaQuery',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyMousePosition',
+                                    'name': '/FefferyMousePosition',
+                                    'title': translator.t(
+                                        'FefferyMousePosition 鼠标位置监听'
+                                    ),
+                                    'href': '/FefferyMousePosition',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1164,4 +1175,5 @@ class AppConfig:
         '/FefferyLocation': ['事件监听'],
         '/FefferyLongPress': ['事件监听'],
         '/FefferyMediaQuery': ['事件监听'],
+        '/FefferyMousePosition': ['事件监听'],
     }
