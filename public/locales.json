@@ -627,6 +627,12 @@
         },
         "针对指定目标内的文字选中事件进行监听。": {
             "en-us": "Listen to text selection events for the specified target."
+        },
+        "FefferyWindowSize 浏览器窗口尺寸监听": {
+            "en-us": "FefferyWindowSize"
+        },
+        "针对浏览器窗口尺寸变化事件进行监听。": {
+            "en-us": "Listen to the browser window size change event."
         }
     }
 }

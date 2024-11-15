@@ -74,4 +74,5 @@ from . import (
     FefferyPageLeave,  # noqa: F401
     FefferyResponsive,  # noqa: F401
     FefferyTextSelection,  # noqa: F401
+    FefferyWindowSize,  # noqa: F401
 )

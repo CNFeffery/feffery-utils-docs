@@ -1004,6 +1004,17 @@ class AppConfig:
                                     'href': '/FefferyTextSelection',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyWindowSize',
+                                    'name': '/FefferyWindowSize',
+                                    'title': translator.t(
+                                        'FefferyWindowSize 浏览器窗口尺寸监听'
+                                    ),
+                                    'href': '/FefferyWindowSize',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1224,4 +1235,5 @@ class AppConfig:
         '/FefferyPageLeave': ['事件监听'],
         '/FefferyResponsive': ['事件监听'],
         '/FefferyTextSelection': ['事件监听'],
+        '/FefferyWindowSize': ['事件监听'],
     }
