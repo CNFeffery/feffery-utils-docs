@@ -645,6 +645,12 @@
         },
         "动态控制注入外部js资源。": {
             "en-us": "Dynamically control the injection of external js resources."
+        },
+        "FefferyFullscreen 全屏化": {
+            "en-us": "FefferyFullscreen"
+        },
+        "控制当前页面是否全屏化。": {
+            "en-us": "Control whether the current page is full screen."
         }
     }
 }

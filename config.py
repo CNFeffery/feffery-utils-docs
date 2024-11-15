@@ -1054,7 +1054,19 @@ class AppConfig:
                             'key': '页面控制',
                             'title': translator.t('页面控制'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyFullscreen',
+                                    'name': '/FefferyFullscreen',
+                                    'title': translator.t(
+                                        'FefferyFullscreen 全屏化'
+                                    ),
+                                    'href': '/FefferyFullscreen',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1261,4 +1273,5 @@ class AppConfig:
         '/FefferyWindowSize': ['事件监听'],
         '/FefferyExternalCss': ['静态资源控制'],
         '/FefferyExternalJs': ['静态资源控制'],
+        '/FefferyFullscreen': ['页面控制'],
     }
