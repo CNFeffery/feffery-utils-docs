@@ -591,6 +591,12 @@
         },
         "监听指定目标元素的鼠标长按事件。": {
             "en-us": "Listen to the mouse long press event of the specified target element."
+        },
+        "FefferyMediaQuery 媒体查询监听": {
+            "en-us": "FefferyMediaQuery"
+        },
+        "针对指定媒体查询条件满足状态进行监听。": {
+            "en-us": "Listen to the satisfied status of the specified media query conditions."
         }
     }
 }

@@ -938,6 +938,17 @@ class AppConfig:
                                     'href': '/FefferyLongPress',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyMediaQuery',
+                                    'name': '/FefferyMediaQuery',
+                                    'title': translator.t(
+                                        'FefferyMediaQuery 媒体查询监听'
+                                    ),
+                                    'href': '/FefferyMediaQuery',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1152,4 +1163,5 @@ class AppConfig:
         '/FefferyListenUnload': ['事件监听'],
         '/FefferyLocation': ['事件监听'],
         '/FefferyLongPress': ['事件监听'],
+        '/FefferyMediaQuery': ['事件监听'],
     }
