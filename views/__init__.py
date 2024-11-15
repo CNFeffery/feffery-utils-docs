@@ -76,4 +76,5 @@ from . import (
     FefferyTextSelection,  # noqa: F401
     FefferyWindowSize,  # noqa: F401
     FefferyExternalCss,  # noqa: F401
+    FefferyExternalJs,  # noqa: F401
 )

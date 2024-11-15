@@ -1035,6 +1035,17 @@ class AppConfig:
                                     'href': '/FefferyExternalCss',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyExternalJs',
+                                    'name': '/FefferyExternalJs',
+                                    'title': translator.t(
+                                        'FefferyExternalJs 外部js资源动态注入'
+                                    ),
+                                    'href': '/FefferyExternalJs',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1249,4 +1260,5 @@ class AppConfig:
         '/FefferyTextSelection': ['事件监听'],
         '/FefferyWindowSize': ['事件监听'],
         '/FefferyExternalCss': ['静态资源控制'],
+        '/FefferyExternalJs': ['静态资源控制'],
     }
