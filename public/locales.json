@@ -585,6 +585,12 @@
         },
         "监听地址栏相关信息变化。": {
             "en-us": "Listen to address bar related information changes."
+        },
+        "FefferyLongPress 长按事件监听": {
+            "en-us": "FefferyLongPress"
+        },
+        "监听指定目标元素的鼠标长按事件。": {
+            "en-us": "Listen to the mouse long press event of the specified target element."
         }
     }
 }

@@ -927,6 +927,17 @@ class AppConfig:
                                     'href': '/FefferyLocation',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyLongPress',
+                                    'name': '/FefferyLongPress',
+                                    'title': translator.t(
+                                        'FefferyLongPress 长按事件监听'
+                                    ),
+                                    'href': '/FefferyLongPress',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1140,4 +1151,5 @@ class AppConfig:
         '/FefferyListenScroll': ['事件监听'],
         '/FefferyListenUnload': ['事件监听'],
         '/FefferyLocation': ['事件监听'],
+        '/FefferyLongPress': ['事件监听'],
     }

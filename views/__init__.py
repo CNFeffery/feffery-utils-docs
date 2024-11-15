@@ -67,4 +67,5 @@ from . import (
     FefferyListenScroll,  # noqa: F401
     FefferyListenUnload,  # noqa: F401
     FefferyLocation,  # noqa: F401
+    FefferyLongPress,  # noqa: F401
 )
