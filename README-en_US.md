@@ -2,7 +2,7 @@
 
 [简体中文](./README.md) | English
 
-<a href='https://github.com/CNFeffery/feffery-utils-components' target='_blank'>feffery-utils-components</a> online documentation source code(`fuc>=0.3.0`)
+<a href='https://github.com/CNFeffery/feffery-utils-components' target='_blank'>feffery-utils-components</a> online documentation source code(`fuc>=0.2.0`)
 
 ## 1 Install & Run
 
