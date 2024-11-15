@@ -1023,7 +1023,19 @@ class AppConfig:
                             'key': '静态资源控制',
                             'title': translator.t('静态资源控制'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyExternalCss',
+                                    'name': '/FefferyExternalCss',
+                                    'title': translator.t(
+                                        'FefferyExternalCss 外部css资源动态注入'
+                                    ),
+                                    'href': '/FefferyExternalCss',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1236,4 +1248,5 @@ class AppConfig:
         '/FefferyResponsive': ['事件监听'],
         '/FefferyTextSelection': ['事件监听'],
         '/FefferyWindowSize': ['事件监听'],
+        '/FefferyExternalCss': ['静态资源控制'],
     }

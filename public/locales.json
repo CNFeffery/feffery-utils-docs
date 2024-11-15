@@ -633,6 +633,12 @@
         },
         "针对浏览器窗口尺寸变化事件进行监听。": {
             "en-us": "Listen to the browser window size change event."
+        },
+        "FefferyExternalCss 外部css资源动态注入": {
+            "en-us": "FefferyExternalCss"
+        },
+        "动态控制注入外部css资源。": {
+            "en-us": "Dynamically control the injection of external css resources."
         }
     }
 }
