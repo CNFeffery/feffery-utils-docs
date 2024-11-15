@@ -603,6 +603,12 @@
         },
         "监听鼠标所在位置信息。": {
             "en-us": "Listen to mouse position information."
+        },
+        "FefferyNetwork 网络状态信息监听": {
+            "en-us": "FefferyNetwork"
+        },
+        "监听网络状态。": {
+            "en-us": "Listen to network status."
         }
     }
 }

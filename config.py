@@ -960,6 +960,17 @@ class AppConfig:
                                     'href': '/FefferyMousePosition',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyNetwork',
+                                    'name': '/FefferyNetwork',
+                                    'title': translator.t(
+                                        'FefferyNetwork 网络状态信息监听'
+                                    ),
+                                    'href': '/FefferyNetwork',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1176,4 +1187,5 @@ class AppConfig:
         '/FefferyLongPress': ['事件监听'],
         '/FefferyMediaQuery': ['事件监听'],
         '/FefferyMousePosition': ['事件监听'],
+        '/FefferyNetwork': ['事件监听'],
     }
