@@ -72,4 +72,5 @@ from . import (
     FefferyMousePosition,  # noqa: F401
     FefferyNetwork,  # noqa: F401
     FefferyPageLeave,  # noqa: F401
+    FefferyResponsive,  # noqa: F401
 )

@@ -615,6 +615,12 @@
         },
         "监听鼠标离开页面事件。": {
             "en-us": "Listen to mouse leaving page events."
+        },
+        "FefferyResponsive 页面响应式监听": {
+            "en-us": "FefferyResponsive"
+        },
+        "监听页面响应式变化。": {
+            "en-us": "Listen to responsive changes in the page."
         }
     }
 }

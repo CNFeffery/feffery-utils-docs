@@ -982,6 +982,17 @@ class AppConfig:
                                     'href': '/FefferyPageLeave',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyResponsive',
+                                    'name': '/FefferyResponsive',
+                                    'title': translator.t(
+                                        'FefferyResponsive 页面响应式监听'
+                                    ),
+                                    'href': '/FefferyResponsive',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1200,4 +1211,5 @@ class AppConfig:
         '/FefferyMousePosition': ['事件监听'],
         '/FefferyNetwork': ['事件监听'],
         '/FefferyPageLeave': ['事件监听'],
+        '/FefferyResponsive': ['事件监听'],
     }
