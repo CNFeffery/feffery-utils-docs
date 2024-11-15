@@ -993,6 +993,17 @@ class AppConfig:
                                     'href': '/FefferyResponsive',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyTextSelection',
+                                    'name': '/FefferyTextSelection',
+                                    'title': translator.t(
+                                        'FefferyTextSelection 文字选中监听'
+                                    ),
+                                    'href': '/FefferyTextSelection',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1212,4 +1223,5 @@ class AppConfig:
         '/FefferyNetwork': ['事件监听'],
         '/FefferyPageLeave': ['事件监听'],
         '/FefferyResponsive': ['事件监听'],
+        '/FefferyTextSelection': ['事件监听'],
     }

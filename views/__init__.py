@@ -73,4 +73,5 @@ from . import (
     FefferyNetwork,  # noqa: F401
     FefferyPageLeave,  # noqa: F401
     FefferyResponsive,  # noqa: F401
+    FefferyTextSelection,  # noqa: F401
 )

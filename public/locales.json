@@ -621,6 +621,12 @@
         },
         "监听页面响应式变化。": {
             "en-us": "Listen to responsive changes in the page."
+        },
+        "FefferyTextSelection 文字选中监听": {
+            "en-us": "FefferyTextSelection"
+        },
+        "针对指定目标内的文字选中事件进行监听。": {
+            "en-us": "Listen to text selection events for the specified target."
         }
     }
 }
