@@ -71,4 +71,5 @@ from . import (
     FefferyMediaQuery,  # noqa: F401
     FefferyMousePosition,  # noqa: F401
     FefferyNetwork,  # noqa: F401
+    FefferyPageLeave,  # noqa: F401
 )

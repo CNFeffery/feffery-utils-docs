@@ -609,6 +609,12 @@
         },
         "监听网络状态。": {
             "en-us": "Listen to network status."
+        },
+        "FefferyPageLeave 鼠标离开页面监听": {
+            "en-us": "FefferyPageLeave"
+        },
+        "监听鼠标离开页面事件。": {
+            "en-us": "Listen to mouse leaving page events."
         }
     }
 }

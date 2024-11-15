@@ -971,6 +971,17 @@ class AppConfig:
                                     'href': '/FefferyNetwork',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyPageLeave',
+                                    'name': '/FefferyPageLeave',
+                                    'title': translator.t(
+                                        'FefferyPageLeave 鼠标离开页面监听'
+                                    ),
+                                    'href': '/FefferyPageLeave',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1188,4 +1199,5 @@ class AppConfig:
         '/FefferyMediaQuery': ['事件监听'],
         '/FefferyMousePosition': ['事件监听'],
         '/FefferyNetwork': ['事件监听'],
+        '/FefferyPageLeave': ['事件监听'],
     }
