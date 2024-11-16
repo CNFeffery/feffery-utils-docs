@@ -78,4 +78,5 @@ from . import (
     FefferyExternalCss,  # noqa: F401
     FefferyExternalJs,  # noqa: F401
     FefferyFullscreen,  # noqa: F401
+    FefferyReload,  # noqa: F401
 )

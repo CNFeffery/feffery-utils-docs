@@ -1066,6 +1066,17 @@ class AppConfig:
                                     'href': '/FefferyFullscreen',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyReload',
+                                    'name': '/FefferyReload',
+                                    'title': translator.t(
+                                        'FefferyReload 页面重载'
+                                    ),
+                                    'href': '/FefferyReload',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1274,4 +1285,5 @@ class AppConfig:
         '/FefferyExternalCss': ['静态资源控制'],
         '/FefferyExternalJs': ['静态资源控制'],
         '/FefferyFullscreen': ['页面控制'],
+        '/FefferyReload': ['页面控制'],
     }

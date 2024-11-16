@@ -651,6 +651,12 @@
         },
         "控制当前页面是否全屏化。": {
             "en-us": "Control whether the current page is full screen."
+        },
+        "FefferyReload 页面重载": {
+            "en-us": "FefferyReload"
+        },
+        "快捷重载当前页面。": {
+            "en-us": "Reload the current page quickly."
         }
     }
 }
