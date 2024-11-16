@@ -669,6 +669,12 @@
         },
         "快捷设置favicon图标。": {
             "en-us": "Quickly set favicon icon."
+        },
+        "FefferySetTitle 页面title设置": {
+            "en-us": "FefferySetTitle"
+        },
+        "快捷设置页面title。": {
+            "en-us": "Quickly set page title."
         }
     }
 }

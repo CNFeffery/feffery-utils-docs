@@ -81,4 +81,5 @@ from . import (
     FefferyReload,  # noqa: F401
     FefferyScroll,  # noqa: F401
     FefferySetFavicon,  # noqa: F401
+    FefferySetTitle,  # noqa: F401
 )
