@@ -96,4 +96,5 @@ from . import (
     FefferyResizable,  # noqa: F401
     FefferyDebugGuardian,  # noqa: F401
     FefferyDebounceProp,  # noqa: F401
+    FefferyLazyLoad,  # noqa: F401
 )

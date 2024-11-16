@@ -1318,6 +1318,17 @@ class AppConfig:
                                     'href': '/FefferyDebounceProp',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyLazyLoad',
+                                    'name': '/FefferyLazyLoad',
+                                    'title': translator.t(
+                                        'FefferyLazyLoad 懒加载容器'
+                                    ),
+                                    'href': '/FefferyLazyLoad',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1496,4 +1507,5 @@ class AppConfig:
         '/FefferyResizable': ['尺寸调整'],
         '/FefferyDebugGuardian': ['安全'],
         '/FefferyDebounceProp': ['性能优化'],
+        '/FefferyLazyLoad': ['性能优化'],
     }

@@ -759,6 +759,12 @@
         },
         "实现针对任意目标组件属性值的防抖改造。": {
             "en-us": "Implement debouncing for any target component attribute value."
+        },
+        "FefferyLazyLoad 懒加载容器": {
+            "en-us": "FefferyLazyLoad"
+        },
+        "为容器内元素添加懒加载功能。": {
+            "en-us": "Add lazy loading function to container elements."
         }
     }
 }
