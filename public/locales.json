@@ -885,6 +885,12 @@
         },
         "进行指定时长的倒计时。": {
             "en-us": "Countdown for the specified duration."
+        },
+        "FefferyExecuteJs js执行": {
+            "en-us": "FefferyExecuteJs"
+        },
+        "执行指定的javascript代码片段。": {
+            "en-us": "Execute the specified javascript code snippet."
         }
     }
 }

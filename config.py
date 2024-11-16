@@ -1583,6 +1583,17 @@ class AppConfig:
                                     'href': '/FefferyCountDown',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyExecuteJs',
+                                    'name': '/FefferyExecuteJs',
+                                    'title': translator.t(
+                                        'FefferyExecuteJs js执行'
+                                    ),
+                                    'href': '/FefferyExecuteJs',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -1734,4 +1745,5 @@ class AppConfig:
         '/FefferyCaptcha': ['验证码'],
         '/FefferySliderCaptcha': ['验证码'],
         '/FefferyCountDown': ['其他'],
+        '/FefferyExecuteJs': ['其他'],
     }
