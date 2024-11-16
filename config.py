@@ -1359,7 +1359,19 @@ class AppConfig:
                             'key': '数据展示',
                             'title': translator.t('数据展示'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyBarcode',
+                                    'name': '/FefferyBarcode',
+                                    'title': translator.t(
+                                        'FefferyBarcode 条形码'
+                                    ),
+                                    'href': '/FefferyBarcode',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1532,4 +1544,5 @@ class AppConfig:
         '/FefferyLazyLoad': ['性能优化'],
         '/FefferyThrottleProp': ['性能优化'],
         '/FefferyVirtualList': ['性能优化'],
+        '/FefferyBarcode': ['数据展示'],
     }

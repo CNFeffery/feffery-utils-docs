@@ -777,6 +777,12 @@
         },
         "基于虚拟滚动实现对众多元素的高性能渲染。": {
             "en-us": "Implement high-performance rendering of many elements based on virtual scrolling."
+        },
+        "FefferyBarcode 条形码": {
+            "en-us": "FefferyBarcode"
+        },
+        "渲染条形码。": {
+            "en-us": "Render barcodes."
         }
     }
 }

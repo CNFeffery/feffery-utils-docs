@@ -99,4 +99,5 @@ from . import (
     FefferyLazyLoad,  # noqa: F401
     FefferyThrottleProp,  # noqa: F401
     FefferyVirtualList,  # noqa: F401
+    FefferyBarcode,  # noqa: F401
 )
