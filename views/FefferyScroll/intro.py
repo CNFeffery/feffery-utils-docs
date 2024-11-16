@@ -12,13 +12,13 @@ def render() -> Component:
             items=[
                 {'title': translator.t('组件介绍')},
                 {'title': translator.t('页面控制')},
-                {'title': translator.t('FefferyFullscreen 全屏化')},
+                {'title': translator.t('FefferyScroll 滚动操作')},
             ],
             style={'marginBottom': 8},
         ),
         fac.AntdTitle(
-            translator.t('FefferyFullscreen 全屏化'),
+            translator.t('FefferyScroll 滚动操作'),
             level=2,
         ),
-        fac.AntdParagraph(translator.t('控制当前页面是否全屏化。')),
+        fac.AntdParagraph(translator.t('快捷实现滚动操作。')),
     ]

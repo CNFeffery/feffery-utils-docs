@@ -11,7 +11,7 @@ def render() -> Component:
         fac.AntdBreadcrumb(
             items=[
                 {'title': translator.t('组件介绍')},
-                {'title': translator.t('静态资源控制')},
+                {'title': translator.t('页面控制')},
                 {'title': translator.t('FefferyReload 页面重载')},
             ],
             style={'marginBottom': 8},

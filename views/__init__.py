@@ -79,4 +79,5 @@ from . import (
     FefferyExternalJs,  # noqa: F401
     FefferyFullscreen,  # noqa: F401
     FefferyReload,  # noqa: F401
+    FefferyScroll,  # noqa: F401
 )

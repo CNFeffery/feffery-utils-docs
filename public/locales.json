@@ -657,6 +657,12 @@
         },
         "快捷重载当前页面。": {
             "en-us": "Reload the current page quickly."
+        },
+        "FefferyScroll 滚动操作": {
+            "en-us": "FefferyScroll"
+        },
+        "快捷实现滚动操作。": {
+            "en-us": "Quickly implement scrolling operations."
         }
     }
 }
