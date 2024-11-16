@@ -1329,6 +1329,17 @@ class AppConfig:
                                     'href': '/FefferyLazyLoad',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyThrottleProp',
+                                    'name': '/FefferyThrottleProp',
+                                    'title': translator.t(
+                                        'FefferyThrottleProp 节流属性'
+                                    ),
+                                    'href': '/FefferyThrottleProp',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1508,4 +1519,5 @@ class AppConfig:
         '/FefferyDebugGuardian': ['安全'],
         '/FefferyDebounceProp': ['性能优化'],
         '/FefferyLazyLoad': ['性能优化'],
+        '/FefferyThrottleProp': ['性能优化'],
     }

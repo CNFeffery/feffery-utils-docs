@@ -97,4 +97,5 @@ from . import (
     FefferyDebugGuardian,  # noqa: F401
     FefferyDebounceProp,  # noqa: F401
     FefferyLazyLoad,  # noqa: F401
+    FefferyThrottleProp,  # noqa: F401
 )

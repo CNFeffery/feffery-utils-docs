@@ -765,6 +765,12 @@
         },
         "为容器内元素添加懒加载功能。": {
             "en-us": "Add lazy loading function to container elements."
+        },
+        "FefferyThrottleProp 节流属性": {
+            "en-us": "FefferyThrottleProp"
+        },
+        "实现针对任意目标组件属性值的节流改造。": {
+            "en-us": "Implement throttling for any target component attribute value."
         }
     }
 }
