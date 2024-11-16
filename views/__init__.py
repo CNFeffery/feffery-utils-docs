@@ -104,4 +104,5 @@ from . import (
     FefferyCountUp,  # noqa: F401
     FefferyFormatBytes,  # noqa: F401
     FefferyFormatNumber,  # noqa: F401
+    FefferyJsonViewer,  # noqa: F401
 )

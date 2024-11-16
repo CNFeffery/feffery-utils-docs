@@ -807,6 +807,12 @@
         },
         "数值格式化显示。": {
             "en-us": "Number format display."
+        },
+        "FefferyJsonViewer json数据展示": {
+            "en-us": "FefferyJsonViewer"
+        },
+        "json数据查看器。": {
+            "en-us": "Json data viewer."
         }
     }
 }

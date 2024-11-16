@@ -1415,6 +1415,17 @@ class AppConfig:
                                     'href': '/FefferyFormatNumber',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyJsonViewer',
+                                    'name': '/FefferyJsonViewer',
+                                    'title': translator.t(
+                                        'FefferyJsonViewer json数据展示'
+                                    ),
+                                    'href': '/FefferyJsonViewer',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1593,4 +1604,5 @@ class AppConfig:
         '/FefferyCountUp': ['数据展示'],
         '/FefferyFormatBytes': ['数据展示'],
         '/FefferyFormatNumber': ['数据展示'],
+        '/FefferyJsonViewer': ['数据展示'],
     }
