@@ -98,4 +98,5 @@ from . import (
     FefferyDebounceProp,  # noqa: F401
     FefferyLazyLoad,  # noqa: F401
     FefferyThrottleProp,  # noqa: F401
+    FefferyVirtualList,  # noqa: F401
 )

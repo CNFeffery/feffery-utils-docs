@@ -1340,6 +1340,17 @@ class AppConfig:
                                     'href': '/FefferyThrottleProp',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyVirtualList',
+                                    'name': '/FefferyVirtualList',
+                                    'title': translator.t(
+                                        'FefferyVirtualList 虚拟滚动'
+                                    ),
+                                    'href': '/FefferyVirtualList',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1520,4 +1531,5 @@ class AppConfig:
         '/FefferyDebounceProp': ['性能优化'],
         '/FefferyLazyLoad': ['性能优化'],
         '/FefferyThrottleProp': ['性能优化'],
+        '/FefferyVirtualList': ['性能优化'],
     }

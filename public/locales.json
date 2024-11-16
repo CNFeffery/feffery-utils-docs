@@ -771,6 +771,12 @@
         },
         "实现针对任意目标组件属性值的节流改造。": {
             "en-us": "Implement throttling for any target component attribute value."
+        },
+        "FefferyVirtualList 虚拟滚动": {
+            "en-us": "FefferyVirtualList"
+        },
+        "基于虚拟滚动实现对众多元素的高性能渲染。": {
+            "en-us": "Implement high-performance rendering of many elements based on virtual scrolling."
         }
     }
 }
