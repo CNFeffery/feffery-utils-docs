@@ -1255,7 +1255,19 @@ class AppConfig:
                             'key': '尺寸调整',
                             'title': translator.t('尺寸调整'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyAutoFit',
+                                    'name': '/FefferyAutoFit',
+                                    'title': translator.t(
+                                        'FefferyAutoFit 自适应'
+                                    ),
+                                    'href': '/FefferyAutoFit',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1445,4 +1457,5 @@ class AppConfig:
         '/FefferyWebSocket': ['通信'],
         '/FefferyExcelPreview': ['文件预览'],
         '/FefferyWordPreview': ['文件预览'],
+        '/FefferyAutoFit': ['尺寸调整'],
     }

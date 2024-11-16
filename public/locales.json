@@ -735,6 +735,12 @@
         },
         "预览word文件。": {
             "en-us": "Preview word file."
+        },
+        "FefferyAutoFit 自适应": {
+            "en-us": "FefferyAutoFit"
+        },
+        "为页面整体添加屏幕自适应功能。": {
+            "en-us": "Add screen adaptation function to the whole page."
         }
     }
 }

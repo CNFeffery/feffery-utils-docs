@@ -92,4 +92,5 @@ from . import (
     FefferyWebSocket,  # noqa: F401
     FefferyExcelPreview,  # noqa: F401
     FefferyWordPreview,  # noqa: F401
+    FefferyAutoFit,  # noqa: F401
 )
