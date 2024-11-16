@@ -108,4 +108,5 @@ from . import (
     FefferyQRCode,  # noqa: F401
     FefferyRawHTML,  # noqa: F401
     FefferySeamlessScroll,  # noqa: F401
+    FefferyFancyMessage,  # noqa: F401
 )

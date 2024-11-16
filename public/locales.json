@@ -831,6 +831,12 @@
         },
         "针对一组元素进行无缝滚动。": {
             "en-us": "Seamless scrolling for a group of elements."
+        },
+        "FefferyFancyMessage 美观消息提示": {
+            "en-us": "FefferyFancyMessage"
+        },
+        "渲染美观的消息提示。": {
+            "en-us": "Render beautiful messages."
         }
     }
 }

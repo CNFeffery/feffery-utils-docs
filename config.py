@@ -1453,18 +1453,22 @@ class AppConfig:
                     {
                         'component': 'SubMenu',
                         'props': {
-                            'key': '数据展示',
-                            'title': translator.t('数据展示'),
-                        },
-                        'children': [],
-                    },
-                    {
-                        'component': 'SubMenu',
-                        'props': {
                             'key': '反馈',
                             'title': translator.t('反馈'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyFancyMessage',
+                                    'name': '/FefferyFancyMessage',
+                                    'title': translator.t(
+                                        'FefferyFancyMessage 美观消息提示'
+                                    ),
+                                    'href': '/FefferyFancyMessage',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1630,4 +1634,5 @@ class AppConfig:
         '/FefferyQRCode': ['数据展示'],
         '/FefferyRawHTML': ['数据展示'],
         '/FefferySeamlessScroll': ['数据展示'],
+        '/FefferyFancyMessage': ['反馈'],
     }
