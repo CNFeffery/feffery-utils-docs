@@ -753,6 +753,12 @@
         },
         "提供多种策略的前端防调试功能。": {
             "en-us": "Provide multiple strategies of front-end debugging protection."
+        },
+        "FefferyDebounceProp 防抖属性": {
+            "en-us": "FefferyDebounceProp"
+        },
+        "实现针对任意目标组件属性值的防抖改造。": {
+            "en-us": "Implement debouncing for any target component attribute value."
         }
     }
 }

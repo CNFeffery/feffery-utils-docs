@@ -95,4 +95,5 @@ from . import (
     FefferyAutoFit,  # noqa: F401
     FefferyResizable,  # noqa: F401
     FefferyDebugGuardian,  # noqa: F401
+    FefferyDebounceProp,  # noqa: F401
 )

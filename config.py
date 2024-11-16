@@ -1306,7 +1306,19 @@ class AppConfig:
                             'key': '性能优化',
                             'title': translator.t('性能优化'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyDebounceProp',
+                                    'name': '/FefferyDebounceProp',
+                                    'title': translator.t(
+                                        'FefferyDebounceProp 防抖属性'
+                                    ),
+                                    'href': '/FefferyDebounceProp',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1483,4 +1495,5 @@ class AppConfig:
         '/FefferyAutoFit': ['尺寸调整'],
         '/FefferyResizable': ['尺寸调整'],
         '/FefferyDebugGuardian': ['安全'],
+        '/FefferyDebounceProp': ['性能优化'],
     }
