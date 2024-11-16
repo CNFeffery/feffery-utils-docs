@@ -705,6 +705,12 @@
         },
         "在浏览器端发起http请求并获取响应数据。": {
             "en-us": "Make an http request in the browser and get the response data."
+        },
+        "FefferyIframeMessenger 跨iframe通信组件": {
+            "en-us": "FefferyIframeMessenger"
+        },
+        "实现跨iframe通信。": {
+            "en-us": "Implement cross-iframe communication."
         }
     }
 }

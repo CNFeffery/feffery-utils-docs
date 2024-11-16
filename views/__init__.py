@@ -87,4 +87,5 @@ from . import (
     FefferyEventSource,  # noqa: F401
     FefferyPostEventSource,  # noqa: F401
     FefferyHttpRequests,  # noqa: F401
+    FefferyIframeMessenger,  # noqa: F401
 )
