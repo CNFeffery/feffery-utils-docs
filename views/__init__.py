@@ -115,4 +115,5 @@ from . import (
     FefferyLocalStorage,  # noqa: F401
     FefferySessionStorage,  # noqa: F401
     FefferyCaptcha,  # noqa: F401
+    FefferySliderCaptcha,  # noqa: F401
 )

@@ -873,6 +873,12 @@
         },
         "图片形式的验证码组件。": {
             "en-us": "Image form verification code component."
+        },
+        "FefferySliderCaptcha 滑块验证码": {
+            "en-us": "FefferySliderCaptcha"
+        },
+        "滑块形式的验证码组件。": {
+            "en-us": "Slider form verification code component."
         }
     }
 }

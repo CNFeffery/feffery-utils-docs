@@ -1552,6 +1552,17 @@ class AppConfig:
                                     'href': '/FefferyCaptcha',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferySliderCaptcha',
+                                    'name': '/FefferySliderCaptcha',
+                                    'title': translator.t(
+                                        'FefferySliderCaptcha 滑块验证码'
+                                    ),
+                                    'href': '/FefferySliderCaptcha',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1709,4 +1720,5 @@ class AppConfig:
         '/FefferyLocalStorage': ['存储'],
         '/FefferySessionStorage': ['存储'],
         '/FefferyCaptcha': ['存储'],
+        '/FefferySliderCaptcha': ['存储'],
     }
