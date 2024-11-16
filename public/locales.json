@@ -747,6 +747,12 @@
         },
         "提供尺寸可调整的容器。": {
             "en-us": "Provide a container for size adjustment."
+        },
+        "FefferyDebugGuardian 调试守护": {
+            "en-us": "FefferyDebugGuardian"
+        },
+        "提供多种策略的前端防调试功能。": {
+            "en-us": "Provide multiple strategies of front-end debugging protection."
         }
     }
 }

@@ -1286,7 +1286,19 @@ class AppConfig:
                             'key': '安全',
                             'title': translator.t('安全'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyDebugGuardian',
+                                    'name': '/FefferyDebugGuardian',
+                                    'title': translator.t(
+                                        'FefferyDebugGuardian 调试守护'
+                                    ),
+                                    'href': '/FefferyDebugGuardian',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1470,4 +1482,5 @@ class AppConfig:
         '/FefferyWordPreview': ['文件预览'],
         '/FefferyAutoFit': ['尺寸调整'],
         '/FefferyResizable': ['尺寸调整'],
+        '/FefferyDebugGuardian': ['安全'],
     }
