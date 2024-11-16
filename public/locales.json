@@ -849,6 +849,12 @@
         },
         "控制Cookie。": {
             "en-us": "Control Cookie."
+        },
+        "FefferyLocalLargeStorage 客户端大容量存储器": {
+            "en-us": "FefferyLocalLargeStorage"
+        },
+        "在用户浏览器本地缓存大量数据。": {
+            "en-us": "Store large amounts of data in the user's browser cache."
         }
     }
 }

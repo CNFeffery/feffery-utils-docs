@@ -111,4 +111,5 @@ from . import (
     FefferyFancyMessage,  # noqa: F401
     FefferyFancyNotification,  # noqa: F401
     FefferyCookie,  # noqa: F401
+    FefferyLocalLargeStorage,  # noqa: F401
 )
