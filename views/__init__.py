@@ -113,4 +113,5 @@ from . import (
     FefferyCookie,  # noqa: F401
     FefferyLocalLargeStorage,  # noqa: F401
     FefferyLocalStorage,  # noqa: F401
+    FefferySessionStorage,  # noqa: F401
 )

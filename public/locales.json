@@ -861,6 +861,12 @@
         },
         "管理指定的localStorage键值对状态。": {
             "en-us": "Manage the specified localStorage key-value pair state."
+        },
+        "FefferySessionStorage sessionStorage状态管理": {
+            "en-us": "FefferySessionStorage"
+        },
+        "管理指定的sessionStorage键值对状态。": {
+            "en-us": "Manage the specified sessionStorage key-value pair state."
         }
     }
 }
