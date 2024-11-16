@@ -1224,7 +1224,19 @@ class AppConfig:
                             'key': '文件预览',
                             'title': translator.t('文件预览'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyExcelPreview',
+                                    'name': '/FefferyExcelPreview',
+                                    'title': translator.t(
+                                        'FefferyExcelPreview excel文件预览'
+                                    ),
+                                    'href': '/FefferyExcelPreview',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1420,4 +1432,5 @@ class AppConfig:
         '/FefferyIframeMessenger': ['通信'],
         '/FefferyTabMessenger': ['通信'],
         '/FefferyWebSocket': ['通信'],
+        '/FefferyExcelPreview': ['通信'],
     }

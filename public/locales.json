@@ -723,6 +723,12 @@
         },
         "处理与WebSocket服务的通信。": {
             "en-us": "Handle communication with the WebSocket service."
+        },
+        "FefferyExcelPreview excel文件预览": {
+            "en-us": "FefferyExcelPreview"
+        },
+        "预览excel文件。": {
+            "en-us": "Preview excel file."
         }
     }
 }

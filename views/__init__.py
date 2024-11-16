@@ -90,4 +90,5 @@ from . import (
     FefferyIframeMessenger,  # noqa: F401
     FefferyTabMessenger,  # noqa: F401
     FefferyWebSocket,  # noqa: F401
+    FefferyExcelPreview,  # noqa: F401
 )
