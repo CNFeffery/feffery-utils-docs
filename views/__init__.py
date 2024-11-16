@@ -114,4 +114,5 @@ from . import (
     FefferyLocalLargeStorage,  # noqa: F401
     FefferyLocalStorage,  # noqa: F401
     FefferySessionStorage,  # noqa: F401
+    FefferyCaptcha,  # noqa: F401
 )

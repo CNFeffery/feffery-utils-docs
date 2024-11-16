@@ -1540,7 +1540,19 @@ class AppConfig:
                             'key': '验证码',
                             'title': translator.t('验证码'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyCaptcha',
+                                    'name': '/FefferyCaptcha',
+                                    'title': translator.t(
+                                        'FefferyCaptcha 验证码'
+                                    ),
+                                    'href': '/FefferyCaptcha',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1696,4 +1708,5 @@ class AppConfig:
         '/FefferyLocalLargeStorage': ['存储'],
         '/FefferyLocalStorage': ['存储'],
         '/FefferySessionStorage': ['存储'],
+        '/FefferyCaptcha': ['存储'],
     }

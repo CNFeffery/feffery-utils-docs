@@ -867,6 +867,12 @@
         },
         "管理指定的sessionStorage键值对状态。": {
             "en-us": "Manage the specified sessionStorage key-value pair state."
+        },
+        "FefferyCaptcha 验证码": {
+            "en-us": "FefferyCaptcha"
+        },
+        "图片形式的验证码组件。": {
+            "en-us": "Image form verification code component."
         }
     }
 }
