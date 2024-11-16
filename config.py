@@ -1130,6 +1130,17 @@ class AppConfig:
                                     'href': '/FefferyCssVar',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyStyle',
+                                    'name': '/FefferyStyle',
+                                    'title': translator.t(
+                                        'FefferyStyle 动态样式'
+                                    ),
+                                    'href': '/FefferyStyle',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1335,4 +1346,5 @@ class AppConfig:
         '/FefferySetFavicon': ['页面控制'],
         '/FefferySetTitle': ['页面控制'],
         '/FefferyCssVar': ['样式控制'],
+        '/FefferyStyle': ['样式控制'],
     }

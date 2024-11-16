@@ -681,6 +681,12 @@
         },
         "控制指定CSS变量的值。": {
             "en-us": "Control the value of the specified CSS variable."
+        },
+        "FefferyStyle 动态样式": {
+            "en-us": "FefferyStyle"
+        },
+        "动态注入CSS样式规则片段并生效。": {
+            "en-us": "Dynamically inject CSS style rule fragments and make them effective."
         }
     }
 }

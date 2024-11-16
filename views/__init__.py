@@ -83,4 +83,5 @@ from . import (
     FefferySetFavicon,  # noqa: F401
     FefferySetTitle,  # noqa: F401
     FefferyCssVar,  # noqa: F401
+    FefferyStyle,  # noqa: F401
 )
