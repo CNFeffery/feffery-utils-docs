@@ -675,6 +675,12 @@
         },
         "快捷设置页面title。": {
             "en-us": "Quickly set page title."
+        },
+        "FefferyCssVar CSS变量更新": {
+            "en-us": "FefferyCssVar"
+        },
+        "控制指定CSS变量的值。": {
+            "en-us": "Control the value of the specified CSS variable."
         }
     }
 }

@@ -1118,7 +1118,19 @@ class AppConfig:
                             'key': '样式控制',
                             'title': translator.t('样式控制'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyCssVar',
+                                    'name': '/FefferyCssVar',
+                                    'title': translator.t(
+                                        'FefferyCssVar CSS变量更新'
+                                    ),
+                                    'href': '/FefferyCssVar',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1322,4 +1334,5 @@ class AppConfig:
         '/FefferyScroll': ['页面控制'],
         '/FefferySetFavicon': ['页面控制'],
         '/FefferySetTitle': ['页面控制'],
+        '/FefferyCssVar': ['样式控制'],
     }
