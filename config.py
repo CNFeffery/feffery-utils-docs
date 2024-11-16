@@ -1571,7 +1571,19 @@ class AppConfig:
                             'key': '其他',
                             'title': translator.t('其他'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyCountDown',
+                                    'name': '/FefferyCountDown',
+                                    'title': translator.t(
+                                        'FefferyCountDown 倒计时'
+                                    ),
+                                    'href': '/FefferyCountDown',
+                                },
+                            },
+                        ],
                     },
                 ],
             },
@@ -1719,6 +1731,7 @@ class AppConfig:
         '/FefferyLocalLargeStorage': ['存储'],
         '/FefferyLocalStorage': ['存储'],
         '/FefferySessionStorage': ['存储'],
-        '/FefferyCaptcha': ['存储'],
-        '/FefferySliderCaptcha': ['存储'],
+        '/FefferyCaptcha': ['验证码'],
+        '/FefferySliderCaptcha': ['验证码'],
+        '/FefferyCountDown': ['其他'],
     }

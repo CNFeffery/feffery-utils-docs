@@ -879,6 +879,12 @@
         },
         "滑块形式的验证码组件。": {
             "en-us": "Slider form verification code component."
+        },
+        "FefferyCountDown 倒计时": {
+            "en-us": "FefferyCountDown"
+        },
+        "进行指定时长的倒计时。": {
+            "en-us": "Countdown for the specified duration."
         }
     }
 }
