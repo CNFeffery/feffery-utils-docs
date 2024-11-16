@@ -1440,12 +1440,12 @@ class AppConfig:
                             {
                                 'component': 'Item',
                                 'props': {
-                                    'key': '/FefferyRawHTML',
-                                    'name': '/FefferyRawHTML',
+                                    'key': '/FefferySeamlessScroll',
+                                    'name': '/FefferySeamlessScroll',
                                     'title': translator.t(
-                                        'FefferyRawHTML HTML字符渲染'
+                                        'FefferySeamlessScroll 无缝滚动'
                                     ),
-                                    'href': '/FefferyRawHTML',
+                                    'href': '/FefferySeamlessScroll',
                                 },
                             },
                         ],
@@ -1629,4 +1629,5 @@ class AppConfig:
         '/FefferyJsonViewer': ['数据展示'],
         '/FefferyQRCode': ['数据展示'],
         '/FefferyRawHTML': ['数据展示'],
+        '/FefferySeamlessScroll': ['数据展示'],
     }

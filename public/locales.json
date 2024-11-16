@@ -825,6 +825,12 @@
         },
         "将HTML源码渲染为页面元素。": {
             "en-us": "Render HTML source code as page elements."
+        },
+        "FefferySeamlessScroll 无缝滚动": {
+            "en-us": "FefferySeamlessScroll"
+        },
+        "针对一组元素进行无缝滚动。": {
+            "en-us": "Seamless scrolling for a group of elements."
         }
     }
 }
