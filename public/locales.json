@@ -717,6 +717,12 @@
         },
         "实现跨标签页通信。": {
             "en-us": "Implement cross-tab communication."
+        },
+        "FefferyWebSocket WebSocket通信": {
+            "en-us": "FefferyWebSocket"
+        },
+        "处理与WebSocket服务的通信。": {
+            "en-us": "Handle communication with the WebSocket service."
         }
     }
 }

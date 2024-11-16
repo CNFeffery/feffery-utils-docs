@@ -1205,6 +1205,17 @@ class AppConfig:
                                     'href': '/FefferyTabMessenger',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyWebSocket',
+                                    'name': '/FefferyWebSocket',
+                                    'title': translator.t(
+                                        'FefferyWebSocket WebSocket通信'
+                                    ),
+                                    'href': '/FefferyWebSocket',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1408,4 +1419,5 @@ class AppConfig:
         '/FefferyHttpRequests': ['通信'],
         '/FefferyIframeMessenger': ['通信'],
         '/FefferyTabMessenger': ['通信'],
+        '/FefferyWebSocket': ['通信'],
     }

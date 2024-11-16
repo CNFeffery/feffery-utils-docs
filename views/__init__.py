@@ -89,4 +89,5 @@ from . import (
     FefferyHttpRequests,  # noqa: F401
     FefferyIframeMessenger,  # noqa: F401
     FefferyTabMessenger,  # noqa: F401
+    FefferyWebSocket,  # noqa: F401
 )
