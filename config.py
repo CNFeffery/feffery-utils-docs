@@ -1510,6 +1510,17 @@ class AppConfig:
                                     'href': '/FefferyLocalLargeStorage',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyLocalStorage',
+                                    'name': '/FefferyLocalStorage',
+                                    'title': translator.t(
+                                        'FefferyLocalStorage localStorage状态管理'
+                                    ),
+                                    'href': '/FefferyLocalStorage',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1672,4 +1683,5 @@ class AppConfig:
         '/FefferyFancyNotification': ['反馈'],
         '/FefferyCookie': ['存储'],
         '/FefferyLocalLargeStorage': ['存储'],
+        '/FefferyLocalStorage': ['存储'],
     }

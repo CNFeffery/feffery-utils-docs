@@ -855,6 +855,12 @@
         },
         "在用户浏览器本地缓存大量数据。": {
             "en-us": "Store large amounts of data in the user's browser cache."
+        },
+        "FefferyLocalStorage localStorage状态管理": {
+            "en-us": "FefferyLocalStorage"
+        },
+        "管理指定的localStorage键值对状态。": {
+            "en-us": "Manage the specified localStorage key-value pair state."
         }
     }
 }
