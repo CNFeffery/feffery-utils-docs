@@ -119,4 +119,5 @@ from . import (
     FefferyCountDown,  # noqa: F401
     FefferyExecuteJs,  # noqa: F401
     FefferyGuide,  # noqa: F401
+    FefferyShortcutPanel,  # noqa: F401
 )

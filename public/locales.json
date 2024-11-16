@@ -897,6 +897,12 @@
         },
         "用户操作引导提示。": {
             "en-us": "User operation guide prompt."
+        },
+        "FefferyShortcutPanel 快捷指令面板": {
+            "en-us": "FefferyShortcutPanel"
+        },
+        "快捷指令面板。": {
+            "en-us": "Shortcut command panel."
         }
     }
 }

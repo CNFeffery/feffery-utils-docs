@@ -1603,6 +1603,17 @@ class AppConfig:
                                     'href': '/FefferyGuide',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyShortcutPanel',
+                                    'name': '/FefferyShortcutPanel',
+                                    'title': translator.t(
+                                        'FefferyShortcutPanel 快捷指令面板'
+                                    ),
+                                    'href': '/FefferyShortcutPanel',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -1756,4 +1767,5 @@ class AppConfig:
         '/FefferyCountDown': ['其他'],
         '/FefferyExecuteJs': ['其他'],
         '/FefferyGuide': ['其他'],
+        '/FefferyShortcutPanel': ['其他'],
     }
