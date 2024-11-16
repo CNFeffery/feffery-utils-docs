@@ -103,4 +103,5 @@ from . import (
     FefferyCompareSlider,  # noqa: F401
     FefferyCountUp,  # noqa: F401
     FefferyFormatBytes,  # noqa: F401
+    FefferyFormatNumber,  # noqa: F401
 )

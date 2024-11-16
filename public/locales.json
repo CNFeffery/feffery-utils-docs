@@ -801,6 +801,12 @@
         },
         "字节格式化显示。": {
             "en-us": "Byte format display."
+        },
+        "FefferyFormatNumber 数值格式化": {
+            "en-us": "FefferyFormatNumber"
+        },
+        "数值格式化显示。": {
+            "en-us": "Number format display."
         }
     }
 }

@@ -1404,6 +1404,17 @@ class AppConfig:
                                     'href': '/FefferyFormatBytes',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyFormatNumber',
+                                    'name': '/FefferyFormatNumber',
+                                    'title': translator.t(
+                                        'FefferyFormatNumber 数值格式化'
+                                    ),
+                                    'href': '/FefferyFormatNumber',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1581,4 +1592,5 @@ class AppConfig:
         '/FefferyCompareSlider': ['数据展示'],
         '/FefferyCountUp': ['数据展示'],
         '/FefferyFormatBytes': ['数据展示'],
+        '/FefferyFormatNumber': ['数据展示'],
     }
