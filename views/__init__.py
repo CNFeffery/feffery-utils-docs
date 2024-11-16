@@ -80,4 +80,5 @@ from . import (
     FefferyFullscreen,  # noqa: F401
     FefferyReload,  # noqa: F401
     FefferyScroll,  # noqa: F401
+    FefferySetFavicon,  # noqa: F401
 )

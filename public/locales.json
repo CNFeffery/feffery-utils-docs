@@ -663,6 +663,12 @@
         },
         "快捷实现滚动操作。": {
             "en-us": "Quickly implement scrolling operations."
+        },
+        "FefferySetFavicon favicon设置": {
+            "en-us": "FefferySetFavicon"
+        },
+        "快捷设置favicon图标。": {
+            "en-us": "Quickly set favicon icon."
         }
     }
 }

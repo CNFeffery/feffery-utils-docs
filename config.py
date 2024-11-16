@@ -1088,6 +1088,17 @@ class AppConfig:
                                     'href': '/FefferyScroll',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferySetFavicon',
+                                    'name': '/FefferySetFavicon',
+                                    'title': translator.t(
+                                        'FefferySetFavicon favicon设置'
+                                    ),
+                                    'href': '/FefferySetFavicon',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1298,4 +1309,5 @@ class AppConfig:
         '/FefferyFullscreen': ['页面控制'],
         '/FefferyReload': ['页面控制'],
         '/FefferyScroll': ['页面控制'],
+        '/FefferySetFavicon': ['页面控制'],
     }
