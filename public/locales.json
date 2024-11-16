@@ -837,6 +837,12 @@
         },
         "渲染美观的消息提示。": {
             "en-us": "Render beautiful messages."
+        },
+        "FefferyFancyNotification 美观通知提示": {
+            "en-us": "FefferyFancyNotification"
+        },
+        "渲染美观的通知提示。": {
+            "en-us": "Render beautiful notifications."
         }
     }
 }

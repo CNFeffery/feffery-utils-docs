@@ -1468,6 +1468,17 @@ class AppConfig:
                                     'href': '/FefferyFancyMessage',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyFancyNotification',
+                                    'name': '/FefferyFancyNotification',
+                                    'title': translator.t(
+                                        'FefferyFancyNotification 美观通知提示'
+                                    ),
+                                    'href': '/FefferyFancyNotification',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1635,4 +1646,5 @@ class AppConfig:
         '/FefferyRawHTML': ['数据展示'],
         '/FefferySeamlessScroll': ['数据展示'],
         '/FefferyFancyMessage': ['反馈'],
+        '/FefferyFancyNotification': ['反馈'],
     }

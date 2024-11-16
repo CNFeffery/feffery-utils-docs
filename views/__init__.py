@@ -109,4 +109,5 @@ from . import (
     FefferyRawHTML,  # noqa: F401
     FefferySeamlessScroll,  # noqa: F401
     FefferyFancyMessage,  # noqa: F401
+    FefferyFancyNotification,  # noqa: F401
 )
