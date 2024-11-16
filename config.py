@@ -1437,6 +1437,17 @@ class AppConfig:
                                     'href': '/FefferyQRCode',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyRawHTML',
+                                    'name': '/FefferyRawHTML',
+                                    'title': translator.t(
+                                        'FefferyRawHTML HTML字符渲染'
+                                    ),
+                                    'href': '/FefferyRawHTML',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1617,4 +1628,5 @@ class AppConfig:
         '/FefferyFormatNumber': ['数据展示'],
         '/FefferyJsonViewer': ['数据展示'],
         '/FefferyQRCode': ['数据展示'],
+        '/FefferyRawHTML': ['数据展示'],
     }
