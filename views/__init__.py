@@ -120,4 +120,5 @@ from . import (
     FefferyExecuteJs,  # noqa: F401
     FefferyGuide,  # noqa: F401
     FefferyShortcutPanel,  # noqa: F401
+    FefferyTimeout,  # noqa: F401
 )

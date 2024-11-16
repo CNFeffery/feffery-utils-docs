@@ -903,6 +903,12 @@
         },
         "快捷指令面板。": {
             "en-us": "Shortcut command panel."
+        },
+        "FefferyTimeout 定时执行": {
+            "en-us": "FefferyTimeout"
+        },
+        "执行指定时长的定时。": {
+            "en-us": "Execute a timed task for the specified duration."
         }
     }
 }

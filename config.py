@@ -1614,6 +1614,17 @@ class AppConfig:
                                     'href': '/FefferyShortcutPanel',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyTimeout',
+                                    'name': '/FefferyTimeout',
+                                    'title': translator.t(
+                                        'FefferyTimeout 定时执行'
+                                    ),
+                                    'href': '/FefferyTimeout',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -1768,4 +1779,5 @@ class AppConfig:
         '/FefferyExecuteJs': ['其他'],
         '/FefferyGuide': ['其他'],
         '/FefferyShortcutPanel': ['其他'],
+        '/FefferyTimeout': ['其他'],
     }
