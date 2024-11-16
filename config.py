@@ -1594,6 +1594,15 @@ class AppConfig:
                                     'href': '/FefferyExecuteJs',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyGuide',
+                                    'name': '/FefferyGuide',
+                                    'title': translator.t('FefferyGuide 引导'),
+                                    'href': '/FefferyGuide',
+                                },
+                            },
                         ],
                     },
                 ],
@@ -1746,4 +1755,5 @@ class AppConfig:
         '/FefferySliderCaptcha': ['验证码'],
         '/FefferyCountDown': ['其他'],
         '/FefferyExecuteJs': ['其他'],
+        '/FefferyGuide': ['其他'],
     }

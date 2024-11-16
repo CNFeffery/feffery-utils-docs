@@ -891,6 +891,12 @@
         },
         "执行指定的javascript代码片段。": {
             "en-us": "Execute the specified javascript code snippet."
+        },
+        "FefferyGuide 引导": {
+            "en-us": "FefferyGuide"
+        },
+        "用户操作引导提示。": {
+            "en-us": "User operation guide prompt."
         }
     }
 }

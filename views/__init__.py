@@ -118,4 +118,5 @@ from . import (
     FefferySliderCaptcha,  # noqa: F401
     FefferyCountDown,  # noqa: F401
     FefferyExecuteJs,  # noqa: F401
+    FefferyGuide,  # noqa: F401
 )
