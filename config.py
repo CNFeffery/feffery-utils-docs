@@ -1267,6 +1267,17 @@ class AppConfig:
                                     'href': '/FefferyAutoFit',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyResizable',
+                                    'name': '/FefferyResizable',
+                                    'title': translator.t(
+                                        'FefferyResizable 尺寸调整'
+                                    ),
+                                    'href': '/FefferyResizable',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1458,4 +1469,5 @@ class AppConfig:
         '/FefferyExcelPreview': ['文件预览'],
         '/FefferyWordPreview': ['文件预览'],
         '/FefferyAutoFit': ['尺寸调整'],
+        '/FefferyResizable': ['尺寸调整'],
     }

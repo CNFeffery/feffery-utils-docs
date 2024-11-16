@@ -741,6 +741,12 @@
         },
         "为页面整体添加屏幕自适应功能。": {
             "en-us": "Add screen adaptation function to the whole page."
+        },
+        "FefferyResizable 尺寸调整": {
+            "en-us": "FefferyResizable"
+        },
+        "提供尺寸可调整的容器。": {
+            "en-us": "Provide a container for size adjustment."
         }
     }
 }

@@ -93,4 +93,5 @@ from . import (
     FefferyExcelPreview,  # noqa: F401
     FefferyWordPreview,  # noqa: F401
     FefferyAutoFit,  # noqa: F401
+    FefferyResizable,  # noqa: F401
 )
