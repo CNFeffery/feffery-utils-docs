@@ -1426,6 +1426,17 @@ class AppConfig:
                                     'href': '/FefferyJsonViewer',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyQRCode',
+                                    'name': '/FefferyQRCode',
+                                    'title': translator.t(
+                                        'FefferyQRCode 二维码生成'
+                                    ),
+                                    'href': '/FefferyQRCode',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1605,4 +1616,5 @@ class AppConfig:
         '/FefferyFormatBytes': ['数据展示'],
         '/FefferyFormatNumber': ['数据展示'],
         '/FefferyJsonViewer': ['数据展示'],
+        '/FefferyQRCode': ['数据展示'],
     }

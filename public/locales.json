@@ -813,6 +813,12 @@
         },
         "json数据查看器。": {
             "en-us": "Json data viewer."
+        },
+        "FefferyQRCode 二维码生成": {
+            "en-us": "FefferyQRCode"
+        },
+        "渲染二维码。": {
+            "en-us": "Render QR codes."
         }
     }
 }

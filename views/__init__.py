@@ -105,4 +105,5 @@ from . import (
     FefferyFormatBytes,  # noqa: F401
     FefferyFormatNumber,  # noqa: F401
     FefferyJsonViewer,  # noqa: F401
+    FefferyQRCode,  # noqa: F401
 )
