@@ -84,4 +84,5 @@ from . import (
     FefferySetTitle,  # noqa: F401
     FefferyCssVar,  # noqa: F401
     FefferyStyle,  # noqa: F401
+    FefferyEventSource,  # noqa: F401
 )

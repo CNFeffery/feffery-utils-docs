@@ -1149,7 +1149,19 @@ class AppConfig:
                             'key': '通信',
                             'title': translator.t('通信'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyEventSource',
+                                    'name': '/FefferyEventSource',
+                                    'title': translator.t(
+                                        'FefferyEventSource EventSource通信'
+                                    ),
+                                    'href': '/FefferyEventSource',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1347,4 +1359,5 @@ class AppConfig:
         '/FefferySetTitle': ['页面控制'],
         '/FefferyCssVar': ['样式控制'],
         '/FefferyStyle': ['样式控制'],
+        '/FefferyEventSource': ['通信'],
     }

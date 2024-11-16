@@ -687,6 +687,12 @@
         },
         "动态注入CSS样式规则片段并生效。": {
             "en-us": "Dynamically inject CSS style rule fragments and make them effective."
+        },
+        "FefferyEventSource EventSource通信": {
+            "en-us": "FefferyEventSource"
+        },
+        "处理与SSE（Server Sent Events）服务的通信。": {
+            "en-us": "Handle communication with the SSE (Server Sent Events) service."
         }
     }
 }
