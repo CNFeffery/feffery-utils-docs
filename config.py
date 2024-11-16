@@ -1194,6 +1194,17 @@ class AppConfig:
                                     'href': '/FefferyIframeMessenger',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyTabMessenger',
+                                    'name': '/FefferyTabMessenger',
+                                    'title': translator.t(
+                                        'FefferyTabMessenger 跨标签页通信'
+                                    ),
+                                    'href': '/FefferyTabMessenger',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1396,4 +1407,5 @@ class AppConfig:
         '/FefferyPostEventSource': ['通信'],
         '/FefferyHttpRequests': ['通信'],
         '/FefferyIframeMessenger': ['通信'],
+        '/FefferyTabMessenger': ['通信'],
     }

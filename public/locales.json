@@ -711,6 +711,12 @@
         },
         "实现跨iframe通信。": {
             "en-us": "Implement cross-iframe communication."
+        },
+        "FefferyTabMessenger 跨标签页通信": {
+            "en-us": "FefferyTabMessenger"
+        },
+        "实现跨标签页通信。": {
+            "en-us": "Implement cross-tab communication."
         }
     }
 }
