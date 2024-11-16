@@ -12,21 +12,15 @@ def render() -> Component:
             items=[
                 {'title': translator.t('组件介绍')},
                 {'title': translator.t('通信')},
-                {
-                    'title': translator.t(
-                        'FefferyPostEventSource POST请求EventSource通信'
-                    )
-                },
+                {'title': translator.t('FefferyHttpRequests http请求')},
             ],
             style={'marginBottom': 8},
         ),
         fac.AntdTitle(
-            translator.t('FefferyPostEventSource POST请求EventSource通信'),
+            translator.t('FefferyHttpRequests http请求'),
             level=2,
         ),
         fac.AntdParagraph(
-            translator.t(
-                '处理与POST请求类型SSE（Server Sent Events）服务的通信。'
-            )
+            translator.t('在浏览器端发起http请求并获取响应数据。')
         ),
     ]

@@ -11,7 +11,7 @@ def render() -> Component:
         fac.AntdBreadcrumb(
             items=[
                 {'title': translator.t('组件介绍')},
-                {'title': translator.t('样式控制')},
+                {'title': translator.t('通信')},
                 {'title': translator.t('FefferyEventSource EventSource通信')},
             ],
             style={'marginBottom': 8},

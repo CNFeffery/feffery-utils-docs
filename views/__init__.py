@@ -86,4 +86,5 @@ from . import (
     FefferyStyle,  # noqa: F401
     FefferyEventSource,  # noqa: F401
     FefferyPostEventSource,  # noqa: F401
+    FefferyHttpRequests,  # noqa: F401
 )

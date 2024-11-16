@@ -699,6 +699,12 @@
         },
         "处理与POST请求类型SSE（Server Sent Events）服务的通信。": {
             "en-us": "Handle communication with the POST request type SSE (Server Sent Events) service."
+        },
+        "FefferyHttpRequests http请求": {
+            "en-us": "FefferyHttpRequests"
+        },
+        "在浏览器端发起http请求并获取响应数据。": {
+            "en-us": "Make an http request in the browser and get the response data."
         }
     }
 }
