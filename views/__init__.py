@@ -100,4 +100,5 @@ from . import (
     FefferyThrottleProp,  # noqa: F401
     FefferyVirtualList,  # noqa: F401
     FefferyBarcode,  # noqa: F401
+    FefferyCompareSlider,  # noqa: F401
 )

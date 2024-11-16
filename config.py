@@ -1371,6 +1371,17 @@ class AppConfig:
                                     'href': '/FefferyBarcode',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyCompareSlider',
+                                    'name': '/FefferyCompareSlider',
+                                    'title': translator.t(
+                                        'FefferyCompareSlider 卷帘比较'
+                                    ),
+                                    'href': '/FefferyCompareSlider',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1545,4 +1556,5 @@ class AppConfig:
         '/FefferyThrottleProp': ['性能优化'],
         '/FefferyVirtualList': ['性能优化'],
         '/FefferyBarcode': ['数据展示'],
+        '/FefferyCompareSlider': ['数据展示'],
     }

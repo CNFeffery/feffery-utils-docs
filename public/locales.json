@@ -783,6 +783,12 @@
         },
         "渲染条形码。": {
             "en-us": "Render barcodes."
+        },
+        "FefferyCompareSlider 卷帘比较": {
+            "en-us": "FefferyCompareSlider"
+        },
+        "针对两个元素进行卷帘比较。": {
+            "en-us": "Compare two elements via sliding."
         }
     }
 }
