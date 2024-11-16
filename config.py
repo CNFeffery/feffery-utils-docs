@@ -1236,6 +1236,17 @@ class AppConfig:
                                     'href': '/FefferyExcelPreview',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyWordPreview',
+                                    'name': '/FefferyWordPreview',
+                                    'title': translator.t(
+                                        'FefferyWordPreview word文件预览'
+                                    ),
+                                    'href': '/FefferyWordPreview',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1432,5 +1443,6 @@ class AppConfig:
         '/FefferyIframeMessenger': ['通信'],
         '/FefferyTabMessenger': ['通信'],
         '/FefferyWebSocket': ['通信'],
-        '/FefferyExcelPreview': ['通信'],
+        '/FefferyExcelPreview': ['文件预览'],
+        '/FefferyWordPreview': ['文件预览'],
     }

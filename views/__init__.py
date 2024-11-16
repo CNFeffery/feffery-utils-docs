@@ -91,4 +91,5 @@ from . import (
     FefferyTabMessenger,  # noqa: F401
     FefferyWebSocket,  # noqa: F401
     FefferyExcelPreview,  # noqa: F401
+    FefferyWordPreview,  # noqa: F401
 )

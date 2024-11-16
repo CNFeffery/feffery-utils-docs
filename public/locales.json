@@ -729,6 +729,12 @@
         },
         "预览excel文件。": {
             "en-us": "Preview excel file."
+        },
+        "FefferyWordPreview word文件预览": {
+            "en-us": "FefferyWordPreview"
+        },
+        "预览word文件。": {
+            "en-us": "Preview word file."
         }
     }
 }
