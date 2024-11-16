@@ -1382,6 +1382,17 @@ class AppConfig:
                                     'href': '/FefferyCompareSlider',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyCountUp',
+                                    'name': '/FefferyCountUp',
+                                    'title': translator.t(
+                                        'FefferyCountUp 数字递增'
+                                    ),
+                                    'href': '/FefferyCountUp',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1557,4 +1568,5 @@ class AppConfig:
         '/FefferyVirtualList': ['性能优化'],
         '/FefferyBarcode': ['数据展示'],
         '/FefferyCompareSlider': ['数据展示'],
+        '/FefferyCountUp': ['数据展示'],
     }

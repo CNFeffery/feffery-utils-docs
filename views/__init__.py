@@ -101,4 +101,5 @@ from . import (
     FefferyVirtualList,  # noqa: F401
     FefferyBarcode,  # noqa: F401
     FefferyCompareSlider,  # noqa: F401
+    FefferyCountUp,  # noqa: F401
 )

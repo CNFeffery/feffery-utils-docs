@@ -789,6 +789,12 @@
         },
         "针对两个元素进行卷帘比较。": {
             "en-us": "Compare two elements via sliding."
+        },
+        "FefferyCountUp 数字递增": {
+            "en-us": "FefferyCountUp"
+        },
+        "实现数字递增效果。": {
+            "en-us": "Implement number increase effect."
         }
     }
 }
