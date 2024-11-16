@@ -110,4 +110,5 @@ from . import (
     FefferySeamlessScroll,  # noqa: F401
     FefferyFancyMessage,  # noqa: F401
     FefferyFancyNotification,  # noqa: F401
+    FefferyCookie,  # noqa: F401
 )

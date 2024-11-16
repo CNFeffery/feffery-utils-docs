@@ -1487,7 +1487,19 @@ class AppConfig:
                             'key': '存储',
                             'title': translator.t('存储'),
                         },
-                        'children': [],
+                        'children': [
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyCookie',
+                                    'name': '/FefferyCookie',
+                                    'title': translator.t(
+                                        'FefferyCookie Cookie控制'
+                                    ),
+                                    'href': '/FefferyCookie',
+                                },
+                            },
+                        ],
                     },
                     {
                         'component': 'SubMenu',
@@ -1647,4 +1659,5 @@ class AppConfig:
         '/FefferySeamlessScroll': ['数据展示'],
         '/FefferyFancyMessage': ['反馈'],
         '/FefferyFancyNotification': ['反馈'],
+        '/FefferyCookie': ['存储'],
     }

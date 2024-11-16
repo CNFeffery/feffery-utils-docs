@@ -843,6 +843,12 @@
         },
         "渲染美观的通知提示。": {
             "en-us": "Render beautiful notifications."
+        },
+        "FefferyCookie Cookie控制": {
+            "en-us": "FefferyCookie"
+        },
+        "控制Cookie。": {
+            "en-us": "Control Cookie."
         }
     }
 }
