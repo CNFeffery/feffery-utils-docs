@@ -85,4 +85,5 @@ from . import (
     FefferyCssVar,  # noqa: F401
     FefferyStyle,  # noqa: F401
     FefferyEventSource,  # noqa: F401
+    FefferyPostEventSource,  # noqa: F401
 )

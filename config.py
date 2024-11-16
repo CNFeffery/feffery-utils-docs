@@ -1161,6 +1161,17 @@ class AppConfig:
                                     'href': '/FefferyEventSource',
                                 },
                             },
+                            {
+                                'component': 'Item',
+                                'props': {
+                                    'key': '/FefferyPostEventSource',
+                                    'name': '/FefferyPostEventSource',
+                                    'title': translator.t(
+                                        'FefferyPostEventSource POST请求EventSource通信'
+                                    ),
+                                    'href': '/FefferyPostEventSource',
+                                },
+                            },
                         ],
                     },
                     {
@@ -1360,4 +1371,5 @@ class AppConfig:
         '/FefferyCssVar': ['样式控制'],
         '/FefferyStyle': ['样式控制'],
         '/FefferyEventSource': ['通信'],
+        '/FefferyPostEventSource': ['通信'],
     }

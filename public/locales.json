@@ -693,6 +693,12 @@
         },
         "处理与SSE（Server Sent Events）服务的通信。": {
             "en-us": "Handle communication with the SSE (Server Sent Events) service."
+        },
+        "FefferyPostEventSource POST请求EventSource通信": {
+            "en-us": "FefferyPostEventSource"
+        },
+        "处理与POST请求类型SSE（Server Sent Events）服务的通信。": {
+            "en-us": "Handle communication with the POST request type SSE (Server Sent Events) service."
         }
     }
 }
