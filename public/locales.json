@@ -795,6 +795,12 @@
         },
         "实现数字递增效果。": {
             "en-us": "Implement number increase effect."
+        },
+        "FefferyFormatBytes 字节格式化": {
+            "en-us": "FefferyFormatBytes"
+        },
+        "字节格式化显示。": {
+            "en-us": "Byte format display."
         }
     }
 }

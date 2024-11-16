@@ -102,4 +102,5 @@ from . import (
     FefferyBarcode,  # noqa: F401
     FefferyCompareSlider,  # noqa: F401
     FefferyCountUp,  # noqa: F401
+    FefferyFormatBytes,  # noqa: F401
 )
