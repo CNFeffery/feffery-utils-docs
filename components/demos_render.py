@@ -27,6 +27,20 @@ def render(
     if not isinstance(demos_config, list):
         demos_config = demos_config()
 
+    # 检查当前组件文档页示例是否尚未开始建设
+    if (
+        getattr(
+            getattr(views, section_name or component.__name__).demos,
+            demos_config[0]['path'],
+        ).render()
+        is None
+    ):
+        return fac.AntdResult(
+            status='info',
+            title='🚧🚧🚧🚧🚧🚧',
+            subTitle='当前组件文档页示例建设中',
+        )
+
     return fac.AntdSpace(
         [
             html.Div(
