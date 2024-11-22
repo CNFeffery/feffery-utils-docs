@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '这个例子展示了针对指定**websocket**接口的常用控制及响应监听功能。',
         },
     ]
 
