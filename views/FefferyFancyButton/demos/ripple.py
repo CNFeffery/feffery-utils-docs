@@ -9,7 +9,7 @@ def render() -> Component:
     # 构造演示用例相关内容
     demo_contents = fac.AntdSpace(
         [
-            fuc.FefferyFancyButton(t, type=t)
+            fuc.FefferyFancyButton(t, type=t, ripple=True)
             for t in ['primary', 'secondary', 'danger']
         ]
     )
@@ -25,7 +25,7 @@ def code_string() -> list:
             'code': """
 fac.AntdSpace(
     [
-        fuc.FefferyFancyButton(t, type=t)
+        fuc.FefferyFancyButton(t, type=t, ripple=True)
         for t in ['primary', 'secondary', 'danger']
     ]
 )

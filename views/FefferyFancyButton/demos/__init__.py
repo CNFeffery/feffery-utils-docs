@@ -3,6 +3,8 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    ripple,  # noqa: F401
+    basic_callbacks,  # noqa: F401
 )
 from components import demos_render
 
@@ -16,7 +18,17 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '不同类型的按钮。',
+        },
+        {
+            'path': 'ripple',
+            'title': t('点击涟漪效果'),
+            'description': '设置参数`ripple=True`开启点击涟漪效果。',
+        },
+        {
+            'path': 'basic_callbacks',
+            'title': t('回调监听'),
+            'description': '在默认、防抖情况下分别监听按钮点击事件。',
         },
     ]
 
