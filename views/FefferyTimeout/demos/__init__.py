@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '每一次更新`delay`参数后，在定时结束时都可以利用`timeoutCount`的更新来触发其他逻辑。',
         },
     ]
 
