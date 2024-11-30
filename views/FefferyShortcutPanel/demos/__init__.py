@@ -3,6 +3,7 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    remote_search,  # noqa: F401
 )
 from components import demos_render
 
@@ -16,7 +17,12 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '构建可通过指定快捷键组合唤出的指令选择面板。',
+        },
+        {
+            'path': 'remote_search',
+            'title': '远程搜索',
+            'description': '配合回调函数实现远程搜索功能。',
         },
     ]
 
