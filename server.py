@@ -1,6 +1,5 @@
 import re
 import dash
-from flask import request, abort
 
 from config import DeployConfig, AppConfig
 
