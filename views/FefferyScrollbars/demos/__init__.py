@@ -3,6 +3,7 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    horizontal,  # noqa: F401
 )
 from components import demos_render
 
@@ -16,7 +17,12 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '基础的垂直滚动条。',
+        },
+        {
+            'path': 'horizontal',
+            'title': '横向滚动条',
+            'description': '横向滚动条。',
         },
     ]
 

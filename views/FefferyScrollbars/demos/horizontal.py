@@ -8,11 +8,12 @@ def render() -> Component:
 
     # 构造演示用例相关内容
     demo_contents = fuc.FefferyScrollbars(
-        fac.AntdSpace(
-            ['请将鼠标移入本区域进行滚动'] * 20,
-            direction='vertical',
-            style={'width': '100%'},
-        ),
+        [
+            fac.AntdParagraph(
+                '请将鼠标移入本区域进行滚动' * 5, style={'whiteSpace': 'pre'}
+            )
+        ]
+        * 5,
         style={
             'maxHeight': '150px',
             'maxWidth': '200px',
@@ -30,11 +31,12 @@ def code_string() -> list:
         {
             'code': """
 fuc.FefferyScrollbars(
-    fac.AntdSpace(
-        ['请将鼠标移入本区域进行滚动'] * 20,
-        direction='vertical',
-        style={'width': '100%'},
-    ),
+    [
+        fac.AntdParagraph(
+            '请将鼠标移入本区域进行滚动' * 5, style={'whiteSpace': 'pre'}
+        )
+    ]
+    * 5,
     style={
         'maxHeight': '150px',
         'maxWidth': '200px',
