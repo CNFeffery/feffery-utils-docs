@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '既可直接设置`data`参数进行状态设置，又可监听其他位置发生的`sessionStorage.setItem()`事件并同步回`data`。',
         },
     ]
 
