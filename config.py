@@ -1440,6 +1440,17 @@ class AppConfig:
                             {
                                 'component': 'Item',
                                 'props': {
+                                    'key': '/FefferyRawHTML',
+                                    'name': '/FefferyRawHTML',
+                                    'title': translator.t(
+                                        'FefferyRawHTML html源码渲染'
+                                    ),
+                                    'href': '/FefferyRawHTML',
+                                },
+                            },
+                            {
+                                'component': 'Item',
+                                'props': {
                                     'key': '/FefferySeamlessScroll',
                                     'name': '/FefferySeamlessScroll',
                                     'title': translator.t(
