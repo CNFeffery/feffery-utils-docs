@@ -3,6 +3,9 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    levels,  # noqa: F401
+    with_image,  # noqa: F401
+    renderer,  # noqa: F401
 )
 from components import demos_render
 
@@ -16,7 +19,22 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '渲染具有指定信息的二维码。',
+        },
+        {
+            'path': 'levels',
+            'title': '精确水平',
+            'description': '通过参数`level`控制二维码的精确水平。',
+        },
+        {
+            'path': 'with_image',
+            'title': '内嵌图片',
+            'description': '通过参数`imageSettings`配置内嵌图片。',
+        },
+        {
+            'path': 'renderer',
+            'title': '渲染模式',
+            'description': '通过参数`renderer`控制渲染模式。',
         },
     ]
 
