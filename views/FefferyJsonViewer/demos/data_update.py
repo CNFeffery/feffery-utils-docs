@@ -13,7 +13,10 @@ def render() -> Component:
             'string示例': '我爱dash',
             '数组示例': [0, 1, 2, 3],
             '字典示例': {'a': 1, 'b': 2, 'c': 3},
-        }
+        },
+        editable=True,
+        addible=True,
+        deletable=True,
     )
 
     return demo_contents
@@ -32,7 +35,10 @@ fuc.FefferyJsonViewer(
         'string示例': '我爱dash',
         '数组示例': [0, 1, 2, 3],
         '字典示例': {'a': 1, 'b': 2, 'c': 3},
-    }
+    },
+    editable=True,
+    addible=True,
+    deletable=True,
 )
 """
         }
