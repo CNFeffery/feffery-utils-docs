@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '可作为对[fac.AntdTour](https://fac.feffery.tech/AntdTour)的备选，用于引导用户认识页面功能。',
         },
     ]
 
