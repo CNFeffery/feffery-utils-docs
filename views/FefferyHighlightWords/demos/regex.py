@@ -18,7 +18,8 @@ def render() -> Component:
 这是最后的斗争，
 团结起来，到明天，
 英特纳雄耐尔就一定要实现。""",
-        searchWords=['我们', '团结'],
+        searchWords=['([一-龥]*我们[一-龥]*)'],
+        useRegex=True,
     )
 
     return demo_contents
@@ -42,7 +43,8 @@ fuc.FefferyHighlightWords(
 这是最后的斗争，
 团结起来，到明天，
 英特纳雄耐尔就一定要实现。""",
-    searchWords=['我们', '团结'],
+    searchWords=['([一-龥]*我们[一-龥]*)'],
+    useRegex=True,
 )
 '''
         }
