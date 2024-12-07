@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '配合[FefferyDiv](/FefferyDiv)的鼠标悬停监听功能，实现鼠标在指定容器内时才启用图片粘贴捕获功能。',
         },
     ]
 
