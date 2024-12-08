@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '可作为[fac.AntdMessage](https://fac.feffery.tech/AntdMessage)功能的备选。',
         },
     ]
 
