@@ -3,6 +3,7 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    duration,  # noqa: F401
 )
 from components import demos_render
 
@@ -16,7 +17,12 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '以目标数值为终点自动呈现数字变化的效果。',
+        },
+        {
+            'path': 'duration',
+            'title': '控制变化过程时长',
+            'description': '通过参数`duration`控制变化过程时长。',
         },
     ]
 

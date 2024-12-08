@@ -8,7 +8,10 @@ def render() -> Component:
 
     # 构造演示用例相关内容
     demo_contents = fac.AntdSpace(
-        [fuc.FefferyCountUp(end=99999), fuc.FefferyCountUp(end=-99999)],
+        [
+            fuc.FefferyCountUp(end=99999, duration=5),
+            fuc.FefferyCountUp(end=-99999, duration=5),
+        ],
         style={'fontSize': 18},
     )
 
@@ -22,7 +25,10 @@ def code_string() -> list:
         {
             'code': """
 fac.AntdSpace(
-    [fuc.FefferyCountUp(end=99999), fuc.FefferyCountUp(end=-99999)],
+    [
+        fuc.FefferyCountUp(end=99999, duration=5),
+        fuc.FefferyCountUp(end=-99999, duration=5),
+    ],
     style={'fontSize': 18},
 )
 """
