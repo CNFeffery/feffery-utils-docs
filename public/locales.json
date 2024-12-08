@@ -649,8 +649,8 @@
         "FefferyFullscreen 全屏化": {
             "en-us": "FefferyFullscreen"
         },
-        "控制当前页面是否全屏化。": {
-            "en-us": "Control whether the current page is full screen."
+        "控制指定目标元素的全屏化。": {
+            "en-us": "Control the full screen of the specified target element."
         },
         "FefferyReload 页面重载": {
             "en-us": "FefferyReload"

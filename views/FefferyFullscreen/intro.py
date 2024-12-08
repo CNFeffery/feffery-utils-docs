@@ -20,5 +20,5 @@ def render() -> Component:
             translator.t('FefferyFullscreen 全屏化'),
             level=2,
         ),
-        fac.AntdParagraph(translator.t('控制当前页面是否全屏化。')),
+        fac.AntdParagraph(translator.t('控制指定目标元素的全屏化。')),
     ]
