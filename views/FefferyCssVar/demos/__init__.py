@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '通过参数`cssVars`管理更新若干**CSS**变量。',
         },
     ]
 
