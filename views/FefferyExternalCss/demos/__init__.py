@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '通过观察浏览器开发者工具-网络可以更清楚地了解到上述回调过程运作原理。',
         },
     ]
 
