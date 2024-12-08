@@ -3,6 +3,7 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    use_with_antd_spin,  # noqa: F401
 )
 from components import demos_render
 
@@ -16,7 +17,12 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '可用的全部内置加载动画。',
+        },
+        {
+            'path': 'use_with_antd_spin',
+            'title': '配合fac.AntdSpin使用',
+            'description': '充当[fac.AntdSpin](https://fac.feffery.tech/AntdSpin)的加载动画使用。',
         },
     ]
 
