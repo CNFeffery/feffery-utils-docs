@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '动态加载指定地址的**js**文件，加载阶段状态可监听。',
         },
     ]
 
