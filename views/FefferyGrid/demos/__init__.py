@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '可拖拽网格基础用例。',
         },
     ]
 
