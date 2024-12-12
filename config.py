@@ -1443,7 +1443,7 @@ class AppConfig:
                                     'key': '/FefferyRawHTML',
                                     'name': '/FefferyRawHTML',
                                     'title': translator.t(
-                                        'FefferyRawHTML html源码渲染'
+                                        'FefferyRawHTML HTML源码渲染'
                                     ),
                                     'href': '/FefferyRawHTML',
                                 },

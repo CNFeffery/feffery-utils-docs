@@ -10,5 +10,4 @@ def render() -> Component:
         component=fuc.FefferyGridItem,
         intro=intro.render(),
         demos=demos.render(component=fuc.FefferyGridItem),
-        catalog=demos.demos_config,
     )

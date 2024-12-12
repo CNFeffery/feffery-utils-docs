@@ -820,7 +820,7 @@
         "渲染二维码。": {
             "en-us": "Render QR codes."
         },
-        "FefferyRawHTML HTML字符渲染": {
+        "FefferyRawHTML HTML源码渲染": {
             "en-us": "FefferyRawHTML"
         },
         "将HTML源码渲染为页面元素。": {

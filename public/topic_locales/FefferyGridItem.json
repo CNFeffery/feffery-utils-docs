@@ -2,8 +2,8 @@
     "root_locale": "zh-cn",
     "topic": "FefferyGridItem",
     "contents": {
-        "基础使用": {
-            "en-us": "Basic usage"
+        "注：**FefferyGridItem**使用需配合**FefferyGrid**，请前往[FefferyGrid文档页](/FefferyGrid)查看具体使用示例。": {
+            "en-us": "Note: **FefferyGridItem** is used together with **FefferyGrid**, please refer to the [FefferyGrid document page](/FefferyGrid) for specific usage examples."
         }
     }
 }
