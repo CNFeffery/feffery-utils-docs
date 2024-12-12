@@ -10,9 +10,16 @@ def render() -> Component:
     demo_contents = fuc.FefferyResizable(
         fac.AntdCenter(
             '示例内容',
-            style={'background': '#dee2e6', 'height': '100%'},
+            style={
+                'height': '100%',
+                'background': '#dee2e6',
+            },
         ),
         defaultSize={'width': 200, 'height': 200},
+        minWidth=100,
+        minHeight=100,
+        maxWidth=400,
+        maxHeight=400,
     )
 
     return demo_contents
@@ -27,9 +34,16 @@ def code_string() -> list:
 fuc.FefferyResizable(
     fac.AntdCenter(
         '示例内容',
-        style={'background': '#dee2e6', 'height': '100%'},
+        style={
+            'height': '100%',
+            'background': '#dee2e6',
+        },
     ),
     defaultSize={'width': 200, 'height': 200},
+    minWidth=100,
+    minHeight=100,
+    maxWidth=400,
+    maxHeight=400,
 )
 """
         }
