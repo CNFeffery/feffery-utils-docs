@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '针对当前应用页面宽度，对应常用响应式断点的满足情况进行实时监听。',
         },
     ]
 
