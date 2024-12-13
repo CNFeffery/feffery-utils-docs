@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '相较于[dcc.Location](https://dash.plotly.com/dash-core-components/location)，可支持对更多地址切换相关信息的监听。',
         },
     ]
 
