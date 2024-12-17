@@ -3,6 +3,7 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    target,  # noqa: F401
 )
 from components import demos_render
 
@@ -16,7 +17,12 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '默认可监听页面整体滚动位置。',
+        },
+        {
+            'path': 'target',
+            'title': '指定目标容器',
+            'description': '通过参数`target`指定目标监听容器的id。',
         },
     ]
 
