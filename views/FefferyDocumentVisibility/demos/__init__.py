@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '最小化浏览器或切换到其他浏览器标签页，再切换回来以查看监听结果变化情况。',
         },
     ]
 
