@@ -1,14 +1,26 @@
 import feffery_utils_components as fuc
-from dash.dependencies import Component
+from dash.dependencies import Component, Input, Output
+
+from server import app
 
 
 def render() -> Component:
     """渲染当前演示用例"""
 
     # 构造演示用例相关内容
-    demo_contents = None
+    demo_contents = [
+        fuc.FefferyDeviceDetect(id='device-detect'),
+        fuc.FefferyJsonViewer(id='device-detect-output'),
+    ]
 
     return demo_contents
+
+
+@app.callback(
+    Output('device-detect-output', 'data'), Input('device-detect', 'deviceInfo')
+)
+def device_detect_demo(deviceInfo):
+    return deviceInfo
 
 
 def code_string() -> list:
@@ -17,6 +29,18 @@ def code_string() -> list:
     return [
         {
             'code': """
+[
+    fuc.FefferyDeviceDetect(id='device-detect'),
+    fuc.FefferyJsonViewer(id='device-detect-output'),
+]
+
+...
+
+@app.callback(
+    Output('device-detect-output', 'data'), Input('device-detect', 'deviceInfo')
+)
+def device_detect_demo(deviceInfo):
+    return deviceInfo
 """
         }
     ]
