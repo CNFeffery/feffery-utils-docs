@@ -3,6 +3,7 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    threshold,  # noqa: F401
 )
 from components import demos_render
 
@@ -16,7 +17,12 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '监听目标元素是否出现在视口中。',
+        },
+        {
+            'path': 'threshold',
+            'title': '设置显示比例阈值',
+            'description': '通过参数`threshold`设置满足出现状态的显示比例阈值。',
         },
     ]
 
