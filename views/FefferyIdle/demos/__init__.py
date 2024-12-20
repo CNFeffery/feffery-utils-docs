@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '本例中，若超过`3`秒没有任何用户操作，则`isIdle`会更新为`True`，直到继续有交互操作发生。',
         },
     ]
 
