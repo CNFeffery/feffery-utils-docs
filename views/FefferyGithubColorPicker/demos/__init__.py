@@ -3,6 +3,7 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    basic_callback,  # noqa: F401
 )
 from components import demos_render
 
@@ -16,7 +17,12 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '供用户在给定的一系列颜色中进行选择。',
+        },
+        {
+            'path': 'basic_usage',
+            'title': '回调监听',
+            'description': '监听`color`变化获取当前选中颜色。',
         },
     ]
 
