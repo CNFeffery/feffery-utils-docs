@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '更新`enable`触发颜色拾取功能，并通过监听`color`变化获取当前选中颜色。',
         },
     ]
 
