@@ -20,7 +20,7 @@ def demos_config() -> list:
             'description': '供用户在给定的一系列颜色中进行选择。',
         },
         {
-            'path': 'basic_usage',
+            'path': 'basic_callback',
             'title': '回调监听',
             'description': '监听`color`变化获取当前选中颜色。',
         },
