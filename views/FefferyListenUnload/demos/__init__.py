@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '对标签页刷新/关闭、浏览器关闭行为进行监听，通常用于接受应用销毁信号辅助清理缓存等操作。',
         },
     ]
 
