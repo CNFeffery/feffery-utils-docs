@@ -19,6 +19,7 @@ def render() -> Component:
                 # 无限循环动画
                 'repeat': 'infinity',
                 'duration': 2,
+                'type': 'spring',
             },
         ),
         fuc.FefferyMotion(
@@ -39,6 +40,7 @@ def render() -> Component:
                 # 无限循环动画
                 'repeat': 'infinity',
                 'duration': 2,
+                'type': 'spring',
             },
         ),
     ]
@@ -65,6 +67,7 @@ def code_string() -> list:
             # 无限循环动画
             'repeat': 'infinity',
             'duration': 2,
+            'type': 'spring',
         },
     ),
     fuc.FefferyMotion(
@@ -85,6 +88,7 @@ def code_string() -> list:
             # 无限循环动画
             'repeat': 'infinity',
             'duration': 2,
+            'type': 'spring',
         },
     ),
 ]

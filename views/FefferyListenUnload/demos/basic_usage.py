@@ -20,10 +20,7 @@ def render() -> Component:
     return demo_contents
 
 
-@app.callback(
-    Input('listen-unload-demo', 'unloaded'),
-    prevent_initial_call=True,
-)
+@app.callback(Input('listen-unload-demo', 'unloaded'))
 def listen_unload_demo(unloaded):
     print(f'unloaded: {unloaded}')
 
@@ -38,10 +35,7 @@ fuc.FefferyListenUnload(id='listen-unload-demo')
 
 ...
 
-@app.callback(
-    Input('listen-unload-demo', 'unloaded'),
-    prevent_initial_call=True,
-)
+@app.callback(Input('listen-unload-demo', 'unloaded'))
 def listen_unload_demo(unloaded):
     print(f'unloaded: {unloaded}')
 """

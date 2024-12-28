@@ -1792,3 +1792,12 @@ class AppConfig:
         '/FefferyShortcutPanel': ['其他'],
         '/FefferyTimeout': ['其他'],
     }
+
+
+class DocsConfig:
+    """
+    文档所需特殊参数配置
+    """
+
+    # 具有额外参数说明的组件
+    components_with_extra_params = ['FefferyMotion']
