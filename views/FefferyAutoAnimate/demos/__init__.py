@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '**FefferyAutoAnimate**可视作常规的容器使用，其内部的有唯一`id`或`key`定义的子元素，在发生新增、删除、顺序变化等操作时会自动渲染动画效果。',
         },
     ]
 
