@@ -9,5 +9,78 @@
             "avatar": "https://avatars.githubusercontent.com/u/92962165?s=40&v=4"
         }
     },
-    "components": {}
+    "components": {
+        "FefferyBirdsBackground": [
+            "insistence"
+        ],
+        "FefferyCellsBackground": [
+            "insistence"
+        ],
+        "FefferyCloudsBackground": [
+            "insistence"
+        ],
+        "FefferyCloudsTwoBackground": [
+            "insistence"
+        ],
+        "FefferyFogBackground": [
+            "insistence"
+        ],
+        "FefferyGlobeBackground": [
+            "insistence"
+        ],
+        "FefferyHaloBackground": [
+            "insistence"
+        ],
+        "FefferyNetBackground": [
+            "insistence"
+        ],
+        "FefferyRingsBackground": [
+            "insistence"
+        ],
+        "FefferyTopologyBackground": [
+            "insistence"
+        ],
+        "FefferyTrunkBackground": [
+            "insistence"
+        ],
+        "FefferyWavesBackground": [
+            "insistence"
+        ],
+        "FefferyTiltHover": [
+            "insistence"
+        ],
+        "FefferyAPlayer": [
+            "insistence"
+        ],
+        "FefferyDPlayer": [
+            "insistence"
+        ],
+        "FefferyMusicPlayer": [
+            "insistence"
+        ],
+        "FefferyMarkdownEditor": [
+            "insistence"
+        ],
+        "FefferyRichTextEditor": [
+            "insistence"
+        ],
+        "FefferyImageCropper": [
+            "insistence"
+        ],
+        "FefferyEmojiPicker": [
+            "insistence"
+        ],
+        "FefferyNetwork": [
+            "insistence"
+        ],
+        "FefferyAutoFit": [
+            "insistence"
+        ],
+        "FefferyBarcode": [
+            "insistence"
+        ],
+        "FefferySeamlessScroll": [
+            "insistence"
+        ]
+    }
 }
