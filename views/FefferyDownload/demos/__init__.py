@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '针对目标地址文件进行直接下载，避免图片、文本、视频等类型文件默认访问时的预览行为。',
         },
     ]
 
