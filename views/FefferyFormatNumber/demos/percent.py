@@ -6,7 +6,7 @@ def render() -> Component:
     """渲染当前演示用例"""
 
     # 构造演示用例相关内容
-    demo_contents = fuc.FefferyFormatNumber(value=123456789)
+    demo_contents = fuc.FefferyFormatNumber(value=0.34, type='percent')
 
     return demo_contents
 
@@ -17,7 +17,7 @@ def code_string() -> list:
     return [
         {
             'code': """
-fuc.FefferyFormatNumber(value=123456789)
+fuc.FefferyFormatNumber(value=0.34, type='percent')
 """
         }
     ]

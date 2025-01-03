@@ -3,6 +3,7 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    percent,  # noqa: F401
 )
 from components import demos_render
 
@@ -16,7 +17,12 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '针对参数`value`设定的值进行格式化显示。',
+        },
+        {
+            'path': 'percent',
+            'title': '百分数格式化',
+            'description': "设置参数`type='percent'`后，可针对小数进行百分数格式化显示。",
         },
     ]
 
