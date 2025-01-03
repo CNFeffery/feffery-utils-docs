@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '针对参数`src`对应的**excel**表格进行预览。',
         },
     ]
 

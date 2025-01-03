@@ -6,7 +6,10 @@ def render() -> Component:
     """渲染当前演示用例"""
 
     # 构造演示用例相关内容
-    demo_contents = None
+    demo_contents = fuc.FefferyExcelPreview(
+        src='/assets/other/components/FefferyExcelPreview/test.xlsx',
+        style={'height': 600},
+    )
 
     return demo_contents
 
@@ -17,6 +20,10 @@ def code_string() -> list:
     return [
         {
             'code': """
+fuc.FefferyExcelPreview(
+    src='/assets/other/components/FefferyExcelPreview/test.xlsx',
+    style={'height': 600},
+)
 """
         }
     ]
