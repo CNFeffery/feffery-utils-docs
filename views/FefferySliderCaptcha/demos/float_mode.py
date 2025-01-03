@@ -13,6 +13,7 @@ def render() -> Component:
             # 按照图片实际尺寸设定
             imgWidth=520,
             imgHeight=304,
+            mode='float',
         ),
         style={'height': 400},
     )
@@ -32,6 +33,7 @@ fac.AntdCenter(
         # 按照图片实际尺寸设定
         imgWidth=520,
         imgHeight=304,
+        mode='float',
     ),
     style={'height': 400},
 )
