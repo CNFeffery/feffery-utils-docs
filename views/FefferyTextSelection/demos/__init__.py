@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '通过监听属性`selectedTextInfo`变化，获取最近一次用户针对目标文本的选择事件信息。',
         },
     ]
 
