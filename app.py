@@ -2,7 +2,6 @@ import re
 import os
 import dash
 import time
-import uuid
 from flask import request
 from dash import html, dcc
 from datetime import datetime
