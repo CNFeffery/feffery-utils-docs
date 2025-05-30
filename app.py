@@ -63,9 +63,9 @@ if ( !document.cookie.includes('dash-i18n=') ) {
                     # 内容区刷新辅助动画锚点
                     fac.AntdSpin(
                         html.Div(
-                            id='global-spin-center',
                             style={'position': 'fixed'},
                         ),
+                        id='global-spin-center',
                         indicator=fuc.FefferyExtraSpinner(
                             type='guard',
                             color='#1890ff',
@@ -79,13 +79,13 @@ if ( !document.cookie.includes('dash-i18n=') ) {
                                 'zIndex': 999,
                             },
                         ),
+                        manual=True,
                     ),
                 ]
             ),
         ],
         listenPropsMode='include',
         includeProps=[
-            'root-container.children',
             'doc-layout-container.children',
         ],
         minimum=0.33,
@@ -97,7 +97,7 @@ app.layout = render_layout
 
 
 @app.callback(
-    [Output('root-container', 'children'), Output('global-spin-center', 'key')],
+    Output('root-container', 'children'),
     Input('root-url', 'pathname'),
     [
         State('root-url', 'trigger'),
@@ -121,112 +121,101 @@ def root_router(pathname, trigger, search):
             demo_type, demo_path = pathname.split('/')[2:4]
 
             return [
-                [
-                    fuc.FefferyStyle(
-                        rawStyle="""
+                fuc.FefferyStyle(
+                    rawStyle="""
 /* 隐藏debug模式工具图标 */
 .dash-debug-menu,
 .dash-debug-menu__outer--closed {
     display: none;
 }
 """
-                    ),
-                    html.Div(
-                        getattr(
-                            getattr(views, demo_type).demos, demo_path
-                        ).render(),
-                        style={'padding': 0 if 'padding=no' in search else 50},
-                    ),
-                ],
-                str(uuid.uuid4()),
+                ),
+                html.Div(
+                    getattr(
+                        getattr(views, demo_type).demos, demo_path
+                    ).render(),
+                    style={'padding': 0 if 'padding=no' in search else 50},
+                ),
             ]
 
         except (ValueError, AttributeError):
-            return [
-                fac.AntdCenter(
-                    fac.AntdResult(
-                        status='404',
-                        title=fac.AntdParagraph(
-                            [
-                                translator.t('演示示例不存在，'),
-                                html.A(translator.t('回到首页'), href='/'),
-                            ]
-                        ),
+            return fac.AntdCenter(
+                fac.AntdResult(
+                    status='404',
+                    title=fac.AntdParagraph(
+                        [
+                            translator.t('演示示例不存在，'),
+                            html.A(translator.t('回到首页'), href='/'),
+                        ]
                     ),
-                    style={'height': 'calc(100vh - 200px)'},
                 ),
-                str(uuid.uuid4()),
-            ]
+                style={'height': 'calc(100vh - 200px)'},
+            )
 
     # 动态路由切换时，阻止页面重复加载
     if trigger in ['pushstate', 'popstate']:
         return dash.no_update
 
     return [
-        [
-            # 控制非正式发布模式下的文档页初始化通知提示
-            (
-                None
-                if AppConfig.is_release
-                else fac.AntdNotification(
-                    type='info',
-                    message='提示信息',
-                    placement='bottomRight',
-                    description=(
-                        translator.t(
-                            '当前文档网站尚未正式发布，相关文档持续补充建设中。（最近更新时间：{}）'
-                        ).format(boot_datetime)
-                    ),
+        # 控制非正式发布模式下的文档页初始化通知提示
+        (
+            None
+            if AppConfig.is_release
+            else fac.AntdNotification(
+                type='info',
+                message='提示信息',
+                placement='bottomRight',
+                description=(
+                    translator.t(
+                        '当前文档网站尚未正式发布，相关文档持续补充建设中。（最近更新时间：{}）'
+                    ).format(boot_datetime)
+                ),
+            )
+        ),
+        # 悬浮按钮组功能
+        fac.AntdFloatButtonGroup(
+            [
+                fac.AntdFloatButton(
+                    icon=fac.AntdIcon(icon='antd-bug'),
+                    tooltip=translator.t('问题反馈'),
+                    href=AppConfig.library_repo + '/issues/new',
                 )
-            ),
-            # 悬浮按钮组功能
-            fac.AntdFloatButtonGroup(
-                [
-                    fac.AntdFloatButton(
-                        icon=fac.AntdIcon(icon='antd-bug'),
-                        tooltip=translator.t('问题反馈'),
-                        href=AppConfig.library_repo + '/issues/new',
-                    )
-                ],
-                style={'right': 100, 'bottom': 100},
-            ),
-            # 注入快捷搜索面板
-            fuc.FefferyShortcutPanel(
-                id='global-search-panel',
-                placeholder=translator.t('输入你想要搜索的组件...'),
-                data=generate_shortcut_panel_data(AppConfig.side_menu_items()),
-                panelStyles={'accentColor': '#1890ff', 'zIndex': 99999},
-                locale=('zh' if current_locale == 'zh-cn' else 'en'),
-            ),
-            # 文档页面容器url监听
-            dcc.Location(id='doc-layout-url'),
-            # 页首
-            page_header.render(locale=current_locale),
-            # 主体区域
-            fac.AntdRow(
-                [
-                    # 侧边菜单
-                    side_menu.render(locale=current_locale),
-                    # 内容区域
-                    fac.AntdCol(
-                        id='doc-layout-container',
-                        flex='auto',
-                        style={'width': 0, 'padding': '0 0 0 30px'},
-                    ),
-                ],
-                wrap=False,
-            ),
-        ],
-        str(uuid.uuid4()),
+            ],
+            style={'right': 100, 'bottom': 100},
+        ),
+        # 注入快捷搜索面板
+        fuc.FefferyShortcutPanel(
+            id='global-search-panel',
+            placeholder=translator.t('输入你想要搜索的组件...'),
+            data=generate_shortcut_panel_data(AppConfig.side_menu_items()),
+            panelStyles={'accentColor': '#1890ff', 'zIndex': 99999},
+            locale=('zh' if current_locale == 'zh-cn' else 'en'),
+        ),
+        # 文档页面容器url监听
+        dcc.Location(id='doc-layout-url'),
+        # 页首
+        page_header.render(locale=current_locale),
+        # 主体区域
+        fac.AntdRow(
+            [
+                # 侧边菜单
+                side_menu.render(locale=current_locale),
+                # 内容区域
+                fac.AntdCol(
+                    id='doc-layout-container',
+                    flex='auto',
+                    style={'width': 0, 'padding': '0 0 0 30px'},
+                ),
+            ],
+            wrap=False,
+        ),
     ]
 
 
 @app.callback(
-    [
-        Output('doc-layout-container', 'children'),
-        Output('global-spin-center', 'key', allow_duplicate=True),
-    ],
+    Output('doc-layout-container', 'children'),
     Input('doc-layout-url', 'pathname'),
+    running=[(Output('global-spin-center', 'spinning'), True, False)],
     prevent_initial_call=True,
 )
 def doc_layout_router(pathname):
@@ -263,7 +252,7 @@ def doc_layout_router(pathname):
     if pathname in valid_views:
         doc_layout = getattr(views, pathname.replace('/', '')).render()
 
-    return [doc_layout, str(uuid.uuid4())]
+    return doc_layout
 
 
 app.clientside_callback(
