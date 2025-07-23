@@ -59,8 +59,7 @@ setTimeout(() => {
         let hashTarget = window.location.hash.substring(1)
         let scrollTarget = document.getElementById(hashTarget)
         if ( scrollTarget ) {
-            window.location.hash = '';
-            window.location.hash = '#' + hashTarget;
+            window.location.href = window.location.origin + window.location.pathname + '#' + hashTarget;
             window.scrollBy(0, -80);
         }
     }
