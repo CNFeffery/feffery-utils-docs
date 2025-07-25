@@ -154,7 +154,7 @@ def render() -> Component:
                     ),
                     fac.AntdTitle(translator.t('最新稳定版本：'), level=5),
                     fac.AntdText(
-                        f'pip install feffery-utils-components=={fac.__version__}',
+                        f'pip install feffery-utils-components=={fuc.__version__}',
                         keyboard=True,
                         copyable=True,
                     ),
