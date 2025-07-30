@@ -97,7 +97,15 @@ setTimeout(() => {
                                                     translator.t(
                                                         'fac: 通用组件库'
                                                     ),
-                                                    href='https://fac.feffery.tech/',
+                                                    href='https://fac.feffery.tech',
+                                                    target='_blank',
+                                                    className='more-components-link',
+                                                ),
+                                                html.A(
+                                                    translator.t(
+                                                        'fact: 数据可视化组件库'
+                                                    ),
+                                                    href='https://fact.feffery.tech',
                                                     target='_blank',
                                                     className='more-components-link',
                                                 ),
@@ -105,7 +113,7 @@ setTimeout(() => {
                                                     translator.t(
                                                         'fmc: markdown渲染组件库'
                                                     ),
-                                                    href='https://fmc.feffery.tech/',
+                                                    href='https://fmc.feffery.tech',
                                                     target='_blank',
                                                     className='more-components-link',
                                                 ),

@@ -169,6 +169,12 @@
         "fac: 通用组件库": {
             "en-us": "fac: General component library"
         },
+        "fact: 数据可视化组件库": {
+            "en-us": "fact: data visualization components library"
+        },
+        "fuc: 实用工具组件库": {
+            "en-us": "fuc: Useful utils components library"
+        },
         "fmc: markdown渲染组件库": {
             "en-us": "fmc: Markdown rendering component library"
         },
