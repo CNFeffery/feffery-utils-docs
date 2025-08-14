@@ -6,7 +6,13 @@ def render() -> Component:
     """渲染当前演示用例"""
 
     # 构造演示用例相关内容
-    demo_contents = None
+    demo_contents = fuc.FefferyDPlayer(
+        video={
+            'url': 'https://vjs.zencdn.net/v/oceans.mp4',
+            'type': 'auto',
+        },
+        style={'width': '100%'},
+    )
 
     return demo_contents
 
@@ -17,6 +23,13 @@ def code_string() -> list:
     return [
         {
             'code': """
+fuc.FefferyDPlayer(
+    video={
+        'url': 'https://vjs.zencdn.net/v/oceans.mp4',
+        'type': 'auto',
+    },
+    style={'width': '100%'},
+)
 """
         }
     ]

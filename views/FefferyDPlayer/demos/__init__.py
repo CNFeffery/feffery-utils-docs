@@ -16,7 +16,7 @@ def demos_config() -> list:
         {
             'path': 'basic_usage',
             'title': t('基础使用'),
-            'description': None,
+            'description': '最基础的视频播放器，自动识别视频源格式类型。',
         },
     ]
 
