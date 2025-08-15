@@ -3,6 +3,8 @@ from dash.dependencies import Component
 
 from . import (
     basic_usage,  # noqa: F401
+    theme_color,  # noqa: F401
+    logo,  # noqa: F401
 )
 from components import demos_render
 
@@ -17,6 +19,16 @@ def demos_config() -> list:
             'path': 'basic_usage',
             'title': t('基础使用'),
             'description': '最基础的视频播放器，自动识别视频源格式类型。',
+        },
+        {
+            'path': 'theme_color',
+            'title': '主题色',
+            'description': '自定义视频播放器主题色。',
+        },
+        {
+            'path': 'logo',
+            'title': '视频logo',
+            'description': '在左上角展示一个 logo，可以通过`CSS`调整它的大小和位置。',
         },
     ]
 
