@@ -38,6 +38,8 @@ def render() -> Component:
     Input('video-player', 'currentVideoInfo'),
 )
 def listen_video_info(currentVideoInfo):
+    if currentVideoInfo is None:
+        return dash.no_update
     if currentVideoInfo['currentTime'] > 0:
         return [json.dumps(currentVideoInfo, indent=4, ensure_ascii=False)]
     return dash.no_update
@@ -69,10 +71,11 @@ def code_string() -> list:
             Input('video-player', 'currentVideoInfo'),
         )
         def listen_video_info(currentVideoInfo):
-            if currentVideoInfo["currentTime"] > 0:
+            if currentVideoInfo is None:
+                return dash.no_update
+            if currentVideoInfo['currentTime'] > 0:
                 return [json.dumps(currentVideoInfo, indent=4, ensure_ascii=False)]
             return dash.no_update
-
 """
         }
     ]
