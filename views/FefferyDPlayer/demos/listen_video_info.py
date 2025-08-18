@@ -1,10 +1,10 @@
+import json
 import dash
 from dash import html
 
 import feffery_utils_components as fuc
 from dash.dependencies import Component
-from dash.dependencies import Input, Output, State
-import json
+from dash.dependencies import Input, Output
 
 from server import app
 
@@ -30,7 +30,7 @@ def render() -> Component:
         ),
     ]
 
-    return demo_contents  # type: ignore
+    return demo_contents
 
 
 @app.callback(
