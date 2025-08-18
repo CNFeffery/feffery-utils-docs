@@ -2,10 +2,10 @@ from functools import partial
 from dash.dependencies import Component
 
 from . import (
-    basic_usage,
+    basic_usage,  # noqa: F401
     listen_video_info,  # noqa: F401
     theme_color,  # noqa: F401
-    logo  # noqa: F401,  # noqa: F401
+    logo,  # noqa: F401
 )
 from components import demos_render
 
@@ -34,7 +34,7 @@ def demos_config() -> list:
         {
             'path': 'listen_video_info',
             'title': '监听视频播放信息',
-            'description': '视频播放状态 currentVideoInfo 回调。',
+            'description': '通过参数currentVideoInfo监听视频播放状态。',
         },
     ]
 

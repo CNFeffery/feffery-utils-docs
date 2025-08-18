@@ -51,31 +51,33 @@ def code_string() -> list:
     return [
         {
             'code': """
-        fuc.FefferyDPlayer(
-            id='video-player',
-            video={
-                'url': 'https://vjs.zencdn.net/v/oceans.mp4',
-                'type': 'auto',
-            },
-            theme='#FADFA3',
-            style={'width': '100%'},
-            intervalMonitor=True,
-        ),
-        html.Pre(
-            id='video-info',
-            style={'height': 100},
-        ),
+fuc.FefferyDPlayer(
+    id='video-player',
+    video={
+        'url': 'https://vjs.zencdn.net/v/oceans.mp4',
+        'type': 'auto',
+    },
+    theme='#FADFA3',
+    style={'width': '100%'},
+    intervalMonitor=True,
+),
+html.Pre(
+    id='video-info',
+    style={'height': 100},
+),
 
-        @app.callback(
-            Output('video-info', 'children'),
-            Input('video-player', 'currentVideoInfo'),
-        )
-        def listen_video_info(currentVideoInfo):
-            if currentVideoInfo is None:
-                return dash.no_update
-            if currentVideoInfo['currentTime'] > 0:
-                return [json.dumps(currentVideoInfo, indent=4, ensure_ascii=False)]
-            return dash.no_update
+...
+
+@app.callback(
+    Output('video-info', 'children'),
+    Input('video-player', 'currentVideoInfo'),
+)
+def listen_video_info(currentVideoInfo):
+    if currentVideoInfo is None:
+        return dash.no_update
+    if currentVideoInfo['currentTime'] > 0:
+        return [json.dumps(currentVideoInfo, indent=4, ensure_ascii=False)]
+    return dash.no_update
 """
         }
     ]
